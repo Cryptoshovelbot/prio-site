@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SEO -->
+  <title>Prio — Real-Time Apartment Alerts Across Europe & Middle East</title>
+  <meta name="description" content="Get notified within seconds when a new apartment is listed. 15 platforms, 13+ countries — Idealista, SeLoger, Immobiliare, Rightmove, Property Finder & more. Be the first to call.">
+  <link rel="canonical" href="https://getprio.io/">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Prio — Real-Time Apartment Alerts">
+  <meta property="og:description" content="Apartment alerts in under 60 seconds. 15 platforms across Europe & Gulf. For renters, buyers, and real estate professionals.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://getprio.io/">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Prio — Real-Time Apartment Alerts">
+  <meta name="twitter:description" content="Apartment alerts in under 60 seconds. 15 platforms, 13+ countries.">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://api.fontshare.com">
+  <link href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,600,700,800,900&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="/css/style.css">
+
+  <!-- JSON-LD: SoftwareApplication -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Prio",
+    "applicationCategory": "LifestyleApplication",
+    "operatingSystem": "Web (Telegram)",
+    "description": "Real-time apartment and property alerts for competitive rental markets across Europe and the Middle East. Monitors 15 platforms in 13+ countries including Idealista, SeLoger, Immobiliare, Rightmove, Property Finder, and more.",
+    "url": "https://getprio.io",
+    "offers": {
+      "@type": "AggregateOffer",
+      "lowPrice": "4.95",
+      "highPrice": "1200",
+      "priceCurrency": "EUR",
+      "offerCount": "7"
+    },
+    "author": {
+      "@type": "Organization",
+      "name": "Prio",
+      "url": "https://getprio.io"
+    }
+  }
+  </script>
+
+  <!-- JSON-LD: FAQPage -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How is Prio different from Idealista alerts?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Prio detects new listings within seconds of publication, compared to 15-60 minutes for Idealista's own push notifications. Prio also monitors multiple platforms simultaneously in one unified alert stream across 13+ countries."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What countries does Prio cover?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Prio currently covers Spain (Idealista, Fotocasa, Badi) and is expanding to France (SeLoger, Bien'ici), Italy (Immobiliare.it), UK (Rightmove), Netherlands (Funda), Portugal, Poland, Romania, Belgium, Czech Republic, Ireland, and the Gulf region (UAE, Saudi Arabia, Qatar, Bahrain, Egypt, Kuwait)."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the fastest way to get apartment alerts in Europe?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Prio is the fastest apartment alert service in Europe, detecting new listings across 15 platforms in under 60 seconds — significantly faster than any platform's own notification system."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Does Prio offer plans for real estate professionals?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Prio offers B2B plans for real estate agents and agencies, including real-time mandate sourcing alerts and API access. Plans range from 200 EUR per month for solo agents to 1200 EUR per month for premium agencies."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is there a free plan?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Prio offers a free tier with alerts at platform speed. Paid plans unlock priority alerts that arrive minutes before the free tier."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is Prio?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Prio is a real-time property alert service that monitors 15 listing platforms across 13+ countries in Europe and the Middle East. It sends instant Telegram notifications when new listings match your criteria — within seconds of publication, before the platforms' own alerts. Used by renters, buyers, and real estate professionals."
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- ========== NAVIGATION ========== -->
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <div class="nav__inner">
+      <a href="/" class="nav__logo">prio<span>.</span></a>
+
+      <ul class="nav__links">
+        <li><a href="/es/">Spain</a></li>
+        <li><a href="/pricing/">Pricing</a></li>
+        <li><a href="/pricing/#b2b">For Agents</a></li>
+        <li><a href="/blog/">Blog</a></li>
+        <li><a href="/about/">About</a></li>
+        <li><a href="https://t.me/priobot" class="nav__cta" target="_blank" rel="noopener">Get Alerts →</a></li>
+      </ul>
+
+      <button class="nav__toggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ========== HERO ========== -->
+  <header class="hero">
+    <div class="container">
+      <div class="hero__badge">Live in Spain · Expanding to 13+ countries</div>
+
+      <h1>The apartment you want was rented 2 hours ago.</h1>
+
+      <p class="hero__subtitle">
+        What if you'd known first? Prio monitors 15 listing platforms across Europe & the Gulf and sends you a Telegram alert within seconds of a new listing. Same filters as your search. Faster than the platforms themselves.
+      </p>
+
+      <div class="hero__ctas">
+        <a href="https://t.me/priobot" class="btn btn--dark btn--lg" target="_blank" rel="noopener">
+          Start Free →
+        </a>
+        <a href="/pricing/#b2b" class="btn btn--outline btn--lg">
+          For Real Estate Pros
+        </a>
+      </div>
+
+      <div class="hero__proof">
+        <span>📬 46,000+ alerts sent</span>
+        <span>⚡ &lt;60s average</span>
+        <span>🌍 15 platforms · 13+ countries</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- ========== PROBLEM ========== -->
+  <section class="section section--bordered">
+    <div class="container container--text">
+      <div class="section__header">
+        <span class="section__label">The Problem</span>
+        <h2>You're not too slow. The platforms are.</h2>
+      </div>
+
+      <p>
+        You set up your alerts on Idealista, SeLoger, or Rightmove. You check your phone constantly. But by the time you see a listing, dozens of people have already called.
+      </p>
+      <p class="mt-lg">
+        Here's what most people don't know: there's a <strong>15 to 60 minute delay</strong> between when a listing is actually published and when the platform sends you the push notification. On some platforms, the gap is even longer.
+      </p>
+      <p class="mt-lg">
+        Prio eliminates that gap — across every major listing platform in Europe and the Middle East.
+      </p>
+    </div>
+  </section>
+
+  <!-- ========== HOW IT WORKS ========== -->
+  <section class="section" id="how-it-works">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__label">How It Works</span>
+        <h2>Three steps. Two minutes to set up.</h2>
+      </div>
+
+      <div class="steps">
+        <div class="step">
+          <div class="step__number">1</div>
+          <h3>Share your search link</h3>
+          <p>Send us your search URL from any supported platform — Idealista, Fotocasa, SeLoger, Rightmove, Immobiliare, and more. Same filters you already use.</p>
+        </div>
+        <div class="step">
+          <div class="step__number">2</div>
+          <h3>We monitor in real-time</h3>
+          <p>Our system checks for new listings continuously. When a new property matches your criteria, we detect it within seconds of publication — before the platform's own alerts.</p>
+        </div>
+        <div class="step">
+          <div class="step__number">3</div>
+          <h3>Instant Telegram alert</h3>
+          <p>Photo, price, size, location, direct link. Free users get alerts at platform speed. Paid users get them minutes before everyone else.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SPEED COMPARISON ========== -->
+  <section class="section section--subtle">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__label">The Speed Advantage</span>
+        <h2>How much faster?</h2>
+        <p>Measured across thousands of listings. The gap is real.</p>
+      </div>
+
+      <div class="speed-demo">
+        <div class="speed-bars">
+          <div class="speed-bar">
+            <div class="speed-bar__label">Prio</div>
+            <div class="speed-bar__track">
+              <div class="speed-bar__fill speed-bar__fill--prio" style="width: 8%;">
+                &lt;60s
+              </div>
+            </div>
+          </div>
+          <div class="speed-bar">
+            <div class="speed-bar__label">Platform alerts</div>
+            <div class="speed-bar__track">
+              <div class="speed-bar__fill speed-bar__fill--other" style="width: 85%;">
+                15–60 min
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="mt-2xl text-sm text-muted">
+          That 15–60 minute head start is the difference between getting a viewing and hearing "sorry, already taken."
+        </p>
+      </div>
+
+      <div class="comparison mt-3xl" style="margin-top: var(--space-3xl);">
+        <div class="comparison__row comparison__row--header">
+          <div class="comparison__cell"></div>
+          <div class="comparison__cell comparison__highlight">Prio</div>
+          <div class="comparison__cell">Platform Alerts</div>
+        </div>
+        <div class="comparison__row">
+          <div class="comparison__cell fw-600">Alert speed</div>
+          <div class="comparison__cell comparison__highlight">&lt; 60 seconds</div>
+          <div class="comparison__cell">15–60 minutes</div>
+        </div>
+        <div class="comparison__row">
+          <div class="comparison__cell fw-600">Cross-platform</div>
+          <div class="comparison__cell comparison__highlight"><span class="check">✓</span>&nbsp; 15 platforms unified</div>
+          <div class="comparison__cell"><span class="cross">✗</span>&nbsp; One platform only</div>
+        </div>
+        <div class="comparison__row">
+          <div class="comparison__cell fw-600">Multi-country</div>
+          <div class="comparison__cell comparison__highlight"><span class="check">✓</span>&nbsp; 13+ countries</div>
+          <div class="comparison__cell"><span class="cross">✗</span>&nbsp; Single market</div>
+        </div>
+        <div class="comparison__row">
+          <div class="comparison__cell fw-600">Photo + details</div>
+          <div class="comparison__cell comparison__highlight"><span class="check">✓</span></div>
+          <div class="comparison__cell"><span class="check">✓</span></div>
+        </div>
+        <div class="comparison__row">
+          <div class="comparison__cell fw-600">For professionals</div>
+          <div class="comparison__cell comparison__highlight"><span class="check">✓</span>&nbsp; B2B plans</div>
+          <div class="comparison__cell"><span class="cross">✗</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== COVERAGE MAP ========== -->
+  <section class="section section--bordered">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__label">Coverage</span>
+        <h2>15 platforms. 13+ countries. One alert stream.</h2>
+        <p>Every major listing platform across Europe and the Middle East.</p>
+      </div>
+
+      <div class="grid grid--3" style="gap: var(--space-lg);">
+        <div class="card" style="padding: var(--space-lg);">
+          <div style="display:flex;align-items:center;gap:8px;margin-bottom:12px;">
+            <span style="font-size:1.4rem;">🇪🇸</span>
+            <h3 style="font-size:var(--text-lg);margin:0;">Spain</h3>
+            <span style="font-size:0.7rem;font-weight:600;padding:2px 8px;border-radius:999px;background:#ecfdf5;color:#10b981;">Live</span>
+          </div>
+          <p style="font-size:var(--text-sm);margin:0;">Idealista · Fotocasa · Badi</p>
+          <p style="font-size:var(--text-xs);color:var(--color-text-muted);margin-top:4px;">Barcelona, Madrid, Valencia + 9 cities</p>
+        </div>
+
+        <div class="card" style="padding: var(--space-lg);">
+          <div style="display:flex;align-items:center;gap:8px;margin-bottom:12px;">
+            <span style="font-size:1.4rem;">🇫🇷</span>
+            <h3 style="font-size:var(--text-lg);margin:0;">France</h3>
+            <span style="font-size:0.7rem;font-weight:600;padding:2px 8px;border-radius:999px;background:#f1f3f5;color:#9ca3af;">Coming soon</span>
+          </div>
+          <p style="font-size:var(--text-sm);margin:0;">SeLoger · Bien'ici</p>
+          <p style="font-size:var(--text-xs);color:var(--color-text-muted);margin-top:4px;">Paris, Lyon, Marseille, Bordeaux</p>
+        </div>
+
+        <div class="card" style="padding: var(--space-lg);">
+          <div style="display:flex;align-items:center;gap:8px;margin-bottom:12px;">
+            <span style="font-size:1.4rem;">🇮🇹</span>
+            <h3 style="font-size:var(--text-lg);margin:0;">Italy</h3>
+            <span style="font-size:0.7rem;font-weight:600;padding:2px 8px;border-radius:999px;background:#f1f3f5;color:#9ca3af;">Coming soon</span>
+          </div>
+          <p style="font-size:var(--text-sm);margin:0;">Immobiliare.it · Idealista.it</p>
+          <p style="font-size:var(--text-xs);color:var(--color-text-muted);margin-top:4px;">Milan, Rome, Florence</p>
+        </div>
+
+        <div class="card" style="padding: var(--space-lg);">
+          <div style="display:flex;align-items:center;gap:8px;margin-bottom:12px;">
+            <span style="font-size:1.4rem;">🇬🇧</span>
+            <h3 style="font-size:var(--text-lg);margin:0;">United Kingdom</h3>
+            <span style="font-size:0.7rem;font-weight:600;padding:2px 8px;border-radius:999px;background:#f1f3f5;color:#9ca3af;">Coming soon</span>
+          </div>
+          <p style="font-size:var(--text-sm);margin:0;">Rightmove</p>
+          <p style="font-size:var(--text-xs);color:var(--color-text-muted);margin-top:4px;">London, Manchester, Birmingham</p>
+        </div>
+
+        <div class="card" style="padding: var(--space-lg);">
+          <div style="display:flex;align-items:center;gap:8px;margin-bottom:12px;">
+            <span style="font-size:1.4rem;">🇦🇪</span>
+            <h3 style="font-size:var(--text-lg);margin:0;">Gulf Region</h3>
+            <span style="font-size:0.7rem;font-weight:600;padding:2px 8px;border-radius:999px;background:#f1f3f5;color:#9ca3af;">Coming soon</span>
+          </div>
+          <p style="font-size:var(--text-sm);margin:0;">Property Finder · Bayut</p>
+          <p style="font-size:var(--text-xs);color:var(--color-text-muted);margin-top:4px;">UAE, Saudi Arabia, Qatar + 3 countries</p>
+        </div>
+
+        <div class="card" style="padding: var(--space-lg);">
+          <div style="display:flex;align-items:center;gap:8px;margin-bottom:12px;">
+            <span style="font-size:1.4rem;">🇵🇹🇵🇱🇷🇴</span>
+            <h3 style="font-size:var(--text-lg);margin:0;">PT · PL · RO</h3>
+            <span style="font-size:0.7rem;font-weight:600;padding:2px 8px;border-radius:999px;background:#f1f3f5;color:#9ca3af;">Coming soon</span>
+          </div>
+          <p style="font-size:var(--text-sm);margin:0;">Idealista · OLX Group</p>
+          <p style="font-size:var(--text-xs);color:var(--color-text-muted);margin-top:4px;">Lisbon, Warsaw, Bucharest</p>
+        </div>
+
+        <div class="card" style="padding: var(--space-lg);">
+          <div style="display:flex;align-items:center;gap:8px;margin-bottom:12px;">
+            <span style="font-size:1.4rem;">🇳🇱🇧🇪</span>
+            <h3 style="font-size:var(--text-lg);margin:0;">Benelux</h3>
+            <span style="font-size:0.7rem;font-weight:600;padding:2px 8px;border-radius:999px;background:#f1f3f5;color:#9ca3af;">Coming soon</span>
+          </div>
+          <p style="font-size:var(--text-sm);margin:0;">Funda · Immoweb</p>
+          <p style="font-size:var(--text-xs);color:var(--color-text-muted);margin-top:4px;">Amsterdam, Brussels, Rotterdam</p>
+        </div>
+
+        <div class="card" style="padding: var(--space-lg);">
+          <div style="display:flex;align-items:center;gap:8px;margin-bottom:12px;">
+            <span style="font-size:1.4rem;">🇨🇿🇮🇪</span>
+            <h3 style="font-size:var(--text-lg);margin:0;">CZ · Ireland</h3>
+            <span style="font-size:0.7rem;font-weight:600;padding:2px 8px;border-radius:999px;background:#f1f3f5;color:#9ca3af;">Coming soon</span>
+          </div>
+          <p style="font-size:var(--text-sm);margin:0;">Sreality · Daft.ie</p>
+          <p style="font-size:var(--text-xs);color:var(--color-text-muted);margin-top:4px;">Prague, Dublin</p>
+        </div>
+      </div>
+
+      <p class="text-center text-sm text-muted mt-xl">
+        Don't see your country? <a href="https://t.me/priobot" target="_blank" rel="noopener">Tell us</a> — we add new markets every month.
+      </p>
+    </div>
+  </section>
+
+  <!-- ========== B2C + B2B SPLIT ========== -->
+  <section class="section">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__label">Who It's For</span>
+        <h2>Hunting for an apartment — or hunting for clients.</h2>
+      </div>
+
+      <div class="grid grid--2">
+        <div class="card">
+          <div class="card__icon">🏠</div>
+          <h3>For Apartment Hunters</h3>
+          <p style="margin-bottom:var(--space-lg);">
+            Searching for a room, a flat, or a property to buy? Get alerted the moment a listing goes live — before the crowds arrive.
+          </p>
+          <p style="font-size:var(--text-sm);color:var(--color-text-muted);margin-bottom:var(--space-lg);">
+            Free plan available · Paid from €4.95/week · Telegram alerts · All platforms in your city
+          </p>
+          <a href="/pricing/" class="btn btn--primary btn--sm">See B2C Plans →</a>
+        </div>
+
+        <div class="card" style="border-color:var(--color-primary);background:var(--color-primary-light);">
+          <div class="card__icon" style="background:var(--color-primary);color:#fff;">📊</div>
+          <h3>For Real Estate Professionals</h3>
+          <p style="margin-bottom:var(--space-lg);">
+            Source new mandates in real-time. See private seller listings the moment they go live. The modern pige immobilière — faster than any competitor.
+          </p>
+          <p style="font-size:var(--text-sm);color:var(--color-text-secondary);margin-bottom:var(--space-lg);">
+            From €200/month · Exclusive city slots · Multi-platform · API access
+          </p>
+          <a href="/pricing/#b2b" class="btn btn--dark btn--sm">B2B Plans →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PRICING PREVIEW ========== -->
+  <section class="section section--subtle" id="pricing">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__label">Pricing</span>
+        <h2>Start free. Upgrade when you feel the difference.</h2>
+      </div>
+
+      <div class="grid grid--4">
+        <div class="pricing-card">
+          <div class="pricing-card__name">Free</div>
+          <div class="pricing-card__desc">See the speed difference</div>
+          <div class="pricing-card__price">€0</div>
+          <div class="pricing-card__period">forever</div>
+          <ul class="pricing-card__features">
+            <li>Alerts at platform speed</li>
+            <li>All platforms in your city</li>
+            <li>1 active search</li>
+            <li>Telegram delivery</li>
+          </ul>
+          <a href="https://t.me/priobot" class="btn btn--outline btn--sm" target="_blank" rel="noopener" style="width:100%;">Get Started</a>
+        </div>
+
+        <div class="pricing-card">
+          <div class="pricing-card__name">Roommate</div>
+          <div class="pricing-card__desc">Searching for a room</div>
+          <div class="pricing-card__price">€4.95 <span>/wk</span></div>
+          <div class="pricing-card__period">~4 weeks avg. search</div>
+          <ul class="pricing-card__features">
+            <li>Priority alerts (minutes ahead)</li>
+            <li>All platforms in your city</li>
+            <li>Unlimited searches</li>
+            <li>Telegram delivery</li>
+          </ul>
+          <a href="https://t.me/priobot" class="btn btn--outline btn--sm" target="_blank" rel="noopener" style="width:100%;">Start Free</a>
+        </div>
+
+        <div class="pricing-card pricing-card--featured">
+          <div class="pricing-card__name">Renter</div>
+          <div class="pricing-card__desc">Looking for your apartment</div>
+          <div class="pricing-card__price">€19 <span>/mo</span></div>
+          <div class="pricing-card__period">cancel anytime</div>
+          <ul class="pricing-card__features">
+            <li>Priority alerts (minutes ahead)</li>
+            <li>All platforms in your city</li>
+            <li>Unlimited searches</li>
+            <li>Telegram delivery</li>
+          </ul>
+          <a href="https://t.me/priobot" class="btn btn--dark btn--sm" target="_blank" rel="noopener" style="width:100%;">Start Free</a>
+        </div>
+
+        <div class="pricing-card">
+          <div class="pricing-card__name">Buyer</div>
+          <div class="pricing-card__desc">Hunting for a property</div>
+          <div class="pricing-card__price">€79 <span>/mo</span></div>
+          <div class="pricing-card__period">cancel anytime</div>
+          <ul class="pricing-card__features">
+            <li>Priority alerts (minutes ahead)</li>
+            <li>All platforms in your city</li>
+            <li>Unlimited searches</li>
+            <li>Priority support</li>
+          </ul>
+          <a href="https://t.me/priobot" class="btn btn--outline btn--sm" target="_blank" rel="noopener" style="width:100%;">Start Free</a>
+        </div>
+      </div>
+
+      <p class="text-center text-sm text-muted mt-lg mb-xl">
+        Free users see exactly how much faster paid users were — on every single notification.
+      </p>
+
+      <!-- B2B Teaser -->
+      <div style="background:var(--color-bg);border:2px solid var(--color-primary);border-radius:var(--radius-xl);padding:var(--space-2xl);text-align:center;">
+        <h3 style="margin-bottom:var(--space-sm);">Real Estate Agent? Agency? Relocation Service?</h3>
+        <p style="max-width:600px;margin:0 auto var(--space-lg);font-size:var(--text-base);">
+          Source mandates in real-time across 15 platforms. Exclusive city slots from €200/month. API access available.
+        </p>
+        <a href="/pricing/#b2b" class="btn btn--primary">View B2B Plans →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FREEMIUM EXPLAINER ========== -->
+  <section class="section section--bordered">
+    <div class="container container--narrow">
+      <div class="section__header">
+        <span class="section__label">How Free Works</span>
+        <h2>Every free alert shows you what you're missing.</h2>
+      </div>
+
+      <div style="background:var(--color-bg-subtle);border:1px solid var(--color-border);border-radius:var(--radius-lg);padding:var(--space-2xl);">
+        <!-- Mock notification -->
+        <div style="background:var(--color-bg);border:1px solid var(--color-border);border-radius:var(--radius-md);padding:var(--space-lg);margin-bottom:var(--space-lg);">
+          <p style="font-size:var(--text-sm);font-weight:600;color:var(--color-text);margin-bottom:4px;">🏠 New listing — Eixample, Barcelona</p>
+          <p style="font-size:var(--text-sm);color:var(--color-text-secondary);margin-bottom:8px;">€1,100/mo · 2 bed · 65m² · Fotocasa</p>
+          <p style="font-size:var(--text-xs);color:var(--color-primary);font-weight:600;">⚡ 3 Prio subscribers saw this 4 minutes ago</p>
+        </div>
+
+        <p style="font-size:var(--text-base);color:var(--color-text-secondary);margin-bottom:var(--space-md);">
+          Free users get every alert — but they also see how many paid users received it earlier, and how many minutes ahead. That's not a limitation. It's proof the speed advantage is real.
+        </p>
+        <p style="font-size:var(--text-sm);color:var(--color-text-muted);">
+          When you're ready to be first, upgrading takes 30 seconds.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FAQ ========== -->
+  <section class="section" id="faq">
+    <div class="container container--narrow">
+      <div class="section__header">
+        <span class="section__label">FAQ</span>
+        <h2>Questions</h2>
+      </div>
+
+      <div class="faq">
+        <div class="faq__item">
+          <button class="faq__question">How is Prio different from Idealista / SeLoger alerts?</button>
+          <div class="faq__answer">
+            <p>Platform push notifications have a 15 to 60 minute delay from when a listing is actually published. Prio detects new listings within seconds. We also monitor multiple platforms simultaneously across 13+ countries — one unified alert stream instead of checking every app separately.</p>
+          </div>
+        </div>
+
+        <div class="faq__item">
+          <button class="faq__question">What's the difference between Free and Paid?</button>
+          <div class="faq__answer">
+            <p>Free users get alerts at platform speed — already useful since we unify multiple platforms into one stream. Paid users get priority alerts that arrive minutes earlier. Every free notification shows you how many paid users already saw it and how much ahead they were.</p>
+          </div>
+        </div>
+
+        <div class="faq__item">
+          <button class="faq__question">What countries and platforms do you cover?</button>
+          <div class="faq__answer">
+            <p>Live now: Spain (Idealista, Fotocasa, Badi). Expanding to: France (SeLoger, Bien'ici), Italy (Immobiliare.it), UK (Rightmove), Gulf (Property Finder, Bayut — 6 countries), Portugal, Poland, Romania (OLX Group), Netherlands (Funda), Belgium (Immoweb), Czech Republic (Sreality), Ireland (Daft.ie). New markets added monthly.</p>
+          </div>
+        </div>
+
+        <div class="faq__item">
+          <button class="faq__question">Do you have plans for real estate professionals?</button>
+          <div class="faq__answer">
+            <p>Yes. B2B plans for agents and agencies who want to source mandates in real-time. See private seller listings the moment they go live. Plans from €200/month for solo agents, with exclusive city caps to protect your advantage. API access available for larger agencies.</p>
+          </div>
+        </div>
+
+        <div class="faq__item">
+          <button class="faq__question">How is this legal?</button>
+          <div class="faq__answer">
+            <p>Prio uses publicly available listing data — the same information you see when you search on any platform. We check for new listings more frequently than you humanly could.</p>
+          </div>
+        </div>
+
+        <div class="faq__item">
+          <button class="faq__question">Why Telegram?</button>
+          <div class="faq__answer">
+            <p>Telegram delivers notifications instantly with no delays from email servers or app queues. It's the fastest channel we tested. WhatsApp and email are on the roadmap.</p>
+          </div>
+        </div>
+
+        <div class="faq__item">
+          <button class="faq__question">How do I get started?</button>
+          <div class="faq__answer">
+            <p>Message us on Telegram with your search URL from any supported platform. Setup takes under 2 minutes. No app to install, no account to create. Start free, upgrade anytime.</p>
+          </div>
+        </div>
+
+        <div class="faq__item">
+          <button class="faq__question">What is Prio?</button>
+          <div class="faq__answer">
+            <p>Prio is a real-time property alert service monitoring 15 listing platforms across 13+ countries in Europe and the Middle East. Instant Telegram notifications when new listings match your criteria — seconds after publication, well before the platforms' own alerts. Used by apartment hunters, property buyers, and real estate professionals.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FINAL CTA ========== -->
+  <section class="section section--subtle">
+    <div class="container" style="text-align:center;">
+      <h2 style="margin-bottom:var(--space-md);">Stop losing apartments.</h2>
+      <p style="max-width:500px;margin:0 auto var(--space-xl);font-size:var(--text-lg);">
+        Free to start. Two minutes to set up. No app to install.
+      </p>
+      <div style="display:flex;gap:var(--space-md);justify-content:center;flex-wrap:wrap;">
+        <a href="https://t.me/priobot" class="btn btn--dark btn--lg" target="_blank" rel="noopener">
+          Start Free →
+        </a>
+        <a href="/pricing/#b2b" class="btn btn--outline btn--lg">
+          I'm a Real Estate Pro
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__brand">
+          <a href="/" class="nav__logo">prio<span>.</span></a>
+          <p>Real-time property alerts across Europe & the Middle East. 15 platforms. 13+ countries.</p>
+        </div>
+
+        <div class="footer__col">
+          <h4>Markets</h4>
+          <ul>
+            <li><a href="/es/">Spain</a></li>
+            <li><a href="/es/barcelona/">Barcelona</a></li>
+            <li><a href="/es/madrid/">Madrid</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__col">
+          <h4>Product</h4>
+          <ul>
+            <li><a href="/pricing/">Pricing</a></li>
+            <li><a href="/pricing/#b2b">For Agents</a></li>
+            <li><a href="/blog/">Blog</a></li>
+            <li><a href="/about/">About</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__col">
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="/legal/privacy/">Privacy</a></li>
+            <li><a href="/legal/terms/">Terms</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <span>&copy; 2026 Prio. All rights reserved.</span>
+        <span>Built in Barcelona 🇪🇸</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/js/main.js"></script>
+</body>
+</html>
