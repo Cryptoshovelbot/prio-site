@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>About Prio — Built by a Couple Who Got Tired of Losing Apartments in Barcelona</title>
+  <meta name="description" content="Prio was born from frustration. We moved to Barcelona as a couple and lost apartment after apartment because we were always too late. So we built a tool to never be late again.">
+  <link rel="canonical" href="https://getprio.io/about/">
+
+  <meta property="og:title" content="About Prio — Our Story">
+  <meta property="og:description" content="We moved to Barcelona and lost every apartment we wanted. So we built Prio.">
+
+  <link rel="preconnect" href="https://api.fontshare.com">
+  <link href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,600,700,800,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "AboutPage",
+    "name": "About Prio",
+    "description": "Prio was built by a couple who experienced Barcelona's brutal rental market firsthand. After losing multiple apartments to faster applicants, they built a real-time alert system that now monitors 15 platforms across 13+ countries.",
+    "url": "https://getprio.io/about/"
+  }
+  </script>
+
+  <style>
+    .about-hero {
+      padding: calc(64px + 60px) 24px 48px;
+      max-width: 720px;
+      margin: 0 auto;
+    }
+    .about-hero h1 {
+      font-size: clamp(1.8rem, 4vw, 2.8rem);
+      letter-spacing: -0.035em;
+      line-height: 1.15;
+      margin-bottom: 32px;
+    }
+    .about-hero h1 span {
+      color: var(--color-primary);
+    }
+    .story p {
+      font-size: 17px;
+      color: var(--color-text-secondary);
+      line-height: 1.8;
+      margin-bottom: 20px;
+    }
+    .story p strong {
+      color: var(--color-text);
+    }
+    .story-highlight {
+      background: var(--color-bg-subtle);
+      border-left: 3px solid var(--color-primary);
+      padding: 20px 24px;
+      border-radius: 0 12px 12px 0;
+      margin: 28px 0;
+    }
+    .story-highlight p {
+      font-size: 16px;
+      color: var(--color-text);
+      font-weight: 500;
+      margin: 0;
+      line-height: 1.7;
+    }
+    .timeline {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+      margin: 40px 0;
+      position: relative;
+      padding-left: 32px;
+    }
+    .timeline::before {
+      content: '';
+      position: absolute;
+      left: 7px;
+      top: 8px;
+      bottom: 8px;
+      width: 2px;
+      background: var(--color-border);
+    }
+    .timeline__item {
+      position: relative;
+      padding-bottom: 28px;
+    }
+    .timeline__item:last-child {
+      padding-bottom: 0;
+    }
+    .timeline__dot {
+      position: absolute;
+      left: -32px;
+      top: 6px;
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      background: var(--color-primary);
+      border: 3px solid #fff;
+      box-shadow: 0 0 0 2px var(--color-primary-subtle);
+    }
+    .timeline__dot--muted {
+      background: var(--color-text-muted);
+      box-shadow: 0 0 0 2px var(--color-bg-muted);
+    }
+    .timeline__date {
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--color-primary);
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      margin-bottom: 4px;
+    }
+    .timeline__item--muted .timeline__date {
+      color: var(--color-text-muted);
+    }
+    .timeline__text {
+      font-size: 15px;
+      color: var(--color-text-secondary);
+      line-height: 1.6;
+    }
+    .timeline__text strong {
+      color: var(--color-text);
+    }
+    .values {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      margin: 32px 0;
+    }
+    .value-card {
+      padding: 24px;
+      border: 1px solid var(--color-border);
+      border-radius: 14px;
+    }
+    .value-card h3 {
+      font-size: 16px;
+      margin-bottom: 6px;
+    }
+    .value-card p {
+      font-size: 14px !important;
+      margin: 0 !important;
+      line-height: 1.6 !important;
+    }
+    .about-cta {
+      text-align: center;
+      padding: 48px 24px;
+      background: var(--color-bg-subtle);
+      border-radius: 20px;
+      margin: 40px 0 0;
+    }
+    @media (max-width: 640px) {
+      .values { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ========== NAVIGATION ========== -->
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <div class="nav__inner">
+      <a href="/" class="nav__logo">prio<span>.</span></a>
+      <ul class="nav__links">
+        <li><a href="/es/">Spain</a></li>
+        <li><a href="/pricing/">Pricing</a></li>
+        <li><a href="/pricing/#b2b">For Agents</a></li>
+        <li><a href="/blog/">Blog</a></li>
+        <li><a href="/about/" style="color:var(--color-text);">About</a></li>
+        <li><a href="https://t.me/prioalertbot" class="nav__cta" target="_blank" rel="noopener">Get Alerts →</a></li>
+      </ul>
+      <button class="nav__toggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ========== ABOUT HERO ========== -->
+  <div class="about-hero">
+    <h1>We moved to Barcelona as a couple.<br><span>We lost every apartment we wanted.</span></h1>
+
+    <div class="story">
+      <p>
+        We arrived in Barcelona with a plan: find a nice apartment, settle in, start our new life. What we didn't plan for was the <strong>50 other people</strong> who wanted the same apartment.
+      </p>
+
+      <p>
+        Every time we found a place we loved on Idealista — great location, fair price, nice photos — we'd call immediately. "Sorry, we already have 30 visits scheduled." We'd show up to viewings where the line went down the stairs. We'd send our documents within hours and hear nothing back.
+      </p>
+
+      <div class="story-highlight">
+        <p>We weren't too slow. We just didn't know that Idealista's push notifications arrive 15 to 60 minutes after a listing is actually published. By the time your phone buzzes, the best apartments are already gone.</p>
+      </div>
+
+      <p>
+        One of us is a developer. So instead of refreshing Idealista for the 200th time, we built something. A script that checks for new listings every few seconds and sends a Telegram alert the moment something matching our criteria appears.
+      </p>
+
+      <p>
+        <strong>We found our apartment in 3 days.</strong>
+      </p>
+
+      <p>
+        Then friends asked for it. Then friends of friends. Then strangers in expat Facebook groups. We realized this wasn't just our problem — it was everyone's problem. In Barcelona, Madrid, Paris, London, Dubai — anywhere the rental market is competitive, speed is the only advantage that matters.
+      </p>
+
+      <p>
+        So we turned our script into Prio.
+      </p>
+    </div>
+
+    <!-- ========== TIMELINE ========== -->
+    <h2 style="font-size: 22px; margin: 48px 0 24px; letter-spacing: -0.02em;">The journey so far</h2>
+
+    <div class="timeline">
+      <div class="timeline__item">
+        <div class="timeline__dot"></div>
+        <div class="timeline__date">Early 2025</div>
+        <div class="timeline__text">
+          <strong>Moved to Barcelona.</strong> Started apartment hunting on Idealista. Discovered the hard way that being "fast" wasn't fast enough.
+        </div>
+      </div>
+
+      <div class="timeline__item">
+        <div class="timeline__dot"></div>
+        <div class="timeline__date">Mid 2025</div>
+        <div class="timeline__text">
+          <strong>Built the first script.</strong> A Python script checking Idealista every few seconds. Found our apartment in 3 days. Friends started asking for access.
+        </div>
+      </div>
+
+      <div class="timeline__item">
+        <div class="timeline__dot"></div>
+        <div class="timeline__date">Late 2025</div>
+        <div class="timeline__text">
+          <strong>Added Fotocasa and Badi.</strong> One alert stream for all platforms. 22 beta testers in Barcelona, all finding apartments faster than they thought possible.
+        </div>
+      </div>
+
+      <div class="timeline__item">
+        <div class="timeline__dot"></div>
+        <div class="timeline__date">March 2026</div>
+        <div class="timeline__text">
+          <strong>15 platforms, 13+ countries.</strong> Investigated and validated coverage across Spain, France, Italy, UK, Gulf, Portugal, Poland, Romania, Netherlands, Belgium, Czech Republic, and Ireland. 46,000+ alerts sent.
+        </div>
+      </div>
+
+      <div class="timeline__item timeline__item--muted">
+        <div class="timeline__dot timeline__dot--muted"></div>
+        <div class="timeline__date" style="color: var(--color-text-muted);">What's next</div>
+        <div class="timeline__text">
+          Launching paid plans, expanding to France and Italy, building B2B tools for real estate agents. Adding new countries every month.
+        </div>
+      </div>
+    </div>
+
+    <!-- ========== VALUES ========== -->
+    <h2 style="font-size: 22px; margin: 48px 0 20px; letter-spacing: -0.02em;">What we believe</h2>
+
+    <div class="values">
+      <div class="value-card">
+        <h3>Speed is the only moat</h3>
+        <p>In a competitive rental market, the person who knows first wins. Everything we build is optimized for speed — seconds, not minutes.</p>
+      </div>
+      <div class="value-card">
+        <h3>One alert, not three apps</h3>
+        <p>You shouldn't need to check Idealista, Fotocasa, and Badi separately. One unified stream across every platform in your city.</p>
+      </div>
+      <div class="value-card">
+        <h3>Fair pricing, fair access</h3>
+        <p>We offer a free tier because everyone deserves to find a home. Paid plans exist for people who need the extra edge.</p>
+      </div>
+      <div class="value-card">
+        <h3>Built by users, for users</h3>
+        <p>We use Prio ourselves. Every feature exists because we needed it. No bloat, no features nobody asked for.</p>
+      </div>
+    </div>
+
+    <!-- ========== NUMBERS ========== -->
+    <h2 style="font-size: 22px; margin: 48px 0 20px; letter-spacing: -0.02em;">Prio in numbers</h2>
+
+    <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; margin-bottom: 32px;">
+      <div style="text-align: center; padding: 20px; background: var(--color-bg-subtle); border-radius: 14px;">
+        <div style="font-size: 28px; font-weight: 800; letter-spacing: -0.03em; color: var(--color-primary);">46K+</div>
+        <div style="font-size: 12px; color: var(--color-text-muted); margin-top: 4px;">alerts sent</div>
+      </div>
+      <div style="text-align: center; padding: 20px; background: var(--color-bg-subtle); border-radius: 14px;">
+        <div style="font-size: 28px; font-weight: 800; letter-spacing: -0.03em;">&lt;60s</div>
+        <div style="font-size: 12px; color: var(--color-text-muted); margin-top: 4px;">avg alert time</div>
+      </div>
+      <div style="text-align: center; padding: 20px; background: var(--color-bg-subtle); border-radius: 14px;">
+        <div style="font-size: 28px; font-weight: 800; letter-spacing: -0.03em;">15</div>
+        <div style="font-size: 12px; color: var(--color-text-muted); margin-top: 4px;">platforms</div>
+      </div>
+      <div style="text-align: center; padding: 20px; background: var(--color-bg-subtle); border-radius: 14px;">
+        <div style="font-size: 28px; font-weight: 800; letter-spacing: -0.03em;">13+</div>
+        <div style="font-size: 12px; color: var(--color-text-muted); margin-top: 4px;">countries</div>
+      </div>
+    </div>
+
+    <!-- ========== TEAM NOTE ========== -->
+    <div style="border: 1px solid var(--color-border); border-radius: 16px; padding: 28px; margin: 32px 0;">
+      <p style="font-size: 16px; color: var(--color-text-secondary); line-height: 1.7; margin: 0;">
+        Prio is built by two people — not a VC-funded startup with 50 employees. We answer every message personally, we fix bugs the same day, and we care about this problem because we lived it. If you have questions, feedback, or just want to say hi — reach out directly.
+      </p>
+    </div>
+
+    <!-- ========== CTA ========== -->
+    <div class="about-cta">
+      <h2 style="font-size: 24px; font-weight: 700; margin-bottom: 8px; letter-spacing: -0.02em;">Want to talk?</h2>
+      <p style="font-size: 16px; color: var(--color-text-secondary); margin-bottom: 20px;">
+        Whether you're looking for an apartment or have feedback on Prio — we'd love to hear from you.
+      </p>
+      <a href="https://t.me/prioalertbot" class="btn btn--dark btn--lg" target="_blank" rel="noopener">
+        Message us on Telegram →
+      </a>
+    </div>
+  </div>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__brand">
+          <a href="/" class="nav__logo">prio<span>.</span></a>
+          <p>Real-time property alerts across Europe & the Middle East.</p>
+        </div>
+        <div class="footer__col">
+          <h4>Markets</h4>
+          <ul>
+            <li><a href="/es/">Spain</a></li>
+            <li><a href="/es/barcelona/">Barcelona</a></li>
+            <li><a href="/es/madrid/">Madrid</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Product</h4>
+          <ul>
+            <li><a href="/pricing/">Pricing</a></li>
+            <li><a href="/pricing/#b2b">For Agents</a></li>
+            <li><a href="/blog/">Blog</a></li>
+            <li><a href="/about/">About</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="/legal/privacy/">Privacy</a></li>
+            <li><a href="/legal/terms/">Terms</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>&copy; 2026 Prio. All rights reserved.</span>
+        <span>Built in Barcelona 🇪🇸</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>
