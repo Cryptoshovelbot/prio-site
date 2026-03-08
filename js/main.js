@@ -1,6 +1,6 @@
 /* ============================================
    PRIO — Main JavaScript
-   Scroll reveals, speed bars, smooth nav
+   Scroll reveals, FAQ, nav, speed bars
    ============================================ */
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
   if (nav) {
     window.addEventListener('scroll', () => {
       nav.classList.toggle('scrolled', window.scrollY > 10);
-    });
+    }, { passive: true });
   }
 
   // --- Mobile nav toggle ---
@@ -32,46 +32,78 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // --- Scroll reveal (IntersectionObserver) ---
-  const revealObserver = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('visible');
-        revealObserver.unobserve(entry.target);
-      }
+  // --- Scroll Reveal ---
+  const revealElements = document.querySelectorAll('.reveal, .reveal-left, .reveal-scale');
+  
+  if (revealElements.length) {
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('in-view');
+          revealObserver.unobserve(entry.target);
+        }
+      });
+    }, { 
+      threshold: 0.1,
+      rootMargin: '0px 0px -40px 0px'
     });
-  }, { threshold: 0.15 });
 
-  document.querySelectorAll('.reveal, .reveal-left, .reveal-scale, .stagger-children').forEach(el => {
-    revealObserver.observe(el);
+    revealElements.forEach(el => revealObserver.observe(el));
+  }
+
+  // --- Stagger children: trigger all children when parent enters view ---
+  document.querySelectorAll('.stagger-children').forEach(parent => {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          parent.querySelectorAll('.reveal').forEach(child => {
+            child.classList.add('in-view');
+          });
+          observer.unobserve(parent);
+        }
+      });
+    }, { threshold: 0.1 });
+    observer.observe(parent);
   });
 
   // --- Speed bar animation on scroll ---
   const speedBars = document.querySelectorAll('.speed-bar__fill');
   if (speedBars.length) {
+    // Store target widths and set to 0
+    speedBars.forEach(bar => {
+      const computedWidth = bar.style.width || '0%';
+      bar.setAttribute('data-target-width', computedWidth);
+      bar.style.width = '0%';
+    });
+
     const speedObserver = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
-          entry.target.style.width = entry.target.dataset.width;
-          speedObserver.unobserve(entry.target);
+          // Animate all bars when container is visible
+          const container = entry.target;
+          container.querySelectorAll('.speed-bar__fill').forEach((bar, i) => {
+            setTimeout(() => {
+              bar.style.width = bar.getAttribute('data-target-width');
+            }, i * 200);
+          });
+          speedObserver.unobserve(container);
         }
       });
     }, { threshold: 0.3 });
 
-    speedBars.forEach(bar => {
-      bar.dataset.width = bar.style.width || getComputedStyle(bar).width;
-      bar.style.width = '0%';
-      speedObserver.observe(bar);
-    });
+    const speedContainer = document.querySelector('.speed-demo');
+    if (speedContainer) speedObserver.observe(speedContainer);
   }
 
   // --- Smooth anchor scrolling ---
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', (e) => {
-      const target = document.querySelector(anchor.getAttribute('href'));
+    anchor.addEventListener('click', function(e) {
+      const target = document.querySelector(this.getAttribute('href'));
       if (target) {
         e.preventDefault();
         target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        // Close mobile nav if open
+        if (links) links.classList.remove('active');
       }
     });
   });

@@ -25,7 +25,7 @@
   <link href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,600,700,800,900&display=swap" rel="stylesheet">
 
   <!-- Styles -->
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="/css/style.css">
 
   <!-- JSON-LD: SoftwareApplication -->
   <script type="application/ld+json">
@@ -168,13 +168,13 @@
         <h2>You're not too slow. The platforms are.</h2>
       </div>
 
-      <p>
+      <p class="reveal">
         You set up your alerts on Idealista, SeLoger, or Rightmove. You check your phone constantly. But by the time you see a listing, dozens of people have already called.
       </p>
-      <p class="mt-lg">
+      <p class="mt-lg reveal">
         Here's what most people don't know: there's a <strong>15 to 60 minute delay</strong> between when a listing is actually published and when the platform sends you the push notification. On some platforms, the gap is even longer.
       </p>
-      <p class="mt-lg">
+      <p class="mt-lg reveal">
         Prio eliminates that gap — across every major listing platform in Europe and the Middle East.
       </p>
     </div>
@@ -189,17 +189,17 @@
       </div>
 
       <div class="steps stagger-children">
-        <div class="step">
+        <div class="step reveal">
           <div class="step__number">1</div>
           <h3>Share your search link</h3>
           <p>Send us your search URL from any supported platform — Idealista, Fotocasa, SeLoger, Rightmove, Immobiliare, and more. Same filters you already use.</p>
         </div>
-        <div class="step">
+        <div class="step reveal">
           <div class="step__number">2</div>
           <h3>We monitor in real-time</h3>
           <p>Our system checks for new listings continuously. When a new property matches your criteria, we detect it within seconds of publication — before the platform's own alerts.</p>
         </div>
-        <div class="step">
+        <div class="step reveal">
           <div class="step__number">3</div>
           <h3>Instant Telegram alert</h3>
           <p>Photo, price, size, location, direct link. Free users get alerts at platform speed. Paid users get them minutes before everyone else.</p>
@@ -217,7 +217,7 @@
         <p>Measured across thousands of listings. The gap is real.</p>
       </div>
 
-      <div class="speed-demo">
+      <div class="speed-demo reveal-scale">
         <div class="speed-bars">
           <div class="speed-bar">
             <div class="speed-bar__label">Prio</div>
@@ -276,81 +276,91 @@
     </div>
   </section>
 
-  <!-- ========== PLATFORM LOGOS ========== -->
+  <!-- ========== PLATFORM LOGOS (App Store style) ========== -->
   <section class="section section--bordered">
     <div class="container">
       <div class="section__header reveal">
         <span class="section__label">Platforms</span>
-        <h2>Connected to the platforms that matter.</h2>
+        <h2>We monitor the apps you already use.</h2>
       </div>
 
-      <div class="platform-logos stagger-children">
-        <div class="platform-logo">
-          <span class="platform-logo__dot" style="background:#1bc47d;"></span>
-          Idealista
+      <div class="platform-strip stagger-children">
+        <!-- Idealista -->
+        <div class="platform-logo reveal">
+          <div class="platform-logo__icon" style="background: linear-gradient(135deg, #1bc47d, #0d9b5c);">
+            <span style="font-size:18px;font-weight:800;">id</span>
+          </div>
+          <span class="platform-logo__name">Idealista</span>
         </div>
-        <div class="platform-logo">
-          <span class="platform-logo__dot" style="background:#e63946;"></span>
-          Fotocasa
+        <!-- Fotocasa -->
+        <div class="platform-logo reveal">
+          <div class="platform-logo__icon" style="background: linear-gradient(135deg, #e63946, #c1121f);">
+            <span style="font-size:18px;font-weight:800;">Fc</span>
+          </div>
+          <span class="platform-logo__name">Fotocasa</span>
         </div>
-        <div class="platform-logo">
-          <span class="platform-logo__dot" style="background:#e74c3c;"></span>
-          SeLoger
+        <!-- SeLoger -->
+        <div class="platform-logo reveal">
+          <div class="platform-logo__icon" style="background: linear-gradient(135deg, #e74c3c, #c0392b);">
+            <span style="font-size:18px;font-weight:800;">SL</span>
+          </div>
+          <span class="platform-logo__name">SeLoger</span>
         </div>
-        <div class="platform-logo">
-          <span class="platform-logo__dot" style="background:#2563eb;"></span>
-          Immobiliare
+        <!-- Immobiliare -->
+        <div class="platform-logo reveal">
+          <div class="platform-logo__icon" style="background: linear-gradient(135deg, #2563eb, #1d4ed8);">
+            <span style="font-size:16px;font-weight:800;">im</span>
+          </div>
+          <span class="platform-logo__name">Immobiliare</span>
         </div>
-        <div class="platform-logo">
-          <span class="platform-logo__dot" style="background:#00b67a;"></span>
-          Rightmove
+        <!-- Rightmove -->
+        <div class="platform-logo reveal">
+          <div class="platform-logo__icon" style="background: linear-gradient(135deg, #00b67a, #009966);">
+            <span style="font-size:18px;font-weight:800;">R</span>
+          </div>
+          <span class="platform-logo__name">Rightmove</span>
         </div>
-        <div class="platform-logo">
-          <span class="platform-logo__dot" style="background:#1a1a2e;"></span>
-          Property Finder
+        <!-- Property Finder -->
+        <div class="platform-logo reveal">
+          <div class="platform-logo__icon" style="background: linear-gradient(135deg, #1a1a2e, #16213e);">
+            <span style="font-size:18px;font-weight:800;">PF</span>
+          </div>
+          <span class="platform-logo__name">Property Finder</span>
         </div>
-        <div class="platform-logo">
-          <span class="platform-logo__dot" style="background:#00c2cb;"></span>
-          Badi
+        <!-- Badi -->
+        <div class="platform-logo reveal">
+          <div class="platform-logo__icon" style="background: linear-gradient(135deg, #00c2cb, #0097a7);">
+            <span style="font-size:18px;font-weight:800;">B</span>
+          </div>
+          <span class="platform-logo__name">Badi</span>
         </div>
-        <div class="platform-logo">
-          <span class="platform-logo__dot" style="background:#f26522;"></span>
-          Funda
+        <!-- Funda -->
+        <div class="platform-logo platform-logo--coming reveal">
+          <div class="platform-logo__icon" style="background: linear-gradient(135deg, #f26522, #e55d00);">
+            <span style="font-size:18px;font-weight:800;">F</span>
+          </div>
+          <span class="platform-logo__name">Funda</span>
         </div>
-        <div class="platform-logo">
-          <span class="platform-logo__dot" style="background:#5b21b6;"></span>
-          Bien'ici
+        <!-- Bien'ici -->
+        <div class="platform-logo platform-logo--coming reveal">
+          <div class="platform-logo__icon" style="background: linear-gradient(135deg, #5b21b6, #7c3aed);">
+            <span style="font-size:18px;font-weight:800;">Bi</span>
+          </div>
+          <span class="platform-logo__name">Bien'ici</span>
         </div>
-        <div class="platform-logo platform-logo--muted">
-          <span class="platform-logo__dot" style="background:#d1d5db;"></span>
-          Immoweb
-        </div>
-        <div class="platform-logo platform-logo--muted">
-          <span class="platform-logo__dot" style="background:#d1d5db;"></span>
-          Bayut
-        </div>
-        <div class="platform-logo platform-logo--muted">
-          <span class="platform-logo__dot" style="background:#d1d5db;"></span>
-          Sreality
-        </div>
-        <div class="platform-logo platform-logo--muted">
-          <span class="platform-logo__dot" style="background:#d1d5db;"></span>
-          Daft.ie
-        </div>
-        <div class="platform-logo platform-logo--muted">
-          <span class="platform-logo__dot" style="background:#d1d5db;"></span>
-          OLX Group
-        </div>
-        <div class="platform-logo platform-logo--muted">
-          <span class="platform-logo__dot" style="background:#d1d5db;"></span>
-          +6 more
+        <!-- +6 more -->
+        <div class="platform-logo platform-logo--coming reveal">
+          <div class="platform-logo__icon" style="background: linear-gradient(135deg, #94a3b8, #64748b);">
+            <span style="font-size:14px;font-weight:700;">+6</span>
+          </div>
+          <span class="platform-logo__name">& more</span>
         </div>
       </div>
     </div>
   </section>
 
   <!-- ========== COVERAGE MAP ========== -->
-  <section class="section section--bordered">
+  <section class="section">
     <div class="container">
       <div class="section__header reveal">
         <span class="section__label">Coverage</span>
@@ -359,7 +369,7 @@
       </div>
 
       <div class="grid grid--3 stagger-children" style="gap: var(--space-lg);">
-        <div class="card" style="padding: var(--space-lg);">
+        <div class="card reveal" style="padding: var(--space-lg);">
           <div style="display:flex;align-items:center;gap:8px;margin-bottom:12px;">
             <span style="font-size:1.4rem;">🇪🇸</span>
             <h3 style="font-size:var(--text-lg);margin:0;">Spain</h3>
@@ -369,7 +379,7 @@
           <p style="font-size:var(--text-xs);color:var(--color-text-muted);margin-top:4px;">Barcelona, Madrid, Valencia + 9 cities</p>
         </div>
 
-        <div class="card" style="padding: var(--space-lg);">
+        <div class="card reveal" style="padding: var(--space-lg);">
           <div style="display:flex;align-items:center;gap:8px;margin-bottom:12px;">
             <span style="font-size:1.4rem;">🇫🇷</span>
             <h3 style="font-size:var(--text-lg);margin:0;">France</h3>
@@ -379,7 +389,7 @@
           <p style="font-size:var(--text-xs);color:var(--color-text-muted);margin-top:4px;">Paris, Lyon, Marseille, Bordeaux</p>
         </div>
 
-        <div class="card" style="padding: var(--space-lg);">
+        <div class="card reveal" style="padding: var(--space-lg);">
           <div style="display:flex;align-items:center;gap:8px;margin-bottom:12px;">
             <span style="font-size:1.4rem;">🇮🇹</span>
             <h3 style="font-size:var(--text-lg);margin:0;">Italy</h3>
@@ -389,7 +399,7 @@
           <p style="font-size:var(--text-xs);color:var(--color-text-muted);margin-top:4px;">Milan, Rome, Florence</p>
         </div>
 
-        <div class="card" style="padding: var(--space-lg);">
+        <div class="card reveal" style="padding: var(--space-lg);">
           <div style="display:flex;align-items:center;gap:8px;margin-bottom:12px;">
             <span style="font-size:1.4rem;">🇬🇧</span>
             <h3 style="font-size:var(--text-lg);margin:0;">United Kingdom</h3>
@@ -399,7 +409,7 @@
           <p style="font-size:var(--text-xs);color:var(--color-text-muted);margin-top:4px;">London, Manchester, Birmingham</p>
         </div>
 
-        <div class="card" style="padding: var(--space-lg);">
+        <div class="card reveal" style="padding: var(--space-lg);">
           <div style="display:flex;align-items:center;gap:8px;margin-bottom:12px;">
             <span style="font-size:1.4rem;">🇦🇪</span>
             <h3 style="font-size:var(--text-lg);margin:0;">Gulf Region</h3>
@@ -409,7 +419,7 @@
           <p style="font-size:var(--text-xs);color:var(--color-text-muted);margin-top:4px;">UAE, Saudi Arabia, Qatar + 3 countries</p>
         </div>
 
-        <div class="card" style="padding: var(--space-lg);">
+        <div class="card reveal" style="padding: var(--space-lg);">
           <div style="display:flex;align-items:center;gap:8px;margin-bottom:12px;">
             <span style="font-size:1.4rem;">🇵🇹🇵🇱🇷🇴</span>
             <h3 style="font-size:var(--text-lg);margin:0;">PT · PL · RO</h3>
@@ -419,7 +429,7 @@
           <p style="font-size:var(--text-xs);color:var(--color-text-muted);margin-top:4px;">Lisbon, Warsaw, Bucharest</p>
         </div>
 
-        <div class="card" style="padding: var(--space-lg);">
+        <div class="card reveal" style="padding: var(--space-lg);">
           <div style="display:flex;align-items:center;gap:8px;margin-bottom:12px;">
             <span style="font-size:1.4rem;">🇳🇱🇧🇪</span>
             <h3 style="font-size:var(--text-lg);margin:0;">Benelux</h3>
@@ -429,7 +439,7 @@
           <p style="font-size:var(--text-xs);color:var(--color-text-muted);margin-top:4px;">Amsterdam, Brussels, Rotterdam</p>
         </div>
 
-        <div class="card" style="padding: var(--space-lg);">
+        <div class="card reveal" style="padding: var(--space-lg);">
           <div style="display:flex;align-items:center;gap:8px;margin-bottom:12px;">
             <span style="font-size:1.4rem;">🇨🇿🇮🇪</span>
             <h3 style="font-size:var(--text-lg);margin:0;">CZ · Ireland</h3>
@@ -455,7 +465,7 @@
       </div>
 
       <div class="grid grid--2 stagger-children">
-        <div class="card">
+        <div class="card reveal">
           <div class="card__icon">🏠</div>
           <h3>For Apartment Hunters</h3>
           <p style="margin-bottom:var(--space-lg);">
@@ -467,7 +477,7 @@
           <a href="/pricing/" class="btn btn--primary btn--sm">See B2C Plans →</a>
         </div>
 
-        <div class="card" style="border-color:var(--color-primary);background:var(--color-primary-light);">
+        <div class="card reveal" style="border-color:var(--color-primary);background:var(--color-primary-light);">
           <div class="card__icon" style="background:var(--color-primary);color:#fff;">📊</div>
           <h3>For Real Estate Professionals</h3>
           <p style="margin-bottom:var(--space-lg);">
@@ -491,7 +501,7 @@
       </div>
 
       <div class="grid grid--4 stagger-children">
-        <div class="pricing-card">
+        <div class="pricing-card reveal">
           <div class="pricing-card__name">Free</div>
           <div class="pricing-card__desc">See the speed difference</div>
           <div class="pricing-card__price">€0</div>
@@ -505,7 +515,7 @@
           <a href="https://t.me/priobot" class="btn btn--outline btn--sm" target="_blank" rel="noopener" style="width:100%;">Get Started</a>
         </div>
 
-        <div class="pricing-card">
+        <div class="pricing-card reveal">
           <div class="pricing-card__name">Roommate</div>
           <div class="pricing-card__desc">Searching for a room</div>
           <div class="pricing-card__price">€4.95 <span>/wk</span></div>
@@ -519,7 +529,7 @@
           <a href="https://t.me/priobot" class="btn btn--outline btn--sm" target="_blank" rel="noopener" style="width:100%;">Start Free</a>
         </div>
 
-        <div class="pricing-card pricing-card--featured">
+        <div class="pricing-card pricing-card--featured reveal">
           <div class="pricing-card__name">Renter</div>
           <div class="pricing-card__desc">Looking for your apartment</div>
           <div class="pricing-card__price">€19 <span>/mo</span></div>
@@ -533,7 +543,7 @@
           <a href="https://t.me/priobot" class="btn btn--dark btn--sm" target="_blank" rel="noopener" style="width:100%;">Start Free</a>
         </div>
 
-        <div class="pricing-card">
+        <div class="pricing-card reveal">
           <div class="pricing-card__name">Buyer</div>
           <div class="pricing-card__desc">Hunting for a property</div>
           <div class="pricing-card__price">€79 <span>/mo</span></div>
@@ -719,6 +729,6 @@
     </div>
   </footer>
 
-  <script src="js/main.js"></script>
+  <script src="/js/main.js"></script>
 </body>
 </html>
