@@ -1,6 +1,6 @@
 /* ============================================
    PRIO — Main JavaScript
-   Minimal, no dependencies
+   Scroll reveals, speed bars, smooth nav
    ============================================ */
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -27,25 +27,23 @@ document.addEventListener('DOMContentLoaded', () => {
     btn.addEventListener('click', () => {
       const item = btn.closest('.faq__item');
       const isActive = item.classList.contains('active');
-      // Close all
       document.querySelectorAll('.faq__item').forEach(i => i.classList.remove('active'));
-      // Toggle clicked
       if (!isActive) item.classList.add('active');
     });
   });
 
-  // --- Scroll animations ---
-  const observer = new IntersectionObserver((entries) => {
+  // --- Scroll reveal (IntersectionObserver) ---
+  const revealObserver = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
-        entry.target.classList.add('animate-in');
-        observer.unobserve(entry.target);
+        entry.target.classList.add('visible');
+        revealObserver.unobserve(entry.target);
       }
     });
-  }, { threshold: 0.1 });
+  }, { threshold: 0.15 });
 
-  document.querySelectorAll('.animate-on-scroll').forEach(el => {
-    observer.observe(el);
+  document.querySelectorAll('.reveal, .reveal-left, .reveal-scale, .stagger-children').forEach(el => {
+    revealObserver.observe(el);
   });
 
   // --- Speed bar animation on scroll ---
@@ -66,5 +64,16 @@ document.addEventListener('DOMContentLoaded', () => {
       speedObserver.observe(bar);
     });
   }
+
+  // --- Smooth anchor scrolling ---
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', (e) => {
+      const target = document.querySelector(anchor.getAttribute('href'));
+      if (target) {
+        e.preventDefault();
+        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    });
+  });
 
 });
