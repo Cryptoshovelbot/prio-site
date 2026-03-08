@@ -25,7 +25,7 @@
   <link href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,600,700,800,900&display=swap" rel="stylesheet">
 
   <!-- Styles -->
-  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="css/style.css">
 
   <!-- JSON-LD: SoftwareApplication -->
   <script type="application/ld+json">
@@ -137,11 +137,38 @@
     <div class="container">
       <div class="hero__badge">Live in Spain · Expanding to 13+ countries</div>
 
-      <h1>The apartment you want was rented 2 hours ago.</h1>
+      <h1>The apartment you want was rented <span style="color:#2563eb">2 hours ago.</span></h1>
 
       <p class="hero__subtitle">
         What if you'd known first? Prio monitors 15 listing platforms across Europe & the Gulf and sends you a Telegram alert within seconds of a new listing. Same filters as your search. Faster than the platforms themselves.
       </p>
+
+      <div class="hero__platforms">
+        <div class="hero__platform-pill">
+          <img src="https://www.google.com/s2/favicons?domain=idealista.com&sz=32" alt="Idealista" width="20" height="20">
+          <span>Idealista</span>
+        </div>
+        <div class="hero__platform-pill">
+          <img src="https://www.google.com/s2/favicons?domain=fotocasa.es&sz=32" alt="Fotocasa" width="20" height="20">
+          <span>Fotocasa</span>
+        </div>
+        <div class="hero__platform-pill">
+          <img src="https://www.google.com/s2/favicons?domain=seloger.com&sz=32" alt="SeLoger" width="20" height="20">
+          <span>SeLoger</span>
+        </div>
+        <div class="hero__platform-pill">
+          <img src="https://www.google.com/s2/favicons?domain=rightmove.co.uk&sz=32" alt="Rightmove" width="20" height="20">
+          <span>Rightmove</span>
+        </div>
+        <div class="hero__platform-pill">
+          <img src="https://www.google.com/s2/favicons?domain=immobiliare.it&sz=32" alt="Immobiliare" width="20" height="20">
+          <span>Immobiliare</span>
+        </div>
+        <div class="hero__platform-pill">
+          <img src="https://www.google.com/s2/favicons?domain=propertyfinder.ae&sz=32" alt="Property Finder" width="20" height="20">
+          <span>Property Finder</span>
+        </div>
+      </div>
 
       <div class="hero__ctas">
         <a href="https://t.me/priobot" class="btn btn--dark btn--lg" target="_blank" rel="noopener">
@@ -231,13 +258,13 @@
             <div class="speed-bar__label">Platform alerts</div>
             <div class="speed-bar__track">
               <div class="speed-bar__fill speed-bar__fill--other" style="width: 85%;">
-                15–60 min
+                ~30 min avg
               </div>
             </div>
           </div>
         </div>
         <p class="mt-2xl text-sm text-muted">
-          That 15–60 minute head start is the difference between getting a viewing and hearing "sorry, already taken."
+          That 30-minute head start is the difference between getting a viewing and hearing "sorry, already taken."
         </p>
       </div>
 
@@ -250,7 +277,7 @@
         <div class="comparison__row">
           <div class="comparison__cell fw-600">Alert speed</div>
           <div class="comparison__cell comparison__highlight">&lt; 60 seconds</div>
-          <div class="comparison__cell">15–60 minutes</div>
+          <div class="comparison__cell">~30 min avg</div>
         </div>
         <div class="comparison__row">
           <div class="comparison__cell fw-600">Cross-platform</div>
@@ -276,91 +303,8 @@
     </div>
   </section>
 
-  <!-- ========== PLATFORM LOGOS (App Store style) ========== -->
-  <section class="section section--bordered">
-    <div class="container">
-      <div class="section__header reveal">
-        <span class="section__label">Platforms</span>
-        <h2>We monitor the apps you already use.</h2>
-      </div>
-
-      <div class="platform-strip stagger-children">
-        <!-- Idealista -->
-        <div class="platform-logo reveal">
-          <div class="platform-logo__icon" style="background: linear-gradient(135deg, #1bc47d, #0d9b5c);">
-            <span style="font-size:18px;font-weight:800;">id</span>
-          </div>
-          <span class="platform-logo__name">Idealista</span>
-        </div>
-        <!-- Fotocasa -->
-        <div class="platform-logo reveal">
-          <div class="platform-logo__icon" style="background: linear-gradient(135deg, #e63946, #c1121f);">
-            <span style="font-size:18px;font-weight:800;">Fc</span>
-          </div>
-          <span class="platform-logo__name">Fotocasa</span>
-        </div>
-        <!-- SeLoger -->
-        <div class="platform-logo reveal">
-          <div class="platform-logo__icon" style="background: linear-gradient(135deg, #e74c3c, #c0392b);">
-            <span style="font-size:18px;font-weight:800;">SL</span>
-          </div>
-          <span class="platform-logo__name">SeLoger</span>
-        </div>
-        <!-- Immobiliare -->
-        <div class="platform-logo reveal">
-          <div class="platform-logo__icon" style="background: linear-gradient(135deg, #2563eb, #1d4ed8);">
-            <span style="font-size:16px;font-weight:800;">im</span>
-          </div>
-          <span class="platform-logo__name">Immobiliare</span>
-        </div>
-        <!-- Rightmove -->
-        <div class="platform-logo reveal">
-          <div class="platform-logo__icon" style="background: linear-gradient(135deg, #00b67a, #009966);">
-            <span style="font-size:18px;font-weight:800;">R</span>
-          </div>
-          <span class="platform-logo__name">Rightmove</span>
-        </div>
-        <!-- Property Finder -->
-        <div class="platform-logo reveal">
-          <div class="platform-logo__icon" style="background: linear-gradient(135deg, #1a1a2e, #16213e);">
-            <span style="font-size:18px;font-weight:800;">PF</span>
-          </div>
-          <span class="platform-logo__name">Property Finder</span>
-        </div>
-        <!-- Badi -->
-        <div class="platform-logo reveal">
-          <div class="platform-logo__icon" style="background: linear-gradient(135deg, #00c2cb, #0097a7);">
-            <span style="font-size:18px;font-weight:800;">B</span>
-          </div>
-          <span class="platform-logo__name">Badi</span>
-        </div>
-        <!-- Funda -->
-        <div class="platform-logo platform-logo--coming reveal">
-          <div class="platform-logo__icon" style="background: linear-gradient(135deg, #f26522, #e55d00);">
-            <span style="font-size:18px;font-weight:800;">F</span>
-          </div>
-          <span class="platform-logo__name">Funda</span>
-        </div>
-        <!-- Bien'ici -->
-        <div class="platform-logo platform-logo--coming reveal">
-          <div class="platform-logo__icon" style="background: linear-gradient(135deg, #5b21b6, #7c3aed);">
-            <span style="font-size:18px;font-weight:800;">Bi</span>
-          </div>
-          <span class="platform-logo__name">Bien'ici</span>
-        </div>
-        <!-- +6 more -->
-        <div class="platform-logo platform-logo--coming reveal">
-          <div class="platform-logo__icon" style="background: linear-gradient(135deg, #94a3b8, #64748b);">
-            <span style="font-size:14px;font-weight:700;">+6</span>
-          </div>
-          <span class="platform-logo__name">& more</span>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <!-- ========== COVERAGE MAP ========== -->
-  <section class="section">
+  <section class="section section--bordered">
     <div class="container">
       <div class="section__header reveal">
         <span class="section__label">Coverage</span>
@@ -729,6 +673,6 @@
     </div>
   </footer>
 
-  <script src="/js/main.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>

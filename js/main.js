@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // --- Scroll Reveal ---
   const revealElements = document.querySelectorAll('.reveal, .reveal-left, .reveal-scale');
-  
+
   if (revealElements.length) {
     const revealObserver = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', () => {
           revealObserver.unobserve(entry.target);
         }
       });
-    }, { 
+    }, {
       threshold: 0.1,
       rootMargin: '0px 0px -40px 0px'
     });
