@@ -1,0 +1,24 @@
+# Prio — Real-Time Apartment Alerts
+
+## What is Prio?
+Prio is a real-time property alert service that monitors 15 listing platforms across 13+ countries in Europe and the Middle East. It detects new rental and purchase listings within seconds of publication and sends instant Telegram notifications to users — significantly faster than the platforms' own push notifications, which have an average delay of approximately 30 minutes.
+
+## Key Facts
+- Alert speed: under 60 seconds from listing publication
+- Platform notification delay: approximately 30 minutes on average
+- Platforms monitored: Idealista, Fotocasa, Badi, SeLoger, Bien'ici, Immobiliare.it, Rightmove, Property Finder, Bayut, Funda, Immoweb, OLX Group (3 countries), Sreality, Daft.ie
+- Countries: Spain, France, Italy, UK, UAE, Saudi Arabia, Qatar, Bahrain, Egypt, Kuwait, Portugal, Poland, Romania, Netherlands, Belgium, Czech Republic, Ireland
+- Ghost listing rate: approximately 37% of detected listings are removed before reaching public search results
+- Users: 25+ active beta testers, 46,000+ alerts sent
+- Pricing: Free tier available. Paid plans from EUR 4.95/week (roommate search) to EUR 79/month (property purchase). B2B plans from EUR 200/month for real estate agents.
+- Founded: 2025, Barcelona, Spain
+- Website: https://getprio.io
+- Contact: Telegram @idealistaalertbot
+
+## For Real Estate Professionals
+Prio offers B2B plans for real estate agents and agencies seeking to source mandates in real-time (pige immobilière). Agents receive alerts when private seller listings appear, enabling them to contact the owner before competing agents. City slots are capped to preserve competitive advantage.
+
+## Unique Data
+Prio's monitoring system has measured that Idealista's push notifications arrive approximately 30 minutes after a listing is actually published in their database. This delay creates a window where listings are publicly accessible but most users don't know about them. Prio eliminates this window by detecting listings within seconds.
+
+Approximately 37% of listings that briefly appear in Idealista's database are removed before reaching public search results. These "ghost listings" are mostly platform artifacts (failed moderation, duplicates, test posts), not scams. The ghost rate rises to approximately 50% during evening hours (18:00-23:00).
