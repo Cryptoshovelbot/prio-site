@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Find an Apartment in Barcelona — Real-Time Alerts on Idealista, Fotocasa & Badi | Prio</title>
+  <meta name="description" content="Get notified within seconds when a new apartment is listed in Barcelona. Real-time alerts from Idealista, Fotocasa & Badi. Neighborhood guide, scam prevention, market prices 2026.">
+  <link rel="canonical" href="https://getprio.io/es/barcelona/">
+
+  <meta property="og:title" content="Find an Apartment in Barcelona — Real-Time Alerts | Prio">
+  <meta property="og:description" content="Barcelona apartment alerts in under 60 seconds. Idealista, Fotocasa, Badi. Beat 50+ applicants to the best listings.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://getprio.io/es/barcelona/">
+
+  <link rel="preconnect" href="https://api.fontshare.com">
+  <link href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,600,700,800,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../css/style.css">
+
+  <!-- JSON-LD: Service -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Prio Barcelona — Real-Time Apartment Alerts",
+    "description": "Real-time rental listing alerts for Barcelona covering Idealista, Fotocasa, and Badi. Get notified within seconds when a new apartment matching your criteria is published.",
+    "areaServed": {
+      "@type": "City",
+      "name": "Barcelona",
+      "containedInPlace": { "@type": "Country", "name": "Spain" }
+    },
+    "provider": { "@type": "Organization", "name": "Prio", "url": "https://getprio.io" },
+    "offers": { "@type": "AggregateOffer", "lowPrice": "0", "highPrice": "79", "priceCurrency": "EUR" }
+  }
+  </script>
+
+  <!-- JSON-LD: FAQPage -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How long does it take to find an apartment in Barcelona?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Most expats find an apartment in Barcelona in 2 to 6 weeks if they are well prepared with documents, flexible on neighborhoods, and fast to respond to new listings. In peak season (September and January), it can take longer due to increased competition from students and new arrivals."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the average rent in Barcelona in 2026?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "In 2026, a 1-bedroom apartment in central Barcelona costs between 900 and 1,300 EUR per month. A 2-bedroom apartment ranges from 1,200 to 1,800 EUR. Prices vary significantly by neighborhood — Eixample and Gracia are at the higher end, while Poble Sec and Sant Andreu offer better value."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What documents do I need to rent an apartment in Barcelona?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "To rent in Barcelona you typically need: passport or NIE, work contract or proof of income (ideally 3x the monthly rent), last 3 payslips or bank statements, and sometimes a Spanish bank account. Having these documents ready in a PDF folder before you start searching saves critical time."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What are the best platforms to find apartments in Barcelona?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The three main platforms are Idealista (largest, most listings), Fotocasa (strong for private landlord listings), and Badi (specialized in shared apartments and rooms). Prio monitors all three simultaneously and sends real-time alerts when new listings match your criteria."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Are there rental scams on Idealista in Barcelona?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, rental scams are common on Idealista and other platforms in Barcelona. Common red flags include prices 20-30% below market average, requests for deposits before viewing, and listings that disappear quickly. About 37% of listings detected by monitoring systems are ghost listings that never reach public search results. Always visit in person before paying anything."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the fastest way to find an apartment in Barcelona?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The fastest way is to be the first to know when a new listing appears. Platform push notifications have a 15-60 minute delay from actual publication. Real-time alert services like Prio detect new listings within seconds across Idealista, Fotocasa, and Badi, giving you a decisive speed advantage in a market where good apartments get 50+ inquiries in hours."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Which neighborhoods in Barcelona are best for expats?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Popular expat neighborhoods include Eixample (central, well-connected, most listings), Gracia (village feel, younger crowd), Poble Sec (up-and-coming, better value), Sant Antoni (trendy, great food market), El Born (beautiful but tourist-heavy), and Sarria-Sant Gervasi (quieter, family-friendly). Each neighborhood has distinct character and price ranges."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <style>
+    .city-hero { padding: calc(64px + 48px) 24px 40px; max-width: 800px; margin: 0 auto; }
+    .city-hero h1 { font-size: clamp(1.8rem, 4vw, 2.6rem); letter-spacing: -0.03em; line-height: 1.15; margin-bottom: 16px; }
+    .city-hero h1 span { color: var(--color-primary); }
+    .city-content { max-width: 760px; margin: 0 auto; padding: 0 24px; }
+    .city-content h2 { font-size: 22px; margin: 40px 0 16px; letter-spacing: -0.02em; }
+    .city-content h3 { font-size: 17px; margin: 24px 0 8px; }
+    .city-content p { font-size: 16px; color: var(--color-text-secondary); line-height: 1.75; margin-bottom: 14px; }
+    .city-content p strong { color: var(--color-text); }
+    .city-stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin: 24px 0; }
+    .city-stat { text-align: center; padding: 18px 12px; background: var(--color-bg-subtle); border-radius: 12px; }
+    .city-stat__value { font-size: 22px; font-weight: 800; letter-spacing: -0.02em; color: var(--color-primary); }
+    .city-stat__label { font-size: 11px; color: var(--color-text-muted); margin-top: 2px; }
+    .neighborhood { padding: 16px 20px; border: 1px solid var(--color-border); border-radius: 12px; margin-bottom: 10px; }
+    .neighborhood h3 { margin: 0 0 4px; font-size: 16px; }
+    .neighborhood p { margin: 0; font-size: 14px; }
+    .neighborhood__price { font-size: 13px; color: var(--color-primary); font-weight: 600; margin-top: 4px; }
+    .scam-box { background: #fef2f2; border: 1px solid #fecaca; border-radius: 12px; padding: 18px 20px; margin: 12px 0; }
+    .scam-box h3 { color: #dc2626; margin: 0 0 4px; font-size: 15px; }
+    .scam-box p { font-size: 14px; margin: 0; color: #7f1d1d; }
+    .tip-box { background: var(--color-primary-light); border: 1px solid var(--color-primary-subtle); border-radius: 12px; padding: 18px 20px; margin: 12px 0; }
+    .tip-box h3 { color: var(--color-primary); margin: 0 0 4px; font-size: 15px; }
+    .tip-box p { font-size: 14px; margin: 0; }
+    .city-cta { text-align: center; padding: 40px 24px; background: var(--color-bg-subtle); border-radius: 20px; margin: 40px 0; }
+    .breadcrumb { font-size: 13px; color: var(--color-text-muted); margin-bottom: 16px; }
+    .breadcrumb a { color: var(--color-text-muted); text-decoration: none; }
+    .breadcrumb a:hover { color: var(--color-primary); }
+    .platforms-used { display: flex; gap: 8px; flex-wrap: wrap; margin: 16px 0; }
+    .platforms-used span { padding: 4px 12px; background: var(--color-bg-subtle); border-radius: 999px; font-size: 12px; font-weight: 600; color: var(--color-text-secondary); }
+    @media (max-width: 640px) { .city-stats { grid-template-columns: repeat(2, 1fr); } }
+  </style>
+</head>
+<body>
+
+  <!-- ========== NAV ========== -->
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <div class="nav__inner">
+      <a href="/" class="nav__logo">prio<span>.</span></a>
+      <ul class="nav__links">
+        <li><a href="/es/" style="color:var(--color-text);">Spain</a></li>
+        <li><a href="/pricing/">Pricing</a></li>
+        <li><a href="/pricing/#b2b">For Agents</a></li>
+        <li><a href="/blog/">Blog</a></li>
+        <li><a href="/about/">About</a></li>
+        <li><a href="https://t.me/prioalertbot" class="nav__cta" target="_blank" rel="noopener">Get Alerts →</a></li>
+      </ul>
+      <button class="nav__toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+
+  <!-- ========== HERO ========== -->
+  <div class="city-hero">
+    <div class="breadcrumb">
+      <a href="/">Prio</a> → <a href="/es/">Spain</a> → Barcelona
+    </div>
+
+    <h1>Find an Apartment in <span>Barcelona</span> Before Anyone Else</h1>
+
+    <p style="font-size: 17px; color: var(--color-text-secondary); line-height: 1.7; margin-bottom: 20px;">
+      Barcelona's rental market is one of the most competitive in Europe. Good apartments get 50+ inquiries within hours. Prio gives you a head start — real-time alerts from Idealista, Fotocasa, and Badi within seconds of publication.
+    </p>
+
+    <div class="platforms-used">
+      <span>✓ Idealista</span>
+      <span>✓ Fotocasa</span>
+      <span>✓ Badi</span>
+    </div>
+
+    <div style="display: flex; gap: 12px; margin-top: 20px;">
+      <a href="https://t.me/prioalertbot" class="btn btn--dark" target="_blank" rel="noopener">Get Barcelona Alerts →</a>
+      <a href="/pricing/" class="btn btn--outline">See Pricing</a>
+    </div>
+
+    <div class="city-stats" style="margin-top: 28px;">
+      <div class="city-stat">
+        <div class="city-stat__value">&lt;60s</div>
+        <div class="city-stat__label">alert speed</div>
+      </div>
+      <div class="city-stat">
+        <div class="city-stat__value">3</div>
+        <div class="city-stat__label">platforms</div>
+      </div>
+      <div class="city-stat">
+        <div class="city-stat__value">12</div>
+        <div class="city-stat__label">cities in Spain</div>
+      </div>
+      <div class="city-stat">
+        <div class="city-stat__value">46K+</div>
+        <div class="city-stat__label">alerts sent</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== CONTENT ========== -->
+  <div class="city-content">
+
+    <h2>The Barcelona Rental Market in 2026</h2>
+
+    <p>
+      Barcelona attracts over <strong>300,000 international residents</strong> — from digital nomads and Erasmus students to relocated professionals and retirees. The rental market is brutally competitive: a well-priced apartment in Eixample or Gràcia can receive <strong>50+ inquiries in the first few hours</strong> after being listed.
+    </p>
+
+    <p>
+      Average rents for a <strong>1-bedroom apartment</strong> in central Barcelona range from <strong>€900 to €1,300 per month</strong> depending on the neighborhood. For a 2-bedroom, expect €1,200 to €1,800. These prices have increased steadily since 2022, despite the Catalan government's rent control measures introduced in 2024.
+    </p>
+
+    <p>
+      Demand peaks in <strong>September</strong> (university intake and summer relocations), <strong>January</strong> (new year moves), and early summer. During these periods, competition intensifies and apartments are rented within hours — sometimes before they even appear in the platform's search results.
+    </p>
+
+    <p>
+      The three main platforms for finding apartments in Barcelona are <strong>Idealista</strong> (the largest, with the most listings), <strong>Fotocasa</strong> (strong for private landlord listings), and <strong>Badi</strong> (specialized in shared apartments and rooms). Most serious apartment hunters check all three.
+    </p>
+
+    <div class="tip-box">
+      <h3>Why speed matters in Barcelona</h3>
+      <p>Platform push notifications have a delay of approximately 30 minutes on average between when a listing is published and when you receive the alert. In a market where apartments get 50+ inquiries in hours, that 30-minute gap means you're already behind. Prio detects new listings within seconds across all three platforms and alerts you via Telegram instantly.</p>
+    </div>
+
+    <h2>Best Neighborhoods in Barcelona for Expats</h2>
+
+    <p>
+      Choosing the right neighborhood is as important as finding the right apartment. Barcelona's barrios each have distinct personalities, price ranges, and lifestyles. Here's what you need to know about the most popular areas for expats in 2026.
+    </p>
+
+    <div class="neighborhood">
+      <h3>Eixample</h3>
+      <p>The most popular choice for newcomers. Grid layout designed by Cerdà, central location, excellent metro connections. The highest density of rental listings — meaning more opportunities, but also more competition. Divided into Eixample Esquerra (left) and Eixample Dreta (right), with Esquerra generally more residential and slightly more affordable.</p>
+      <div class="neighborhood__price">1-bed: €950–1,300/mo · 2-bed: €1,300–1,800/mo</div>
+    </div>
+
+    <div class="neighborhood">
+      <h3>Gràcia</h3>
+      <p>Village feel in the heart of the city. Narrow streets, independent shops, a younger creative crowd. Excellent food scene with local markets and small restaurants. Turnover is lower because people tend to stay — meaning fewer listings but loyal demand. Very popular with French and German expats.</p>
+      <div class="neighborhood__price">1-bed: €900–1,200/mo · 2-bed: €1,200–1,600/mo</div>
+    </div>
+
+    <div class="neighborhood">
+      <h3>Poble Sec</h3>
+      <p>One of Barcelona's best-value neighborhoods. Located between Montjuïc and Paral·lel, it offers a growing expat community, excellent tapas bars along Carrer Blai, and easy access to the beach and city center. Prices are noticeably lower than Eixample while maintaining good quality of life.</p>
+      <div class="neighborhood__price">1-bed: €800–1,100/mo · 2-bed: €1,100–1,400/mo</div>
+    </div>
+
+    <div class="neighborhood">
+      <h3>Sant Antoni</h3>
+      <p>Trendy and gentrifying rapidly. Home to the renovated Mercat de Sant Antoni, excellent brunch spots, and a growing creative scene. Rents have risen sharply in the last 2 years as the neighborhood became one of Barcelona's most fashionable. Well-connected by metro (L2).</p>
+      <div class="neighborhood__price">1-bed: €950–1,250/mo · 2-bed: €1,300–1,700/mo</div>
+    </div>
+
+    <div class="neighborhood">
+      <h3>El Born / Ciutat Vella</h3>
+      <p>Beautiful historic center with medieval streets, galleries, and Barcelona's best cocktail bars. Extremely popular with tourists, which means some buildings are noisy. Watch for apartments that were previously tourist rentals — they may not be fully adapted for long-term living. Higher scam risk in this area.</p>
+      <div class="neighborhood__price">1-bed: €1,000–1,400/mo · 2-bed: €1,400–1,900/mo</div>
+    </div>
+
+    <div class="neighborhood">
+      <h3>Sarrià–Sant Gervasi</h3>
+      <p>Quieter, upscale, and family-friendly. Excellent international schools nearby. Higher-end apartments with more space than central Barcelona. Less nightlife, more parks. Popular with professionals and families with higher budgets. FGC train line rather than metro.</p>
+      <div class="neighborhood__price">1-bed: €1,100–1,500/mo · 2-bed: €1,500–2,200/mo</div>
+    </div>
+
+    <div class="neighborhood">
+      <h3>Poblenou</h3>
+      <p>Barcelona's tech district (22@). Former industrial area transformed into a hub for startups, coworking spaces, and modern apartments. Close to the beach. Attracts digital nomads and tech workers. Newer buildings with better insulation and elevators — a rarity in central Barcelona.</p>
+      <div class="neighborhood__price">1-bed: €950–1,300/mo · 2-bed: €1,300–1,700/mo</div>
+    </div>
+
+    <h2>How to Avoid Rental Scams in Barcelona</h2>
+
+    <p>
+      Rental scams on Idealista and other platforms are a real and persistent problem in Barcelona. The combination of high demand, international tenants unfamiliar with local practices, and online listings creates fertile ground for fraud.
+    </p>
+
+    <div class="scam-box">
+      <h3>🚩 The too-good-to-be-true listing</h3>
+      <p>A beautiful apartment in Eixample for €650/month? It doesn't exist. If the price is 20-30% below the market average for that neighborhood, it's almost certainly a scam. Always cross-reference prices with recent listings in the same area.</p>
+    </div>
+
+    <div class="scam-box">
+      <h3>🚩 Advance payment before viewing</h3>
+      <p>Any landlord or agent who asks for a deposit, first month's rent, or "reservation fee" before you've visited the apartment in person is a scammer. No exceptions. Legitimate landlords understand that tenants need to see the property first.</p>
+    </div>
+
+    <div class="scam-box">
+      <h3>🚩 Ghost listings</h3>
+      <p>Approximately 37% of listings that briefly appear in platform databases are removed before reaching public search results. These "ghost listings" are usually failed moderation, duplicate submissions, or test posts. They're not scams per se, but they mean not every alert will lead to a live listing.</p>
+    </div>
+
+    <div class="scam-box">
+      <h3>🚩 Fake agency impersonation</h3>
+      <p>Scammers sometimes impersonate real Barcelona agencies, using similar names, logos, and even phone numbers. Always verify an agency's identity independently — check their official website, Google Maps listing, and registration number before sending any money or documents.</p>
+    </div>
+
+    <div class="tip-box">
+      <h3>Our advice</h3>
+      <p>Be fast, but verify. The best strategy is to be among the first to know about a new listing (that's what Prio does), then verify everything before committing. Speed gets you to the front of the line. Diligence keeps you safe once you're there.</p>
+    </div>
+
+    <h2>Documents You Need to Rent in Barcelona</h2>
+
+    <p>
+      Having your documents ready before you start searching is one of the biggest advantages you can have. When an agency or landlord asks for documentation, being able to send it within minutes — not hours or days — puts you ahead of other applicants.
+    </p>
+
+    <p>
+      <strong>Essential documents:</strong> passport or NIE (Número de Identificación de Extranjero), work contract or proof of income (agencies typically want to see income of at least 3x the monthly rent), last 3 payslips or bank statements, and in some cases a Spanish bank account.
+    </p>
+
+    <p>
+      <strong>Nice to have:</strong> a recommendation letter from a previous landlord, proof of empadronamiento (municipal registration — though this is a catch-22 since you need an address to register), and EU health insurance or private insurance documentation.
+    </p>
+
+    <div class="tip-box">
+      <h3>Pro tip: Create a "document folder" before searching</h3>
+      <p>Prepare a single PDF or folder with all your documents organized and ready to send. When a listing appears and you contact the landlord, being able to immediately send your complete file demonstrates seriousness and puts you ahead of applicants who need days to gather paperwork.</p>
+    </div>
+
+    <h2>Tips for Finding an Apartment in Barcelona Fast</h2>
+
+    <p>
+      <strong>1. Call, don't email.</strong> Spanish agencies prioritize phone calls over email inquiries. If you don't speak Spanish, have a Spanish-speaking friend call for you, or use the agency's WhatsApp if available. A phone call within the first hour of a listing being published dramatically increases your chances.
+    </p>
+
+    <p>
+      <strong>2. Be ready to decide on the spot.</strong> If you visit an apartment and like it, say yes immediately and offer to sign the reservation. Asking to "think about it overnight" in Barcelona means losing it. The agencies know there are 30 other people waiting.
+    </p>
+
+    <p>
+      <strong>3. Visit in person. Always.</strong> Never rent an apartment you haven't physically visited. Video tours are useful for shortlisting, but scammers rely on people who are desperate enough to pay remotely. The 20 minutes you spend visiting could save you thousands.
+    </p>
+
+    <p>
+      <strong>4. Know the seasonal patterns.</strong> September and January are the worst months for competition. If you have flexibility, searching in November or February gives you significantly less competition and sometimes better prices.
+    </p>
+
+    <p>
+      <strong>5. Use real-time alerts.</strong> The single most impactful thing you can do is eliminate the notification delay. Platform push notifications arrive 15-60 minutes after publication. Real-time alert services detect listings within seconds. In a market where speed is everything, this is the difference between getting a viewing and hearing "sorry, already taken."
+    </p>
+
+    <h2>Why Prio for Barcelona</h2>
+
+    <p>
+      In a market this competitive, the only advantage that matters is speed. Prio monitors new listings on <strong>Idealista, Fotocasa, and Badi</strong> continuously and sends you a Telegram alert within seconds of publication — before the platform's own notifications, and before most other apartment hunters know the listing exists.
+    </p>
+
+    <p>
+      You define your search using the same filters you'd use on Idealista or Fotocasa — neighborhood, price range, number of rooms, minimum size. When a new listing matches your criteria, you get an instant notification with the photo, price, location, and direct link. Everything you need to call the agency within the first minute.
+    </p>
+
+    <p>
+      We've sent over <strong>46,000 alerts</strong> to apartment hunters in Barcelona. Our users consistently report finding apartments in days rather than weeks — because they're always the first to know.
+    </p>
+
+    <!-- CTA -->
+    <div class="city-cta">
+      <h2 style="font-size: 24px; font-weight: 700; margin-bottom: 8px; letter-spacing: -0.02em;">Get real-time Barcelona alerts</h2>
+      <p style="font-size: 16px; color: var(--color-text-secondary); margin-bottom: 20px;">
+        Free to start. Set up in 2 minutes. Idealista + Fotocasa + Badi.
+      </p>
+      <a href="https://t.me/prioalertbot" class="btn btn--dark btn--lg" target="_blank" rel="noopener">Get Barcelona Alerts →</a>
+    </div>
+
+    <!-- Related content -->
+    <h2>Related Reading</h2>
+    <p>
+      <a href="/blog/how-to-find-apartment-barcelona-2026/">How to Find an Apartment in Barcelona in 2026 — Complete Guide</a><br>
+      <a href="/blog/idealista-scams-how-to-spot-fake-listings/">Idealista Scams — How to Spot Fake Listings</a><br>
+      <a href="/blog/idealista-vs-fotocasa-vs-badi-comparison/">Idealista vs Fotocasa vs Badi — Which Platform to Use</a><br>
+      <a href="/es/madrid/">Find an Apartment in Madrid</a><br>
+      <a href="/pricing/">Prio Pricing</a>
+    </p>
+
+  </div>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer" style="margin-top: 48px;">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__brand">
+          <a href="/" class="nav__logo">prio<span>.</span></a>
+          <p>Real-time property alerts across Europe & the Middle East.</p>
+        </div>
+        <div class="footer__col">
+          <h4>Spain</h4>
+          <ul>
+            <li><a href="/es/barcelona/">Barcelona</a></li>
+            <li><a href="/es/madrid/">Madrid</a></li>
+            <li><a href="/es/valencia/">Valencia</a></li>
+            <li><a href="/es/malaga/">Málaga</a></li>
+            <li><a href="/es/sevilla/">Sevilla</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Product</h4>
+          <ul>
+            <li><a href="/pricing/">Pricing</a></li>
+            <li><a href="/pricing/#b2b">For Agents</a></li>
+            <li><a href="/blog/">Blog</a></li>
+            <li><a href="/about/">About</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="/legal/privacy/">Privacy</a></li>
+            <li><a href="/legal/terms/">Terms</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>&copy; 2026 Prio. All rights reserved.</span>
+        <span>Built in Barcelona 🇪🇸</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../../js/main.js"></script>
+</body>
+</html>
