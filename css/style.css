@@ -656,6 +656,67 @@ p {
   flex-shrink: 0;
 }
 
+/* --- Product Hunt Launch Banner (temporary) --- */
+.ph-banner {
+  background: linear-gradient(135deg, #2563eb 0%, #10b981 100%);
+  border-radius: var(--radius-xl);
+  padding: var(--space-xl) var(--space-2xl);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-xl);
+  margin-bottom: var(--space-3xl);
+  flex-wrap: wrap;
+}
+
+.ph-banner__text {
+  color: #fff;
+  font-size: var(--text-lg);
+  font-weight: 600;
+  margin: 0;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.ph-banner__cta {
+  display: inline-flex;
+  align-items: center;
+  padding: 10px 24px;
+  background: #fff;
+  color: #2563eb;
+  font-weight: 700;
+  font-size: var(--text-sm);
+  border-radius: var(--radius-full);
+  text-decoration: none;
+  white-space: nowrap;
+  flex-shrink: 0;
+  transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+  animation: ph-pulse 2.5s ease-in-out infinite;
+}
+
+.ph-banner__cta:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+  color: #1d4ed8;
+}
+
+@keyframes ph-pulse {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(255,255,255,0.4); }
+  50% { box-shadow: 0 0 0 8px rgba(255,255,255,0); }
+}
+
+@media (max-width: 768px) {
+  .ph-banner {
+    flex-direction: column;
+    padding: var(--space-lg);
+    gap: var(--space-md);
+  }
+
+  .ph-banner__text {
+    font-size: var(--text-base);
+  }
+}
+
 /* --- Testimonials --- */
 .testimonial {
   background: var(--color-bg);
