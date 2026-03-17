@@ -24,6 +24,77 @@
   <link href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,600,700,800,900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../../css/style.css">
 
+  <style>
+    /* ========== GLOBAL BASE (from style.css) ========== */
+    :root {
+      --color-bg: #ffffff;
+      --color-bg-subtle: #f8f9fb;
+      --color-bg-muted: #f1f3f5;
+      --color-border: #e5e7eb;
+      --color-border-subtle: #f0f0f0;
+      --color-text: #111827;
+      --color-text-secondary: #374151;
+      --color-text-muted: #9ca3af;
+      --color-primary: #2563eb;
+      --color-primary-hover: #1d4ed8;
+      --color-primary-light: #eff6ff;
+      --color-primary-subtle: #dbeafe;
+      --color-accent: #10b981;
+      --color-accent-light: #ecfdf5;
+      --font-display: 'Satoshi', -apple-system, BlinkMacSystemFont, sans-serif;
+      --font-body: 'Satoshi', -apple-system, BlinkMacSystemFont, sans-serif;
+      --radius-sm: 6px; --radius-md: 10px; --radius-lg: 16px; --radius-xl: 24px; --radius-full: 9999px;
+      --shadow-sm: 0 1px 2px rgba(0,0,0,0.04);
+      --shadow-md: 0 4px 12px rgba(0,0,0,0.06);
+      --max-width: 1200px;
+      --transition-fast: 150ms ease;
+      --transition-base: 250ms ease;
+    }
+    *, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
+    html { font-size:16px; scroll-behavior:smooth; -webkit-font-smoothing:antialiased; }
+    body { font-family:var(--font-body); color:var(--color-text); background:var(--color-bg); line-height:1.6; }
+    a { color:var(--color-primary); text-decoration:none; }
+    a:hover { text-decoration:underline; }
+    .container { max-width:var(--max-width); margin:0 auto; padding:0 24px; }
+
+    /* ========== NAV ========== */
+    .nav { position:fixed; top:0; left:0; right:0; z-index:100; background:rgba(255,255,255,0.92); backdrop-filter:blur(12px); border-bottom:1px solid var(--color-border-subtle); }
+    .nav__inner { max-width:var(--max-width); margin:0 auto; padding:0 24px; display:flex; align-items:center; justify-content:space-between; height:56px; }
+    .nav__logo { font-family:var(--font-display); font-size:22px; font-weight:800; color:var(--color-text); text-decoration:none; letter-spacing:-0.04em; }
+    .nav__logo span { color:var(--color-primary); }
+    .nav__links { display:flex; align-items:center; gap:28px; list-style:none; }
+    .nav__links a { font-size:14px; font-weight:500; color:var(--color-text-secondary); text-decoration:none; transition:color var(--transition-fast); }
+    .nav__links a:hover { color:var(--color-text); text-decoration:none; }
+    .nav__cta { background:var(--color-text); color:#fff !important; padding:8px 18px; border-radius:var(--radius-full); font-size:13px !important; font-weight:600 !important; transition:all var(--transition-fast); }
+    .nav__cta:hover { background:var(--color-primary); }
+    .nav__toggle { display:none; background:none; border:none; cursor:pointer; padding:4px; }
+    .nav__toggle span { display:block; width:20px; height:2px; background:var(--color-text); margin:4px 0; transition:all var(--transition-fast); }
+
+    /* ========== FOOTER ========== */
+    .footer { background:var(--color-bg-subtle); border-top:1px solid var(--color-border); padding:48px 0 24px; margin-top:48px; }
+    .footer__inner { display:grid; grid-template-columns:2fr 1fr 1fr 1fr; gap:40px; margin-bottom:32px; }
+    .footer__brand p { font-size:14px; color:var(--color-text-muted); margin-top:8px; line-height:1.6; }
+    .footer__col h4 { font-size:13px; font-weight:700; text-transform:uppercase; letter-spacing:0.06em; color:var(--color-text-muted); margin-bottom:12px; }
+    .footer__col ul { list-style:none; }
+    .footer__col li { margin-bottom:8px; }
+    .footer__col a { font-size:14px; color:var(--color-text-secondary); text-decoration:none; }
+    .footer__col a:hover { color:var(--color-primary); text-decoration:none; }
+    .footer__bottom { display:flex; justify-content:space-between; padding-top:20px; border-top:1px solid var(--color-border); font-size:13px; color:var(--color-text-muted); }
+
+    /* ========== MOBILE ========== */
+    @media (max-width: 768px) {
+      .nav__links { display:none; }
+      .nav__toggle { display:block; }
+      .footer__inner { grid-template-columns:1fr 1fr; gap:24px; }
+      .footer__bottom { flex-direction:column; gap:4px; }
+      .consulate-grid { grid-template-columns:1fr 1fr; }
+    }
+    @media (max-width: 480px) {
+      .footer__inner { grid-template-columns:1fr; }
+      .consulate-grid { grid-template-columns:1fr; }
+    }
+  </style>
+
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
