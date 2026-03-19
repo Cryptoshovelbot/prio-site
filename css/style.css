@@ -1145,47 +1145,13 @@ p {
   padding: 4rem 0;
 }
 
-.timeline-block__inner {
-  display: flex;
-  align-items: center;
-  gap: 3rem;
-}
-
-.timeline-block__visual {
-  flex: 0 0 350px;
-  max-width: 350px;
-}
-
-.timeline-block__visual svg {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-
-.timeline-block__text {
-  flex: 1;
-}
-
-.timeline-block__text h2 {
-  font-size: 2rem;
-  font-weight: 600;
-  margin-bottom: 1rem;
-}
-
-.timeline-block__text p {
-  font-size: 1.1rem;
-  line-height: 1.6;
-  color: var(--color-text-secondary);
-  margin-bottom: 1rem;
-}
-
 @media (max-width: 768px) {
-  .timeline-block__inner {
-    flex-direction: column;
+  .timeline-block .container {
+    flex-direction: column !important;
   }
-  .timeline-block__visual {
-    flex: none;
-    width: 100%;
+  .timeline-block .container > div:first-child {
+    max-width: 100% !important;
+    flex: none !important;
   }
 }
 
