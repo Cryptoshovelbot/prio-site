@@ -1152,7 +1152,14 @@ p {
 }
 
 .timeline-block__visual {
-  flex: 0 0 420px;
+  flex: 0 0 350px;
+  max-width: 350px;
+}
+
+.timeline-block__visual svg {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 .timeline-block__text {
