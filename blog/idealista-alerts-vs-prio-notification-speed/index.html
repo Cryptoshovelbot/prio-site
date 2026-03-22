@@ -16,6 +16,46 @@
   <script type="application/ld+json">
   { "@context": "https://schema.org", "@type": "Article", "headline": "Idealista Alerts vs Prio: Why Platform Notifications Are Slow", "datePublished": "2026-03-17", "inLanguage": "en", "author": { "@type": "Organization", "name": "Prio", "url": "https://getprio.io" } }
   </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How long is the delay on Idealista push notifications?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Idealista push notifications arrive approximately 55 seconds after a listing is published. The listing enters the database, gets indexed by Elasticsearch, appears in search results, and then the notification system detects matching saved searches and sends push notifications via Firebase Cloud Messaging."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Why does notification speed matter when apartment hunting?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "In Barcelona's rental market, a good listing receives its first inquiry within 2 minutes. The first 10 to 15 people to contact the landlord typically get scheduled for a viewing. Everyone else gets ignored or waitlisted. Being 45 seconds faster puts you in the first wave of respondents instead of the second."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How fast does Prio detect new listings compared to Idealista?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Prio detects listings 10 to 22 seconds after publication (median), compared to Idealista push notifications at approximately 55 seconds. This gives Prio a net advantage of 33 to 45 seconds. For Badi, Prio detects listings 10 to 15 minutes before they appear in search results."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do Fotocasa and Badi notification speeds compare?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Fotocasa has a similar pipeline to Idealista with slightly slower notifications on average. Badi is the most interesting case because its internal API exposes listings in draft state before they are publicly visible, allowing detection 10 to 15 minutes before anyone checking the Badi app or website."
+        }
+      }
+    ]
+  }
+  </script>
   <style>.article{max-width:720px;margin:0 auto;padding:calc(64px+48px) 24px 48px}.article__meta{font-size:13px;color:var(--color-text-muted);margin-bottom:24px;display:flex;gap:16px}.article h1{font-size:clamp(1.8rem,4vw,2.4rem);letter-spacing:-0.03em;line-height:1.2;margin-bottom:20px}.article h2{font-size:22px;margin:36px 0 14px;letter-spacing:-0.02em}.article h3{font-size:17px;margin:24px 0 8px}.article p{font-size:16.5px;color:var(--color-text-secondary);line-height:1.8;margin-bottom:16px}.article p strong{color:var(--color-text)}.article ul,.article ol{margin:12px 0 16px 24px}.article li{font-size:15px;color:var(--color-text-secondary);line-height:1.7;margin-bottom:8px}.callout{background:var(--color-primary-light);border:1px solid var(--color-primary-subtle);border-radius:12px;padding:20px;margin:20px 0}.callout p{font-size:15px;margin:0}.callout h3{color:var(--color-primary);margin:0 0 6px;font-size:15px}.warning{background:#fef2f2;border:1px solid #fecaca;border-radius:12px;padding:20px;margin:20px 0}.warning p{font-size:15px;margin:0;color:#7f1d1d}.warning h3{color:#dc2626;margin:0 0 6px;font-size:15px}.breadcrumb{font-size:13px;color:var(--color-text-muted);margin-bottom:12px}.breadcrumb a{color:var(--color-text-muted);text-decoration:none}.tip-box{background:#f0fdf4;border:1px solid #bbf7d0;border-radius:12px;padding:20px;margin:20px 0}.tip-box p{font-size:15px;margin:0;color:#14532d}.tip-box h3{color:#16a34a;margin:0 0 6px;font-size:15px}table{width:100%;border-collapse:collapse;margin:16px 0}th,td{padding:10px 14px;text-align:left;border-bottom:1px solid var(--color-border);font-size:15px}th{font-weight:700;font-size:13px;text-transform:uppercase;letter-spacing:0.06em;color:var(--color-text-muted)}</style>
   <script defer src="https://analytics.getprio.io/script.js" data-website-id="056589cd-0a9e-4fd9-9634-c93fd21fd826"></script>
 </head>
@@ -29,7 +69,7 @@
 
     <p>If you have ever wondered why you always seem to be too late when responding to Idealista listings, you are not imagining things. There is a measurable delay between when a listing is published on Idealista and when you receive the notification. We measured it.</p>
 
-    <h2>How Idealista notifications work</h2>
+    <h2>How do Idealista notifications work?</h2>
     <p>When a landlord or agency publishes a listing on Idealista, it does not appear in search results immediately. The listing goes through a pipeline:</p>
     <ol>
       <li>The listing enters Idealista's master database</li>
@@ -40,7 +80,7 @@
     </ol>
     <p>Each step adds latency. The total delay from publication to push notification landing on your phone is typically <strong>45 seconds to 2 minutes</strong>.</p>
 
-    <h2>What we measured</h2>
+    <h2>What did we measure about Idealista notification speed?</h2>
     <p>We compared the timestamp when our system first detects a new listing in Idealista's database versus when Idealista's own search results show it. The results over thousands of listings:</p>
 
     <table>
@@ -53,15 +93,15 @@
 
     <p>For Fotocasa, the advantage is even larger at around 19 seconds of detection advantage. For Badi, our system detects listings 10 to 15 minutes before they appear in search results because we catch listings while they are still in draft state.</p>
 
-    <h2>Why does 30 to 45 seconds matter?</h2>
+    <h2>Why do 30 to 45 seconds matter in apartment hunting?</h2>
     <p>In Barcelona's rental market, a good listing receives its first inquiry within 2 minutes. The first 10 to 15 people to contact the landlord typically get scheduled for a viewing. Everyone else gets ignored or waitlisted.</p>
     <p>Being 45 seconds faster does not guarantee you get the apartment. But it puts you in the first wave of respondents instead of the second. Over a multi week search, that advantage adds up significantly.</p>
 
-    <h2>What about Fotocasa and Badi?</h2>
+    <h2>How fast are Fotocasa and Badi notifications compared to Prio?</h2>
     <p><strong>Fotocasa</strong> has a similar pipeline to Idealista. Their notifications are slightly slower on average. Our detection advantage is about 19 seconds.</p>
     <p><strong>Badi</strong> is the most interesting case. Badi's internal API exposes listings in draft state before they are visible in search results. This means Prio users see Badi rooms 10 to 15 minutes before anyone checking the Badi app or website. For shared housing in Barcelona (approximately 300 active rooms), this is a massive advantage.</p>
 
-    <h2>A note on fairness</h2>
+    <h2>Is using early alerts fair?</h2>
     <p>We are not exploiting a bug or a vulnerability. We are simply checking for new listings more frequently than a human can. Idealista, Fotocasa, and Badi all make their listings publicly available. We just look at them faster.</p>
     <p>Think of it like refreshing a job board every few seconds instead of waiting for an email digest. Same information, different timing.</p>
 
