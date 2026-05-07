@@ -383,6 +383,13 @@ p {
   line-height: 1.7;
 }
 
+.hero__about {
+  margin-top: 1rem;
+  font-size: 0.95rem;
+  color: #666;
+  max-width: 640px;
+}
+
 .hero__platforms {
   display: flex;
   align-items: center;
