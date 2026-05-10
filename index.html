@@ -36,6 +36,129 @@
   <!-- Styles -->
   <link rel="stylesheet" href="css/style.css">
 
+  <!-- Pricing V2 scoped styles -->
+  <style>
+    .pricing-v2 {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+      max-width: 1240px;
+      margin: 0 auto 40px;
+      align-items: stretch;
+    }
+    .tier-card {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      background: #fff;
+      border-radius: 16px;
+      border: 1px solid var(--color-border);
+      padding: 32px 24px 24px;
+      flex: 1 1 260px;
+      max-width: 300px;
+      min-width: 240px;
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+      cursor: default;
+    }
+    .tier-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 20px 40px -12px rgba(0,0,0,0.08), 0 8px 20px -8px rgba(0,0,0,0.06);
+    }
+    .tier-card--popular {
+      border: 2px solid #2563eb;
+    }
+    .tier-card--popular:hover {
+      box-shadow: 0 20px 40px -12px rgba(37,99,235,0.15), 0 8px 20px -8px rgba(0,0,0,0.06);
+    }
+    .tier-card__badge {
+      position: absolute;
+      top: -14px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: #2563eb;
+      color: #fff;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      padding: 5px 16px;
+      border-radius: 20px;
+      white-space: nowrap;
+    }
+    .tier-card__header { text-align: center; margin-bottom: 20px; }
+    .tier-card__name { font-size: 20px; font-weight: 700; color: #0f172a; margin: 0 0 4px; }
+    .tier-card__tagline { font-size: 13px; color: var(--color-text-muted); margin: 0; font-style: italic; }
+    .tier-card__price-block { text-align: center; margin-bottom: 20px; }
+    .tier-card__price { font-size: 42px; font-weight: 800; color: #0f172a; line-height: 1; letter-spacing: -0.03em; }
+    .tier-card__period { font-size: 16px; color: var(--color-text-muted); font-weight: 500; }
+    .tier-card__period-sub { font-size: 12px; color: var(--color-text-muted); margin-top: 4px; }
+    .tier-card__platforms {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      justify-content: center;
+      margin-bottom: 8px;
+      padding: 12px 0;
+      border-top: 1px solid var(--color-border);
+      border-bottom: 1px solid var(--color-border);
+    }
+    .tier-card__platform-label {
+      width: 100%;
+      text-align: center;
+      margin-bottom: 4px;
+      font-size: 11px;
+      font-weight: 600;
+      color: var(--color-text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+    }
+    .platform-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 4px 10px;
+      border-radius: 20px;
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0.02em;
+    }
+    .platform-pill__dot { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; }
+    .platform-pill--idealista { background: #f0f7e3; color: #6fa020; border: 1.5px solid rgba(148,200,61,0.19); }
+    .platform-pill--idealista .platform-pill__dot { background: #94C83D; }
+    .platform-pill--fotocasa { background: #fde8e7; color: #c62820; border: 1.5px solid rgba(230,51,42,0.19); }
+    .platform-pill--fotocasa .platform-pill__dot { background: #E6332A; }
+    .platform-pill--badi { background: #e0faf3; color: #00a880; border: 1.5px solid rgba(0,209,161,0.19); }
+    .platform-pill--badi .platform-pill__dot { background: #00D1A1; }
+    .tier-card__features { flex: 1; padding: 12px 0; list-style: none; }
+    .tier-card__feature { display: flex; align-items: flex-start; gap: 10px; padding: 7px 0; font-size: 14px; color: #334155; line-height: 1.4; }
+    .tier-card__feature-icon { font-size: 15px; flex-shrink: 0; margin-top: 1px; }
+    .tier-card__cta {
+      margin-top: 12px;
+      width: 100%;
+      padding: 12px 20px;
+      border-radius: 10px;
+      font-size: 15px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      text-align: center;
+      text-decoration: none;
+      display: block;
+      font-family: var(--font-body);
+    }
+    .tier-card__cta:hover { transform: scale(1.02); }
+    .tier-card__cta--outline { background: transparent; border: 2px solid var(--color-border); color: var(--color-text); }
+    .tier-card__cta--outline:hover { border-color: var(--color-text); color: var(--color-text); box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
+    .tier-card__cta--solid { background: #2563eb; border: none; color: #fff; }
+    .tier-card__cta--solid:hover { background: #1d4ed8; color: #fff; box-shadow: 0 4px 12px rgba(37,99,235,0.3); }
+    .tier-card__cta--dark { background: #0f172a; border: none; color: #fff; }
+    .tier-card__cta--dark:hover { background: #000; color: #fff; box-shadow: 0 4px 12px rgba(0,0,0,0.2); }
+    @media (max-width: 768px) {
+      .pricing-v2 { flex-direction: column; align-items: center; }
+      .tier-card { max-width: 100%; min-width: 0; width: 100%; }
+    }
+  </style>
+
   <!-- JSON-LD: SoftwareApplication -->
   <script type="application/ld+json">
   {
@@ -267,14 +390,139 @@
         <div class="step reveal">
           <div class="step__number">3</div>
           <h3>Instant Telegram alert</h3>
-          <p>Photo, price, size, location, direct link. Free users get alerts at platform speed. Paid users get them minutes before everyone else.</p>
+          <p>Photo, price, size, location, direct link. Free users get 4 alerts/day. Paid users get unlimited, minutes before everyone else.</p>
         </div>
       </div>
     </div>
   </section>
 
+  <!-- ========== PRICING V2 ========== -->
+  <section class="section section--subtle" id="pricing">
+    <div class="container">
+      <div class="section__header reveal">
+        <span class="section__label">Pricing</span>
+        <h2>Start free. Upgrade when you feel the difference.</h2>
+      </div>
+
+      <div class="pricing-v2 stagger-children">
+        <!-- FREE -->
+        <div class="tier-card reveal">
+          <div class="tier-card__header">
+            <h3 class="tier-card__name">Free</h3>
+            <p class="tier-card__tagline">See the speed difference</p>
+          </div>
+          <div class="tier-card__price-block">
+            <span class="tier-card__price">€0</span>
+            <span class="tier-card__period">forever</span>
+          </div>
+          <div class="tier-card__platforms">
+            <span class="tier-card__platform-label">Any platform</span>
+            <span class="platform-pill platform-pill--idealista"><span class="platform-pill__dot"></span>Idealista</span>
+            <span class="platform-pill platform-pill--fotocasa"><span class="platform-pill__dot"></span>Fotocasa</span>
+            <span class="platform-pill platform-pill--badi"><span class="platform-pill__dot"></span>Badi</span>
+          </div>
+          <ul class="tier-card__features">
+            <li class="tier-card__feature"><span class="tier-card__feature-icon">⚡</span><span>4 priority alerts / day</span></li>
+            <li class="tier-card__feature"><span class="tier-card__feature-icon">🔍</span><span>1 active search</span></li>
+            <li class="tier-card__feature"><span class="tier-card__feature-icon">📊</span><span>Daily summary at 9pm</span></li>
+            <li class="tier-card__feature"><span class="tier-card__feature-icon">📱</span><span>Telegram delivery</span></li>
+          </ul>
+          <a href="https://t.me/idealistaalertbot" class="tier-card__cta tier-card__cta--outline" target="_blank" rel="noopener" data-umami-event="cta-click" data-umami-event-cta="home-card-free-getstarted" data-umami-event-page="home" data-umami-event-tier="free">Get Started</a>
+        </div>
+
+        <!-- ROOMMATE -->
+        <div class="tier-card reveal">
+          <div class="tier-card__header">
+            <h3 class="tier-card__name">Roommate</h3>
+            <p class="tier-card__tagline">Finding your room</p>
+          </div>
+          <div class="tier-card__price-block">
+            <span class="tier-card__price">€4.95</span>
+            <span class="tier-card__period">/week</span>
+            <p class="tier-card__period-sub">~4 weeks avg. search</p>
+          </div>
+          <div class="tier-card__platforms">
+            <span class="tier-card__platform-label">Badi only</span>
+            <span class="platform-pill platform-pill--badi"><span class="platform-pill__dot"></span>Badi</span>
+          </div>
+          <ul class="tier-card__features">
+            <li class="tier-card__feature"><span class="tier-card__feature-icon">⚡</span><span>Unlimited priority alerts</span></li>
+            <li class="tier-card__feature"><span class="tier-card__feature-icon">🔍</span><span>Up to 5 searches</span></li>
+            <li class="tier-card__feature"><span class="tier-card__feature-icon">🏃</span><span>Minutes ahead of everyone</span></li>
+            <li class="tier-card__feature"><span class="tier-card__feature-icon">📱</span><span>Telegram delivery</span></li>
+          </ul>
+          <a href="https://t.me/idealistaalertbot" class="tier-card__cta tier-card__cta--outline" target="_blank" rel="noopener" data-umami-event="cta-click" data-umami-event-cta="home-card-roommate-startfree" data-umami-event-page="home" data-umami-event-tier="roommate">Start Free Trial</a>
+        </div>
+
+        <!-- RENTER -->
+        <div class="tier-card tier-card--popular reveal">
+          <div class="tier-card__badge">MOST POPULAR</div>
+          <div class="tier-card__header">
+            <h3 class="tier-card__name">Renter</h3>
+            <p class="tier-card__tagline">Your next apartment</p>
+          </div>
+          <div class="tier-card__price-block">
+            <span class="tier-card__price">€19.90</span>
+            <span class="tier-card__period">/mo</span>
+            <p class="tier-card__period-sub">cancel anytime</p>
+          </div>
+          <div class="tier-card__platforms">
+            <span class="tier-card__platform-label">Rental listings</span>
+            <span class="platform-pill platform-pill--idealista"><span class="platform-pill__dot"></span>Idealista</span>
+            <span class="platform-pill platform-pill--fotocasa"><span class="platform-pill__dot"></span>Fotocasa</span>
+          </div>
+          <ul class="tier-card__features">
+            <li class="tier-card__feature"><span class="tier-card__feature-icon">⚡</span><span>Unlimited priority alerts</span></li>
+            <li class="tier-card__feature"><span class="tier-card__feature-icon">🔍</span><span>3 searches per platform</span></li>
+            <li class="tier-card__feature"><span class="tier-card__feature-icon">🏃</span><span>Minutes ahead of everyone</span></li>
+            <li class="tier-card__feature"><span class="tier-card__feature-icon">📱</span><span>Telegram delivery</span></li>
+          </ul>
+          <a href="https://t.me/idealistaalertbot" class="tier-card__cta tier-card__cta--solid" target="_blank" rel="noopener" data-umami-event="cta-click" data-umami-event-cta="home-card-renter-startfree" data-umami-event-page="home" data-umami-event-tier="renter">Start Free Trial</a>
+        </div>
+
+        <!-- BUYER -->
+        <div class="tier-card reveal">
+          <div class="tier-card__header">
+            <h3 class="tier-card__name">Buyer</h3>
+            <p class="tier-card__tagline">Your dream property</p>
+          </div>
+          <div class="tier-card__price-block">
+            <span class="tier-card__price">€49.90</span>
+            <span class="tier-card__period">/mo</span>
+            <p class="tier-card__period-sub">cancel anytime</p>
+          </div>
+          <div class="tier-card__platforms">
+            <span class="tier-card__platform-label">Purchase listings</span>
+            <span class="platform-pill platform-pill--idealista"><span class="platform-pill__dot"></span>Idealista</span>
+            <span class="platform-pill platform-pill--fotocasa"><span class="platform-pill__dot"></span>Fotocasa</span>
+          </div>
+          <ul class="tier-card__features">
+            <li class="tier-card__feature"><span class="tier-card__feature-icon">⚡</span><span>Unlimited priority alerts</span></li>
+            <li class="tier-card__feature"><span class="tier-card__feature-icon">🔍</span><span>3 searches per platform</span></li>
+            <li class="tier-card__feature"><span class="tier-card__feature-icon">🏃</span><span>Minutes ahead of everyone</span></li>
+            <li class="tier-card__feature"><span class="tier-card__feature-icon">🎯</span><span>Priority support</span></li>
+          </ul>
+          <a href="https://t.me/idealistaalertbot" class="tier-card__cta tier-card__cta--dark" target="_blank" rel="noopener" data-umami-event="cta-click" data-umami-event-cta="home-card-buyer-startfree" data-umami-event-page="home" data-umami-event-tier="buyer">Start Free Trial</a>
+        </div>
+      </div>
+
+      <p class="text-center text-sm text-muted" style="margin-bottom:var(--space-xl);">
+        Free users see exactly how much faster paid users were, on every single notification.
+      </p>
+
+      <!-- B2B Teaser -->
+      <div style="background:var(--color-bg);border:2px solid var(--color-primary);border-radius:var(--radius-xl);padding:var(--space-2xl);text-align:center;">
+        <h3 style="margin-bottom:var(--space-sm);">Real Estate Agent? Agency? Relocation Service?</h3>
+        <p style="max-width:600px;margin:0 auto var(--space-lg);font-size:var(--text-base);">
+          Source mandates before anyone else across all platforms. Plans for solo pros, teams, and custom integrations.
+        </p>
+        <a href="/pricing/#b2b" class="btn btn--primary" data-umami-event="cta-click" data-umami-event-cta="home-section-b2b" data-umami-event-page="home" data-umami-event-tier="na">View B2B Plans →</a>
+      </div>
+    </div>
+  </section>
+
   <!-- ========== SPEED COMPARISON ========== -->
-  <section class="section section--subtle">
+  <section class="section">
     <div class="container">
       <div class="section__header reveal">
         <span class="section__label">The Speed Advantage</span>
@@ -364,42 +612,6 @@
       <p class="text-center text-sm text-muted mt-xl">
         Want Prio in your country? <a href="mailto:contact@getprio.io" data-umami-event="cta-click" data-umami-event-cta="home-coverage-contactus" data-umami-event-page="home" data-umami-event-tier="na">Contact us</a>.
       </p>
-    </div>
-  </section>
-
-  <!-- ========== B2C + B2B SPLIT ========== -->
-  <section class="section">
-    <div class="container">
-      <div class="section__header reveal">
-        <span class="section__label">Who It's For</span>
-        <h2>Hunting for an apartment... or hunting for clients.</h2>
-      </div>
-
-      <div class="grid grid--2 stagger-children">
-        <div class="card reveal">
-          <div class="card__icon">🏠</div>
-          <h3>For Apartment Hunters</h3>
-          <p style="margin-bottom:var(--space-lg);">
-            Searching for a room, a flat, or a property to buy? Get alerted the moment a listing goes live, before the crowds arrive.
-          </p>
-          <p style="font-size:var(--text-sm);color:var(--color-text-muted);margin-bottom:var(--space-lg);">
-            Free plan (4 alerts/day) · Paid from €4.95/week · Telegram alerts · All platforms in your city
-          </p>
-          <a href="/pricing/" class="btn btn--primary btn--sm" data-umami-event="cta-click" data-umami-event-cta="home-teaser-b2c" data-umami-event-page="home" data-umami-event-tier="na">See B2C Plans →</a>
-        </div>
-
-        <div class="card reveal" style="border-color:var(--color-primary);background:var(--color-primary-light);">
-          <div class="card__icon" style="background:var(--color-primary);color:#fff;">📊</div>
-          <h3>For Real Estate Professionals</h3>
-          <p style="margin-bottom:var(--space-lg);">
-            Source new mandates ahead of the competition. See private seller listings before other agents. The modern pige immobilière, faster than any competitor.
-          </p>
-          <p style="font-size:var(--text-sm);color:var(--color-text-secondary);margin-bottom:var(--space-lg);">
-            Plans for solo pros, teams, and custom integrations · See pricing →
-          </p>
-          <a href="/pricing/#b2b" class="btn btn--dark btn--sm" data-umami-event="cta-click" data-umami-event-cta="home-b2b-teaser" data-umami-event-page="home" data-umami-event-tier="na">B2B Plans →</a>
-        </div>
-      </div>
     </div>
   </section>
 
