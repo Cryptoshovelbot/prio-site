@@ -396,7 +396,7 @@
     d.appendChild(circle);
     d.appendChild(el('div', { style: 'font-size:18px;font-weight:700;color:#111;margin-bottom:6px' }, 'Visit Confirmed'));
     d.appendChild(el('div', { style: 'font-size:14px;color:#666' }, 'Today at 18:00 · Eixample'));
-    d.appendChild(el('div', { style: 'font-size:13px;color:#999;margin-top:2px' }, 'You’re the first to book.'));
+    d.appendChild(el('div', { style: 'font-size:13px;color:#999;margin-top:2px' }, "You're the first to book."));
     d.appendChild(homeBar(false));
     return d;
   }
@@ -413,7 +413,7 @@
   /* ---- "Too late" badge ---- */
   function badgeOverlay() {
     var d = el('div', { style: 'position:absolute;bottom:100px;left:50%;transform:translateX(-50%);z-index:260;animation:iphBadgePop .6s cubic-bezier(.17,.89,.32,1.28) forwards;opacity:0' });
-    var inner = el('div', { style: 'background:linear-gradient(135deg,#dc2626,#b91c1c);color:#fff;padding:10px 22px;border-radius:20px;font-size:14px;font-weight:700;white-space:nowrap;box-shadow:0 4px 20px rgba(220,38,38,.4)' }, '⏰ Too late — you’re 5 min ahead’);
+    var inner = el('div', { style: 'background:linear-gradient(135deg,#dc2626,#b91c1c);color:#fff;padding:10px 22px;border-radius:20px;font-size:14px;font-weight:700;white-space:nowrap;box-shadow:0 4px 20px rgba(220,38,38,.4)' }, "⏰ Too late — you're 5 min ahead");
     d.appendChild(inner);
     return d;
   }
@@ -622,7 +622,7 @@
       'calendar': 'Booking a visit',
       'confirmed': 'Visit confirmed ✓',
       'idl-notif': 'Idealista finally sends its alert',
-      ‘badge’: ‘Too late — you’re 5 min ahead’
+      'badge': "Too late — you're 5 min ahead"
     };
 
     var lastStep = '';
