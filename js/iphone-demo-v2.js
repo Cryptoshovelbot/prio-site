@@ -674,10 +674,10 @@
     return { play: play, stop: stop };
   }
 
-  /* ---- Init on DOMContentLoaded ---- */
-  document.addEventListener('DOMContentLoaded', function () {
+  /* ---- Init ---- */
+  function boot() {
     var target = document.getElementById('iphone-demo');
-    if (!target) return;
+    if (!target || target.children.length > 0) return;
 
     var demo = render(target);
     var hasPlayed = false;
@@ -693,7 +693,6 @@
 
     observer.observe(target);
 
-    // replay on click
     target.style.cursor = 'pointer';
     target.addEventListener('click', function () {
       demo.stop();
@@ -701,6 +700,12 @@
       demo = render(target);
       demo.play();
     });
-  });
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', boot);
+  } else {
+    boot();
+  }
 
 })();
