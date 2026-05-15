@@ -1163,12 +1163,12 @@ p {
 .timeline-block .container {
   display: flex;
   align-items: center;
-  gap: 3rem;
+  gap: 60px;
+  max-width: 1100px;
 }
 
 .timeline-block__demo {
-  flex: 0 0 320px;
-  max-width: 320px;
+  flex-shrink: 0;
 }
 
 .timeline-block__text {
@@ -1177,11 +1177,12 @@ p {
 
 @media (max-width: 768px) {
   .timeline-block .container {
-    flex-direction: column !important;
+    flex-direction: column;
+    gap: 2rem;
   }
   .timeline-block__demo {
-    max-width: 100% !important;
-    flex: none !important;
+    display: flex;
+    justify-content: center;
   }
 }
 
@@ -1192,10 +1193,11 @@ p {
 @keyframes iphPulse{0%,100%{opacity:1}50%{opacity:.3}}
 @keyframes iphFadeIn{from{opacity:0}to{opacity:1}}
 @keyframes iphSpin{from{transform:rotate(0deg)}to{transform:rotate(360deg)}}
-@keyframes iphBadgePop{0%{opacity:0;transform:translate(-50%,14px) scale(.9)}60%{transform:translate(-50%,-2px) scale(1.01)}100%{opacity:1;transform:translate(-50%,0) scale(1)}}
-@keyframes iphCallGlow{0%,100%{box-shadow:0 6px 24px rgba(233,30,99,.3)}50%{box-shadow:0 6px 36px rgba(233,30,99,.5)}}
+@keyframes iphBadgePop{0%{opacity:0;transform:translateY(14px) scale(.9)}60%{transform:translateY(-2px) scale(1.01)}100%{opacity:1;transform:translateY(0) scale(1)}}
+@keyframes iphCallGlow{0%,100%{box-shadow:0 6px 24px rgba(179,0,108,.3)}50%{box-shadow:0 6px 36px rgba(179,0,108,.5)}}
 @keyframes iphCheckPop{0%{transform:scale(0);opacity:0}60%{transform:scale(1.1)}100%{transform:scale(1);opacity:1}}
 @keyframes iphDrawCheck{to{stroke-dashoffset:0}}
+@keyframes iphClockSpin{from{transform:rotate(0deg)}to{transform:rotate(360deg)}}
 
 /* --- Utility classes --- */
 .text-center { text-align: center; }
