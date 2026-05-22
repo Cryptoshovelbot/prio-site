@@ -1214,10 +1214,9 @@ p {
   color: #facc15;
 }
 .blog-cta__badge svg {
-  display: inline-block;
-  width: 16px;
-  height: 16px;
-  max-width: 16px;
+  width: 16px !important;
+  height: 16px !important;
+  max-height: 16px !important;
   fill: currentColor;
 }
 .blog-cta__title {
@@ -1264,10 +1263,9 @@ p {
   color: #1a1a2e;
 }
 .blog-cta .blog-cta__btn svg {
-  display: inline-block;
-  width: 18px;
-  height: 18px;
-  max-width: 18px;
+  width: 18px !important;
+  height: 18px !important;
+  max-height: 18px !important;
   flex-shrink: 0;
 }
 .blog-cta__stats {
