@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Prio — Get Alerts</title>
+<meta name="description" content="Get real estate alerts before everyone else. Prio detects new listings 3 to 10 minutes before official notifications.">
+<link rel="canonical" href="https://getprio.io/go/">
+<meta property="og:title" content="Prio — Be the first to call">
+<meta property="og:description" content="Real estate alerts before everyone else.">
+<meta property="og:image" content="https://getprio.io/assets/og-image.png">
+<meta property="og:url" content="https://getprio.io/go/">
+<script defer src="https://analytics.getprio.io/script.js" data-website-id="056589cd-0a9e-4fd9-9634-c93fd21fd826"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{
+  background:#0e0e1a;
+  color:#fff;
+  font-family:'DM Sans',system-ui,sans-serif;
+  min-height:100vh;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  padding:2rem 1.5rem;
+  overflow-x:hidden;
+}
+.glow{
+  position:fixed;
+  width:600px;height:600px;
+  border-radius:50%;
+  filter:blur(120px);
+  opacity:0.10;
+  pointer-events:none;
+  z-index:0;
+}
+.glow-1{background:#facc15;top:-200px;left:-100px}
+.glow-2{background:#2563eb;bottom:-200px;right:-100px}
+
+.container{
+  position:relative;z-index:1;
+  max-width:480px;width:100%;
+  text-align:center;
+}
+
+.logo{
+  font-size:28px;font-weight:700;letter-spacing:-0.5px;
+  margin-bottom:2.5rem;
+  opacity:0;animation:fadeUp .6s .1s forwards;
+}
+.logo span{color:#2563eb}
+
+.badge{
+  display:inline-flex;align-items:center;gap:6px;
+  background:rgba(250,204,21,0.12);
+  border:1px solid rgba(250,204,21,0.25);
+  color:#facc15;
+  font-size:12px;font-weight:600;letter-spacing:0.8px;
+  padding:6px 14px;border-radius:100px;
+  margin-bottom:1.5rem;
+  opacity:0;animation:fadeUp .6s .2s forwards;
+}
+.badge svg{width:14px;height:14px;fill:currentColor}
+
+h1{
+  font-size:clamp(26px,6vw,36px);
+  font-weight:700;line-height:1.2;
+  letter-spacing:-0.5px;
+  margin-bottom:1rem;
+  opacity:0;animation:fadeUp .6s .3s forwards;
+}
+
+.subtitle{
+  font-size:17px;line-height:1.6;
+  color:#a1a1b5;
+  margin-bottom:2.5rem;
+  opacity:0;animation:fadeUp .6s .4s forwards;
+}
+.subtitle strong{color:#fff;font-weight:500}
+
+.btn-primary{
+  display:inline-flex;align-items:center;justify-content:center;gap:10px;
+  width:100%;max-width:360px;
+  padding:18px 32px;
+  background:#facc15;color:#0e0e1a;
+  font-family:inherit;font-size:17px;font-weight:700;
+  border:none;border-radius:12px;
+  cursor:pointer;
+  text-decoration:none;
+  transition:transform .15s,box-shadow .15s;
+  opacity:0;animation:fadeUp .6s .5s forwards;
+}
+.btn-primary:hover{
+  transform:translateY(-2px);
+  box-shadow:0 8px 30px rgba(250,204,21,0.3);
+}
+.btn-primary:active{transform:translateY(0)}
+.btn-primary svg{width:22px;height:22px;flex-shrink:0}
+
+.tg-note{
+  margin-top:14px;
+  font-size:13px;color:#6b6b80;line-height:1.5;
+  max-width:360px;
+  margin-left:auto;margin-right:auto;
+  opacity:0;animation:fadeUp .6s .55s forwards;
+}
+
+.btn-secondary{
+  display:inline-flex;align-items:center;justify-content:center;gap:8px;
+  width:100%;max-width:360px;
+  padding:14px 24px;margin-top:16px;
+  background:transparent;
+  color:#a1a1b5;
+  font-family:inherit;font-size:14px;font-weight:500;
+  border:1px solid rgba(255,255,255,0.1);
+  border-radius:10px;
+  cursor:pointer;text-decoration:none;
+  transition:border-color .2s,color .2s;
+  opacity:0;animation:fadeUp .6s .6s forwards;
+}
+.btn-secondary:hover{border-color:rgba(255,255,255,0.3);color:#fff}
+.btn-secondary svg{width:16px;height:16px;flex-shrink:0}
+
+.no-tg{
+  display:none;
+  margin-top:1.25rem;
+  padding:1.25rem 1.5rem;
+  background:rgba(255,255,255,0.04);
+  border:1px solid rgba(255,255,255,0.08);
+  border-radius:12px;
+  text-align:left;
+  max-width:360px;
+  margin-left:auto;margin-right:auto;
+}
+.no-tg.show{display:block;animation:fadeUp .4s forwards}
+.no-tg p{font-size:14px;color:#a1a1b5;line-height:1.6;margin-bottom:14px}
+.no-tg .store-links{display:flex;gap:10px;flex-wrap:wrap}
+.no-tg .store-link{
+  display:inline-flex;align-items:center;gap:6px;
+  padding:10px 16px;
+  background:rgba(255,255,255,0.06);
+  border:1px solid rgba(255,255,255,0.1);
+  border-radius:8px;
+  color:#fff;font-size:13px;font-weight:500;
+  text-decoration:none;
+  transition:background .2s;
+}
+.no-tg .store-link:hover{background:rgba(255,255,255,0.1)}
+.no-tg .store-link svg{width:18px;height:18px;flex-shrink:0}
+.no-tg .copy-section{
+  margin-top:18px;
+  padding-top:16px;
+  border-top:1px solid rgba(255,255,255,0.06);
+}
+.no-tg .copy-label{
+  font-size:13px;color:#a1a1b5;margin-bottom:8px;
+}
+.no-tg .copy-btn{
+  display:flex;align-items:center;justify-content:space-between;
+  width:100%;
+  padding:12px 16px;
+  background:rgba(250,204,21,0.08);
+  border:1.5px dashed rgba(250,204,21,0.3);
+  border-radius:8px;
+  cursor:pointer;
+  font-family:inherit;
+  transition:background .2s,border-color .2s;
+}
+.no-tg .copy-btn:hover{
+  background:rgba(250,204,21,0.14);
+  border-color:rgba(250,204,21,0.5);
+}
+.no-tg .copy-btn:active{transform:scale(0.98)}
+.no-tg .copy-bot-name{
+  font-size:15px;font-weight:600;color:#facc15;
+  letter-spacing:0.3px;
+}
+.no-tg .copy-icon,.no-tg .copy-done{
+  display:flex;align-items:center;
+  color:#6b6b80;
+}
+.no-tg .copy-hint{
+  font-size:12px;color:#6b6b80;margin-top:8px;margin-bottom:0;
+}
+
+.steps{
+  margin-top:3rem;
+  text-align:left;
+  opacity:0;animation:fadeUp .6s .65s forwards;
+}
+.steps-title{
+  font-size:12px;font-weight:600;letter-spacing:0.8px;
+  color:#6b6b80;
+  margin-bottom:1rem;
+}
+.step{
+  display:flex;gap:14px;
+  padding:14px 0;
+  border-top:1px solid rgba(255,255,255,0.06);
+}
+.step:last-child{border-bottom:1px solid rgba(255,255,255,0.06)}
+.step-num{
+  width:28px;height:28px;flex-shrink:0;
+  display:flex;align-items:center;justify-content:center;
+  font-size:13px;font-weight:700;
+  border-radius:8px;
+  margin-top:1px;
+}
+.step-num.n{background:rgba(37,99,235,0.15);color:#60a5fa}
+.step-num.done{background:rgba(250,204,21,0.15);color:#facc15}
+.step-text{font-size:14px;line-height:1.5;color:#c4c4d4}
+.step-text strong{color:#fff;font-weight:500}
+.step-hint{font-size:12px;color:#6b6b80;margin-top:4px}
+
+.trust{
+  margin-top:2.5rem;
+  display:flex;flex-wrap:wrap;justify-content:center;gap:24px;
+  opacity:0;animation:fadeUp .6s .7s forwards;
+}
+.trust-item{
+  font-size:13px;color:#6b6b80;
+  display:flex;align-items:center;gap:6px;
+}
+.trust-item svg{width:16px;height:16px;color:#60a5fa;flex-shrink:0}
+
+.footer{
+  margin-top:3rem;
+  font-size:12px;color:#3a3a4d;
+  opacity:0;animation:fadeUp .6s .75s forwards;
+}
+.footer a{color:#3a3a4d;text-decoration:underline;transition:color .2s}
+.footer a:hover{color:#6b6b80}
+
+@keyframes fadeUp{
+  from{opacity:0;transform:translateY(16px)}
+  to{opacity:1;transform:translateY(0)}
+}
+
+@media(max-width:400px){
+  body{padding:1.5rem 1rem}
+  .trust{gap:16px}
+  .no-tg .store-links{flex-direction:column}
+}
+</style>
+</head>
+<body>
+
+<div class="glow glow-1"></div>
+<div class="glow glow-2"></div>
+
+<div class="container">
+  <div class="logo">prio<span>.</span></div>
+
+  <div class="badge">
+    <svg viewBox="0 0 24 24"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+    <span id="t-badge">DECISIVE ADVANTAGE</span>
+  </div>
+
+  <h1 id="t-title">Be the first to call.</h1>
+
+  <p class="subtitle" id="t-subtitle">
+    In Spain, a good apartment is gone within the hour. Prio alerts you 
+    <strong>before everyone else</strong> — while they wait for the Idealista 
+    notification, you're already on the phone.
+  </p>
+
+  <a href="https://t.me/idealistaalertbot?start=blog" class="btn-primary" id="btn-open"
+     data-umami-event="cta-click" data-umami-event-cta="go-page-open-telegram">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.562 8.161l-1.97 9.281c-.146.658-.537.818-1.084.508l-3-2.211-1.447 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.333-.373-.121L8.32 13.617l-2.96-.924c-.643-.203-.655-.643.136-.953l11.566-4.458c.538-.196 1.006.131.832.953z"/></svg>
+    <span id="t-btn">Open Telegram</span>
+  </a>
+
+  <p class="tg-note" id="t-tgnote">We use Telegram to deliver alerts because it's instant, free, and lets us keep Prio free for you.</p>
+
+  <button class="btn-secondary" id="btn-notg"
+          onclick="document.getElementById('no-tg-box').classList.add('show');this.style.display='none'">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><path d="M12 17h.01"/></svg>
+    <span id="t-notg">I don't have Telegram</span>
+  </button>
+
+  <div class="no-tg" id="no-tg-box">
+    <p id="t-notg-text">Telegram is a free, secure messaging app used by over 900 million people. It takes 30 seconds to install.</p>
+    <div class="store-links">
+      <a href="https://apps.apple.com/app/telegram-messenger/id686449807" target="_blank" rel="noopener" class="store-link">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83"/><path d="M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+        iPhone
+      </a>
+      <a href="https://play.google.com/store/apps/details?id=org.telegram.messenger" target="_blank" rel="noopener" class="store-link">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M3.609 1.814L13.792 12 3.61 22.186a.996.996 0 0 1-.61-.92V2.734a1 1 0 0 1 .609-.92zm10.89 10.893l2.302 2.302-10.937 6.333 8.635-8.635zm3.199-3.198l2.807 1.626a1 1 0 0 1 0 1.73l-2.808 1.626L15.206 12l2.492-2.491zM5.864 2.658L16.802 8.99l-2.303 2.303-8.635-8.635z"/></svg>
+        Android
+      </a>
+      <a href="https://desktop.telegram.org/" target="_blank" rel="noopener" class="store-link">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8m-4-4v4"/></svg>
+        Desktop
+      </a>
+    </div>
+    <div class="copy-section">
+      <p class="copy-label" id="t-copy-label">Once installed, search for our bot in Telegram:</p>
+      <button class="copy-btn" id="copy-bot" onclick="copyBot()">
+        <span class="copy-bot-name">@idealistaalertbot</span>
+        <span class="copy-icon" id="copy-icon">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+        </span>
+        <span class="copy-done" id="copy-done" style="display:none">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="#facc15" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>
+        </span>
+      </button>
+      <p class="copy-hint" id="t-copy-hint">Tap to copy, then paste in Telegram's search bar and tap Start</p>
+    </div>
+  </div>
+
+  <div class="steps">
+    <div class="steps-title" id="t-steps-title">READY IN 30 SECONDS</div>
+    <div class="step">
+      <div class="step-num n">1</div>
+      <div>
+        <div class="step-text" id="t-step1"><strong>Tap "Open Telegram" above</strong></div>
+        <div class="step-hint" id="t-step1h">The Prio bot opens directly in the app</div>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-num n">2</div>
+      <div>
+        <div class="step-text" id="t-step2"><strong>Tap Start</strong> once you're in the bot</div>
+        <div class="step-hint" id="t-step2h">Choose what you're looking for: rent, buy, or room</div>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-num n">3</div>
+      <div>
+        <div class="step-text" id="t-step3"><strong>Paste your Idealista or Fotocasa URL</strong></div>
+        <div class="step-hint" id="t-step3h">Copy the link from your search results page with your filters</div>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-num done">⚡</div>
+      <div>
+        <div class="step-text" id="t-step4"><strong>You're set. Alerts start immediately.</strong></div>
+        <div class="step-hint" id="t-step4h">New listing? You'll know first. You'll call first.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="trust">
+    <div class="trust-item">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+      <span id="t-trust1">60+ active users</span>
+    </div>
+    <div class="trust-item">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+      <span id="t-trust2">130,000+ alerts sent</span>
+    </div>
+    <div class="trust-item">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+      <span id="t-trust3">Free · No spam · No data sold</span>
+    </div>
+  </div>
+
+  <div class="footer">
+    <a href="https://getprio.io">getprio.io</a> · <a href="/legal/privacy/">Privacy</a> · <a href="/legal/terms/">Terms</a>
+  </div>
+</div>
+
+<script>
+var T={
+  en:{
+    badge:"DECISIVE ADVANTAGE",
+    title:"Be the first to call.",
+    subtitle:'In Spain, a good apartment is gone within the hour. Prio alerts you <strong>before everyone else</strong> — while they wait for the Idealista notification, you\'re already on the phone.',
+    btn:"Open Telegram",
+    tgnote:"We use Telegram to deliver alerts because it's instant, free, and lets us keep Prio free for you.",
+    notg:"I don't have Telegram",
+    notgText:"Telegram is a free, secure messaging app used by over 900 million people. It takes 30 seconds to install.",
+    comeback:"Once installed, come back here and tap the yellow button",
+    stepsTitle:"READY IN 30 SECONDS",
+    step1:'<strong>Tap "Open Telegram" above</strong>',
+    step1h:"The Prio bot opens directly in the app",
+    step2:'<strong>Tap Start</strong> once you\'re in the bot',
+    step2h:"Choose what you're looking for: rent, buy, or room",
+    step3:'<strong>Paste your Idealista or Fotocasa URL</strong>',
+    step3h:"Copy the link from your search results page with your filters",
+    step4:'<strong>You\'re set. Alerts start immediately.</strong>',
+    step4h:"New listing? You'll know first. You'll call first.",
+    trust1:"60+ active users",
+    trust2:"130,000+ alerts sent",
+    trust3:"Free · No spam · No data sold",
+    copyLabel:"Once installed, search for our bot in Telegram:",
+    copyHint:"Tap to copy, then paste in Telegram's search bar and tap Start"
+  },
+  fr:{
+    badge:"AVANTAGE DÉCISIF",
+    title:"Soyez le premier à appeler.",
+    subtitle:'En Espagne, un bon appartement part en moins d\'une heure. Prio vous alerte <strong>avant les autres</strong> — pendant qu\'ils attendent la notification Idealista, vous êtes déjà au téléphone.',
+    btn:"Ouvrir Telegram",
+    tgnote:"Nous utilisons Telegram pour envoyer les alertes car c'est instantané, gratuit, et cela nous permet de garder Prio gratuit pour vous.",
+    notg:"Je n'ai pas Telegram",
+    notgText:"Telegram est une application de messagerie gratuite et sécurisée, utilisée par plus de 900 millions de personnes. L'installation prend 30 secondes.",
+    stepsTitle:"PRÊT EN 30 SECONDES",
+    step1:'<strong>Appuyez sur "Ouvrir Telegram" ci-dessus</strong>',
+    step1h:"Le bot Prio s'ouvre directement dans l'application",
+    step2:'<strong>Appuyez sur Start</strong> une fois dans le bot',
+    step2h:"Choisissez ce que vous cherchez : location, achat ou chambre",
+    step3:'<strong>Collez votre URL Idealista ou Fotocasa</strong>',
+    step3h:"Copiez le lien de votre page de résultats avec vos filtres",
+    step4:'<strong>C\'est parti. Les alertes démarrent instantanément.</strong>',
+    step4h:"Nouvelle annonce ? Vous le saurez en premier. Vous appellerez en premier.",
+    trust1:"60+ utilisateurs actifs",
+    trust2:"130 000+ alertes envoyées",
+    trust3:"Gratuit · Pas de spam · Données jamais vendues",
+    copyLabel:"Une fois installé, cherchez notre bot dans Telegram :",
+    copyHint:"Appuyez pour copier, puis collez dans la barre de recherche Telegram et appuyez sur Start"
+  },
+  es:{
+    badge:"VENTAJA DECISIVA",
+    title:"Sé el primero en llamar.",
+    subtitle:'En España, un buen piso desaparece en menos de una hora. Prio te avisa <strong>antes que nadie</strong> — mientras los demás esperan la notificación de Idealista, tú ya estás llamando.',
+    btn:"Abrir Telegram",
+    tgnote:"Usamos Telegram para enviar alertas porque es instantáneo, gratuito, y nos permite mantener Prio gratis para ti.",
+    notg:"No tengo Telegram",
+    notgText:"Telegram es una app de mensajería gratuita y segura con más de 900 millones de usuarios. Se instala en 30 segundos.",
+    stepsTitle:"LISTO EN 30 SEGUNDOS",
+    step1:'<strong>Pulsa "Abrir Telegram" arriba</strong>',
+    step1h:"El bot de Prio se abre directamente en la app",
+    step2:'<strong>Pulsa Start</strong> una vez dentro del bot',
+    step2h:"Elige lo que buscas: alquiler, compra o habitación",
+    step3:'<strong>Pega tu URL de Idealista o Fotocasa</strong>',
+    step3h:"Copia el enlace de tu página de resultados con tus filtros",
+    step4:'<strong>Listo. Las alertas empiezan de inmediato.</strong>',
+    step4h:"¿Nuevo anuncio? Lo sabrás primero. Llamarás primero.",
+    trust1:"60+ usuarios activos",
+    trust2:"130.000+ alertas enviadas",
+    trust3:"Gratis · Sin spam · Datos nunca vendidos",
+    copyLabel:"Una vez instalado, busca nuestro bot en Telegram:",
+    copyHint:"Toca para copiar, pega en la barra de búsqueda de Telegram y pulsa Start"
+  }
+};
+
+(function(){
+  var usp=new URLSearchParams(location.search);
+  var lang=usp.get('lang')||(navigator.language||'en').slice(0,2);
+  if(!T[lang])lang='en';
+  var t=T[lang];
+  document.documentElement.lang=lang;
+
+  var map={
+    badge:'t-badge',title:'t-title',subtitle:'t-subtitle',btn:'t-btn',
+    tgnote:'t-tgnote',notg:'t-notg',notgText:'t-notg-text',
+    copyLabel:'t-copy-label',copyHint:'t-copy-hint',
+    stepsTitle:'t-steps-title',
+    step1:'t-step1',step1h:'t-step1h',step2:'t-step2',step2h:'t-step2h',
+    step3:'t-step3',step3h:'t-step3h',step4:'t-step4',step4h:'t-step4h',
+    trust1:'t-trust1',trust2:'t-trust2',trust3:'t-trust3'
+  };
+  for(var k in map){
+    var el=document.getElementById(map[k]);
+    if(el&&t[k])el.innerHTML=t[k];
+  }
+
+  var deepLink='tg://resolve?domain=idealistaalertbot&start=go_'+lang;
+  var webLink='https://t.me/idealistaalertbot?start=go_'+lang;
+  var btnOpen=document.getElementById('btn-open');
+
+  var isMobile=/iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+
+  if(isMobile){
+    btnOpen.href=deepLink;
+    btnOpen.addEventListener('click',function(e){
+      e.preventDefault();
+      var clicked=Date.now();
+      window.location=deepLink;
+      setTimeout(function(){
+        if(Date.now()-clicked<2500){
+          window.location=webLink;
+        }
+      },1500);
+    });
+  }else{
+    btnOpen.href=webLink;
+  }
+})();
+
+function copyBot(){
+  navigator.clipboard.writeText('@idealistaalertbot').then(function(){
+    document.getElementById('copy-icon').style.display='none';
+    document.getElementById('copy-done').style.display='flex';
+    var btn=document.getElementById('copy-bot');
+    btn.style.borderColor='rgba(250,204,21,0.6)';
+    btn.style.background='rgba(250,204,21,0.14)';
+    setTimeout(function(){
+      document.getElementById('copy-icon').style.display='flex';
+      document.getElementById('copy-done').style.display='none';
+      btn.style.borderColor='';
+      btn.style.background='';
+    },3000);
+  }).catch(function(){
+    var input=document.createElement('input');
+    input.value='@idealistaalertbot';
+    document.body.appendChild(input);
+    input.select();
+    document.execCommand('copy');
+    document.body.removeChild(input);
+    document.getElementById('copy-icon').style.display='none';
+    document.getElementById('copy-done').style.display='flex';
+    setTimeout(function(){
+      document.getElementById('copy-icon').style.display='flex';
+      document.getElementById('copy-done').style.display='none';
+    },3000);
+  });
+}
+</script>
+</body>
+</html>

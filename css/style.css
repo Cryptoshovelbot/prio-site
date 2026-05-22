@@ -1192,30 +1192,81 @@ p {
 /* --- Blog CTA --- */
 .blog-cta {
   margin: 2.5rem 0;
-  padding: 1.5rem 2rem;
-  background: var(--color-primary-light);
-  border-left: 4px solid var(--color-primary);
-  border-radius: var(--radius-md);
+  padding: 0;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 2px solid #1a1a2e;
+  border-left: none;
+  background: none;
+}
+.blog-cta__inner {
+  background: #1a1a2e;
+  padding: 1.5rem 2rem 1rem;
+}
+.blog-cta__badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 12px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  color: #facc15;
+}
+.blog-cta__badge svg {
+  width: 16px;
+  height: 16px;
+  fill: currentColor;
+}
+.blog-cta__title {
+  margin: 0 0 6px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #fff;
+  line-height: 1.3;
 }
 .blog-cta p {
-  margin: 0 0 1rem 0;
-  font-size: 1.05rem;
+  margin: 0;
+  font-size: 15px;
+  color: #a1a1b5;
   line-height: 1.5;
-  color: var(--color-text);
+}
+.blog-cta p strong {
+  color: #fff;
+  font-weight: 500;
+}
+.blog-cta__bottom {
+  background: #1a1a2e;
+  padding: 0 2rem 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
 }
 .blog-cta .blog-cta__btn {
-  display: inline-block;
-  padding: 0.75rem 1.5rem;
-  background: var(--color-primary);
-  color: #fff;
-  border-radius: var(--radius-sm);
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 14px 28px;
+  background: #facc15;
+  color: #1a1a2e;
+  border-radius: 8px;
   text-decoration: none;
   font-weight: 600;
-  transition: all var(--transition-fast);
+  font-size: 15px;
+  transition: transform 0.15s, box-shadow 0.15s;
 }
 .blog-cta .blog-cta__btn:hover {
-  background: var(--color-primary-hover);
-  color: #fff;
-  transform: translateY(-1px);
-  box-shadow: 0 4px 16px rgba(37, 99, 235, 0.3);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(250, 204, 21, 0.3);
+  color: #1a1a2e;
+}
+.blog-cta .blog-cta__btn svg {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+}
+.blog-cta__stats {
+  font-size: 13px;
+  color: #6b6b80;
 }
