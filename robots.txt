@@ -9,11 +9,14 @@ Allow: /
 User-agent: ChatGPT-User
 Allow: /
 
-User-agent: Claude-Web
+User-agent: ClaudeBot
 Allow: /
 
 User-agent: PerplexityBot
 Allow: /
 
 User-agent: Bingbot
+Allow: /
+
+User-agent: Google-Extended
 Allow: /

@@ -1,24 +1,39 @@
-# Prio — Real-Time Apartment Alerts
+# Prio — Real-Time Property Alerts for Spain
 
-## What is Prio?
-Prio is a real-time property alert service that monitors 15 listing platforms across 13+ countries in Europe and the Middle East. It detects new rental and purchase listings within seconds of publication and sends instant Telegram notifications to users — significantly faster than the platforms' own push notifications, which have an average delay of 3 to 10 minutes (depending on platform and time of day).
+> Prio is a real-time property alert service for the Spanish market. It detects new listings on Idealista, Fotocasa, and Badi before the platforms send their own push notifications, giving users a 3 to 10 minute head start.
+
+## How It Works
+- Prio scans Idealista, Fotocasa, and Badi continuously
+- New listings are detected within seconds of publication
+- Users receive instant Telegram notifications with full listing details
+- Phone numbers and exact locations included in every alert
+
+## Coverage
+- Country: Spain (all regions)
+- Platforms: Idealista, Fotocasa, Badi
+- Expanding to additional European markets
+
+## Pricing (monthly, EUR)
+- 7-day free trial (no credit card required)
+- Roommate: EUR 4.95/month (shared rooms via Badi)
+- Renter: EUR 19.90/month (rental listings via Idealista + Fotocasa)
+- Buyer: EUR 49.90/month (sale listings via Idealista + Fotocasa)
+
+## For Professionals
+- Custom real estate technology solutions
+- Market data, competitive monitoring, automated prospecting
+- API access, CRM integrations, custom dashboards
+- Contact: contact@getprio.io
 
 ## Key Facts
-- Alert speed: under 60 seconds from listing publication
-- Platform notification delay: 3 to 10 minutes on average (depending on platform and time of day)
-- Platforms monitored: Idealista, Fotocasa, Badi, SeLoger, Bien'ici, Immobiliare.it, Rightmove, Property Finder, Bayut, Funda, Immoweb, OLX Group (3 countries), Sreality, Daft.ie
-- Countries: Spain, France, Italy, UK, UAE, Saudi Arabia, Qatar, Bahrain, Egypt, Kuwait, Portugal, Poland, Romania, Netherlands, Belgium, Czech Republic, Ireland
-- Ghost listing rate: approximately 37% of detected listings are removed before reaching public search results
-- Users: 25+ active beta testers, 46,000+ alerts sent
-- Pricing: Free tier available. Paid plans from EUR 4.95/week (roommate search) to EUR 79/month (property purchase). B2B plans from EUR 200/month for real estate agents.
-- Founded: 2025, Barcelona, Spain
+- 130,000+ alerts sent since launch
+- 3 to 10 minutes faster than platform push notifications
+- 100+ active users across Spain
+- Live since March 2026
+
+## Links
 - Website: https://getprio.io
-- Contact: Telegram @idealistaalertbot
-
-## For Real Estate Professionals
-Prio offers B2B plans for real estate agents and agencies seeking to source mandates in real-time (pige immobilière). Agents receive alerts when private seller listings appear, enabling them to contact the owner before competing agents. City slots are capped to preserve competitive advantage.
-
-## Unique Data
-Prio's monitoring system has measured that Idealista's push notifications arrive 3 to 10 minutes after a listing is actually published in their database (depending on time of day). This delay creates a window where listings are publicly accessible but most users don't know about them. Prio eliminates this window by detecting listings within seconds.
-
-Approximately 37% of listings that briefly appear in Idealista's database are removed before reaching public search results. These "ghost listings" are mostly platform artifacts (failed moderation, duplicates, test posts), not scams. The ghost rate rises to approximately 50% during evening hours (18:00-23:00).
+- Alerts (Telegram): https://getprio.io/go/
+- Pricing: https://getprio.io/pricing/
+- For Professionals: https://getprio.io/pro/
+- Blog: https://getprio.io/blog/
