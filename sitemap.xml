@@ -3,6 +3,7 @@
   <url><loc>https://getprio.io/</loc><lastmod>2026-05-02</lastmod><priority>1.0</priority></url>
   <url><loc>https://getprio.io/pricing/</loc><lastmod>2026-05-02</lastmod><priority>0.8</priority></url>
   <url><loc>https://getprio.io/about/</loc><lastmod>2026-05-02</lastmod><priority>0.6</priority></url>
+  <url><loc>https://getprio.io/pro/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://getprio.io/blog/</loc><lastmod>2026-05-02</lastmod><priority>0.8</priority></url>
   <url><loc>https://getprio.io/es/</loc><lastmod>2026-05-02</lastmod><priority>0.8</priority></url>
   <url><loc>https://getprio.io/legal/privacy/</loc><lastmod>2026-05-02</lastmod><priority>0.3</priority></url>
