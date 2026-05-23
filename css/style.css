@@ -384,6 +384,9 @@ p {
 }
 
 .hero__about {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 1rem;
   font-size: 0.95rem;
   color: #666;
