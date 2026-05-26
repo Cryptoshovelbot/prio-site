@@ -13,7 +13,9 @@
 <meta property="og:url" content="https://getprio.io/go/">
 <script defer src="https://analytics.getprio.io/script.js" data-website-id="056589cd-0a9e-4fd9-9634-c93fd21fd826"></script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap"></noscript>
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
 body{
@@ -32,13 +34,12 @@ body{
   position:fixed;
   width:600px;height:600px;
   border-radius:50%;
-  filter:blur(120px);
   opacity:0.10;
   pointer-events:none;
   z-index:0;
 }
-.glow-1{background:#facc15;top:-200px;left:-100px}
-.glow-2{background:#2563eb;bottom:-200px;right:-100px}
+.glow-1{background:radial-gradient(circle,#facc15 0%,transparent 70%);top:-200px;left:-100px}
+.glow-2{background:radial-gradient(circle,#2563eb 0%,transparent 70%);bottom:-200px;right:-100px}
 
 .container{
   position:relative;z-index:1;
@@ -268,6 +269,7 @@ h1{
   </p>
 
   <a href="https://t.me/idealistaalertbot?start=go_en" class="btn-primary" id="btn-open"
+     target="_blank" rel="noopener"
      data-umami-event="cta-click" data-umami-event-cta="go-page-open-telegram">
     <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.562 8.161l-1.97 9.281c-.146.658-.537.818-1.084.508l-3-2.211-1.447 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.333-.373-.121L8.32 13.617l-2.96-.924c-.643-.203-.655-.643.136-.953l11.566-4.458c.538-.196 1.006.131.832.953z"/></svg>
     <span id="t-btn">Start 7-day free trial</span>
@@ -462,27 +464,9 @@ var T={
     if(el&&t[k])el.innerHTML=t[k];
   }
 
-  var deepLink='tg://resolve?domain=idealistaalertbot&start=go_'+lang;
   var webLink='https://t.me/idealistaalertbot?start=go_'+lang;
   var btnOpen=document.getElementById('btn-open');
-
-  var isMobile=/iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
-
-  if(isMobile){
-    btnOpen.href=deepLink;
-    btnOpen.addEventListener('click',function(e){
-      e.preventDefault();
-      var clicked=Date.now();
-      window.location=deepLink;
-      setTimeout(function(){
-        if(Date.now()-clicked<2500){
-          window.location=webLink;
-        }
-      },1500);
-    });
-  }else{
-    btnOpen.href=webLink;
-  }
+  btnOpen.href=webLink;
 })();
 
 function copyBot(){
