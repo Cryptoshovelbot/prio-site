@@ -8,6 +8,9 @@
 <meta name="keywords" content="real estate technology Spain, property data Spain, pige immobilière Espagne, Idealista data, Fotocasa data, real estate automation, property market intelligence Spain, custom real estate tools, real estate API Spain">
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
 <link rel="canonical" href="https://getprio.io/pro/">
+<link rel="alternate" hreflang="en" href="https://getprio.io/pro/">
+<link rel="alternate" hreflang="es" href="https://getprio.io/pro/?lang=es">
+<link rel="alternate" hreflang="x-default" href="https://getprio.io/pro/">
 <meta property="og:title" content="Prio for Professionals — Your Real Estate Tech Department">
 <meta property="og:description" content="Custom real estate technology for professionals in Spain. Market data, automated prospecting, competitive monitoring. Tell us your problem, we build the solution.">
 <meta property="og:image" content="https://getprio.io/assets/og-image.png">
@@ -33,6 +36,7 @@
 </script>
 
 <script defer src="https://analytics.getprio.io/script.js" data-website-id="056589cd-0a9e-4fd9-9634-c93fd21fd826"></script>
+<script src="/assets/i18n.js" defer></script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/css/style.css">
@@ -182,6 +186,8 @@
   .pro-section{padding:3.5rem 1.5rem}
   .pro-step{gap:14px}
 }
+.lang-picker a{font-size:0.75rem;padding:2px 6px;border-radius:3px;text-decoration:none;color:#888;transition:all 0.15s}
+.lang-picker a.active{color:#fff;background:#4f46e5}
 </style>
 </head>
 <body>
@@ -190,12 +196,19 @@
     <div class="nav__inner">
       <a href="/" class="nav__logo">prio<span>.</span></a>
       <ul class="nav__links">
-        <li><a href="/es/">Spain</a></li>
-        <li><a href="/pricing/">Pricing</a></li>
+        <li><a href="/es/" data-i18n="nav.spain">Spain</a></li>
+        <li><a href="/pricing/" data-i18n="nav.pricing">Pricing</a></li>
         <li><a href="/blog/">Blog</a></li>
-        <li><a href="/pro/">For Pros</a></li>
-        <li><a href="/about/">About</a></li>
-        <li><a href="/go/?lang=en" class="nav__cta" data-umami-event="cta-click" data-umami-event-cta="pro-nav-getalerts" data-umami-event-page="pro" data-umami-event-tier="na">Get Alerts →</a></li>
+        <li><a href="/pro/" data-i18n="nav.for_pros">For Pros</a></li>
+        <li><a href="/about/" data-i18n="nav.about">About</a></li>
+        <li>
+          <span class="lang-picker">
+            <a href="?lang=en" data-lang="en">EN</a>
+            <a href="?lang=fr" data-lang="fr">FR</a>
+            <a href="?lang=es" data-lang="es">ES</a>
+          </span>
+        </li>
+        <li><a href="/go/?lang=en" class="nav__cta" data-umami-event="cta-click" data-umami-event-cta="pro-nav-getalerts" data-umami-event-page="pro" data-umami-event-tier="na" data-i18n="nav.get_alerts">Get Alerts →</a></li>
       </ul>
       <button class="nav__toggle" aria-label="Toggle menu">
         <span></span><span></span><span></span>
@@ -207,13 +220,13 @@
 <section class="pro-hero">
   <div class="pro-hero__grid"></div>
   <div class="pro-hero__inner">
-    <div class="pro-hero__badge">FOR REAL ESTATE PROFESSIONALS</div>
-    <h1>Your real estate <span>tech department.</span></h1>
-    <p class="pro-hero__sub">
+    <div class="pro-hero__badge" data-i18n="pro.hero_badge">FOR REAL ESTATE PROFESSIONALS</div>
+    <h1 data-i18n-html="pro.h1">Your real estate <span>tech department.</span></h1>
+    <p class="pro-hero__sub" data-i18n-html="pro.subtitle">
       Our infrastructure scans the Spanish property market in real time. We have the technology, the data, and the expertise to build <strong>exactly what you need</strong>.
     </p>
     <a href="mailto:contact@getprio.io?subject=Prio%20Pro%20—%20Let's%20talk" class="pro-hero__cta"
-       data-umami-event="cta-click" data-umami-event-cta="pro-hero-contact">
+       data-umami-event="cta-click" data-umami-event-cta="pro-hero-contact" data-i18n="pro.cta">
       Let's talk about your project →
     </a>
   </div>
@@ -288,38 +301,38 @@
 <!-- WHAT WE BUILD -->
 <section class="pro-section">
   <div class="pro-section__inner">
-    <div class="pro-section__badge">WHAT WE BUILD</div>
-    <h2>Data, automation, and intelligence for real estate</h2>
-    <p class="pro-section__sub">We don't sell a fixed product. We build bespoke tools powered by our real-time scanning of Idealista, Fotocasa, and Badi.</p>
+    <div class="pro-section__badge" data-i18n="pro.what_badge">WHAT WE BUILD</div>
+    <h2 data-i18n="pro.what_h2">Data, automation, and intelligence for real estate</h2>
+    <p class="pro-section__sub" data-i18n="pro.what_sub">We don't sell a fixed product. We build bespoke tools powered by our real-time scanning of Idealista, Fotocasa, and Badi.</p>
     
     <div class="pro-grid">
       <div class="pro-card">
         <div class="pro-card__icon pro-card__icon--blue">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 20V10M12 20V4M6 20v-6"/></svg>
         </div>
-        <h3>Market data and reports</h3>
-        <p>Automated reports on pricing, volumes, trends, and days on market. By neighborhood, city, or custom zone. Delivered daily, weekly, or on demand in the format you choose.</p>
+        <h3 data-i18n="pro.card1_h3">Market data and reports</h3>
+        <p data-i18n="pro.card1_p">Automated reports on pricing, volumes, trends, and days on market. By neighborhood, city, or custom zone. Delivered daily, weekly, or on demand in the format you choose.</p>
       </div>
       <div class="pro-card">
         <div class="pro-card__icon pro-card__icon--green">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/><path d="M11 8v6M8 11h6"/></svg>
         </div>
-        <h3>Competitive monitoring</h3>
-        <p>Track what your competitors publish, at what price, in which zones. Detect price changes, listing removals, and market movements before they become trends.</p>
+        <h3 data-i18n="pro.card2_h3">Competitive monitoring</h3>
+        <p data-i18n="pro.card2_p">Track what your competitors publish, at what price, in which zones. Detect price changes, listing removals, and market movements before they become trends.</p>
       </div>
       <div class="pro-card">
         <div class="pro-card__icon pro-card__icon--amber">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
         </div>
-        <h3>Automated prospecting</h3>
-        <p>Detect every new listing the moment it appears. Automated lead extraction, contact information, and scoring. Pige at scale across the entire Spanish market.</p>
+        <h3 data-i18n="pro.card3_h3">Automated prospecting</h3>
+        <p data-i18n="pro.card3_p">Detect every new listing the moment it appears. Automated lead extraction, contact information, and scoring. Pige at scale across the entire Spanish market.</p>
       </div>
       <div class="pro-card">
         <div class="pro-card__icon pro-card__icon--purple">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
         </div>
-        <h3>Custom integrations</h3>
-        <p>Real-time API feeds, webhook notifications, CRM sync, Google Sheets export, Notion integration, custom dashboards. Whatever fits your workflow, we plug into it.</p>
+        <h3 data-i18n="pro.card4_h3">Custom integrations</h3>
+        <p data-i18n="pro.card4_p">Real-time API feeds, webhook notifications, CRM sync, Google Sheets export, Notion integration, custom dashboards. Whatever fits your workflow, we plug into it.</p>
       </div>
     </div>
   </div>
@@ -328,9 +341,9 @@
 <!-- CONCRETE EXAMPLES -->
 <section class="pro-section">
   <div class="pro-section__inner">
-    <div class="pro-section__badge">CONCRETE EXAMPLES</div>
-    <h2>Solutions we can build for you</h2>
-    <p class="pro-section__sub">Not hypothetical features. Real solutions we've built or can build within days.</p>
+    <div class="pro-section__badge" data-i18n="pro.examples_badge">CONCRETE EXAMPLES</div>
+    <h2 data-i18n="pro.examples_h2">Solutions we can build for you</h2>
+    <p class="pro-section__sub" data-i18n="pro.examples_sub">Not hypothetical features. Real solutions we've built or can build within days.</p>
     
     <div class="pro-examples">
       <div class="pro-example">
@@ -338,54 +351,54 @@
           <div class="pro-example__icon" style="background:rgba(37,99,235,0.1);color:#2563eb">
             <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
           </div>
-          <div class="pro-example__label">PROSPECTING</div>
+          <div class="pro-example__label" data-i18n="pro.ex1_label">PROSPECTING</div>
         </div>
-        <p><strong>A system that alerts you the moment a new listing appears in your zone</strong>, with the owner's phone number, before any other agent sees it. You call first, you get the mandate.</p>
+        <p data-i18n-html="pro.ex1_p"><strong>A system that alerts you the moment a new listing appears in your zone</strong>, with the owner's phone number, before any other agent sees it. You call first, you get the mandate.</p>
       </div>
       <div class="pro-example">
         <div class="pro-example__header">
           <div class="pro-example__icon" style="background:rgba(16,185,129,0.1);color:#10b981">
             <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20V10M18 20V4M6 20v-4"/><path d="M2 20h20"/></svg>
           </div>
-          <div class="pro-example__label" style="color:#10b981;background:rgba(16,185,129,0.08)">COMPETITIVE INTEL</div>
+          <div class="pro-example__label" style="color:#10b981;background:rgba(16,185,129,0.08)" data-i18n="pro.ex2_label">COMPETITIVE INTEL</div>
         </div>
-        <p><strong>A weekly report showing every price change in your market.</strong> Which competitors dropped their price, by how much, and when. Spot opportunities and adjust your strategy.</p>
+        <p data-i18n-html="pro.ex2_p"><strong>A weekly report showing every price change in your market.</strong> Which competitors dropped their price, by how much, and when. Spot opportunities and adjust your strategy.</p>
       </div>
       <div class="pro-example">
         <div class="pro-example__header">
           <div class="pro-example__icon" style="background:rgba(139,92,246,0.1);color:#8b5cf6">
             <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>
           </div>
-          <div class="pro-example__label" style="color:#8b5cf6;background:rgba(139,92,246,0.08)">MARKET ANALYSIS</div>
+          <div class="pro-example__label" style="color:#8b5cf6;background:rgba(139,92,246,0.08)" data-i18n="pro.ex3_label">MARKET ANALYSIS</div>
         </div>
-        <p><strong>A live dashboard of rental prices by neighborhood in Barcelona</strong>, with average price per m², median time on market, and volume trends. Updated every hour, exportable to Excel.</p>
+        <p data-i18n-html="pro.ex3_p"><strong>A live dashboard of rental prices by neighborhood in Barcelona</strong>, with average price per m², median time on market, and volume trends. Updated every hour, exportable to Excel.</p>
       </div>
       <div class="pro-example">
         <div class="pro-example__header">
           <div class="pro-example__icon" style="background:rgba(245,158,11,0.1);color:#f59e0b">
             <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/></svg>
           </div>
-          <div class="pro-example__label" style="color:#f59e0b;background:rgba(245,158,11,0.08)">AUTOMATION</div>
+          <div class="pro-example__label" style="color:#f59e0b;background:rgba(245,158,11,0.08)" data-i18n="pro.ex4_label">AUTOMATION</div>
         </div>
-        <p><strong>An automatic daily export of all new sale listings under €300k in Valencia</strong>, sent to your CRM with photos, surface, location, and contact. Zero manual work.</p>
+        <p data-i18n-html="pro.ex4_p"><strong>An automatic daily export of all new sale listings under €300k in Valencia</strong>, sent to your CRM with photos, surface, location, and contact. Zero manual work.</p>
       </div>
       <div class="pro-example">
         <div class="pro-example__header">
           <div class="pro-example__icon" style="background:rgba(239,68,68,0.1);color:#ef4444">
             <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
           </div>
-          <div class="pro-example__label" style="color:#ef4444;background:rgba(239,68,68,0.08)">MONITORING</div>
+          <div class="pro-example__label" style="color:#ef4444;background:rgba(239,68,68,0.08)" data-i18n="pro.ex5_label">MONITORING</div>
         </div>
-        <p><strong>Track when listings in your portfolio zone get removed or republished.</strong> Know instantly when a competitor's listing disappears or reappears at a different price.</p>
+        <p data-i18n-html="pro.ex5_p"><strong>Track when listings in your portfolio zone get removed or republished.</strong> Know instantly when a competitor's listing disappears or reappears at a different price.</p>
       </div>
       <div class="pro-example">
         <div class="pro-example__header">
           <div class="pro-example__icon" style="background:rgba(37,99,235,0.1);color:#2563eb">
             <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/><line x1="14" y1="4" x2="10" y2="20"/></svg>
           </div>
-          <div class="pro-example__label">CUSTOM API</div>
+          <div class="pro-example__label" data-i18n="pro.ex6_label">CUSTOM API</div>
         </div>
-        <p><strong>A REST API that returns all active listings in a given zone</strong>, with filters on price, surface, rooms, publication date. Paginated, authenticated, documented. Plug it into anything.</p>
+        <p data-i18n-html="pro.ex6_p"><strong>A REST API that returns all active listings in a given zone</strong>, with filters on price, surface, rooms, publication date. Paginated, authenticated, documented. Plug it into anything.</p>
       </div>
     </div>
   </div>
@@ -394,30 +407,30 @@
 <!-- HOW IT WORKS -->
 <section class="pro-section">
   <div class="pro-section__inner">
-    <div class="pro-section__badge">HOW IT WORKS</div>
-    <h2>From your problem to a working solution</h2>
-    <p class="pro-section__sub">No months of development. No rigid SaaS. We already have the infrastructure.</p>
+    <div class="pro-section__badge" data-i18n="pro.how_badge">HOW IT WORKS</div>
+    <h2 data-i18n="pro.how_h2">From your problem to a working solution</h2>
+    <p class="pro-section__sub" data-i18n="pro.how_sub">No months of development. No rigid SaaS. We already have the infrastructure.</p>
     
     <div class="pro-steps">
       <div class="pro-step">
         <div class="pro-step__num">1</div>
         <div>
-          <h3>You tell us what you need</h3>
-          <p>A 30-minute call or a simple email. What are you trying to achieve? What data do you need? How do you work today?</p>
+          <h3 data-i18n="pro.step1_h3">You tell us what you need</h3>
+          <p data-i18n="pro.step1_p">A 30-minute call or a simple email. What are you trying to achieve? What data do you need? How do you work today?</p>
         </div>
       </div>
       <div class="pro-step">
         <div class="pro-step__num">2</div>
         <div>
-          <h3>We come back with a proposal</h3>
-          <p>Within 48 hours. What we'll build, how it integrates with your workflow, what it costs, and when it'll be live. Clear and concrete.</p>
+          <h3 data-i18n="pro.step2_h3">We come back with a proposal</h3>
+          <p data-i18n="pro.step2_p">Within 48 hours. What we'll build, how it integrates with your workflow, what it costs, and when it'll be live. Clear and concrete.</p>
         </div>
       </div>
       <div class="pro-step">
         <div class="pro-step__num">3</div>
         <div>
-          <h3>We build, you use</h3>
-          <p>Most solutions go live within 1 to 2 weeks. Not a proof of concept. A working tool that solves your problem. We iterate based on your feedback.</p>
+          <h3 data-i18n="pro.step3_h3">We build, you use</h3>
+          <p data-i18n="pro.step3_p">Most solutions go live within 1 to 2 weeks. Not a proof of concept. A working tool that solves your problem. We iterate based on your feedback.</p>
         </div>
       </div>
     </div>
@@ -427,33 +440,33 @@
 <!-- FAQ -->
 <section class="pro-section">
   <div class="pro-section__inner">
-    <div class="pro-section__badge">FAQ</div>
-    <h2>Common questions</h2>
+    <div class="pro-section__badge" data-i18n="pro.faq_badge">FAQ</div>
+    <h2 data-i18n="pro.faq_h2">Common questions</h2>
     
     <div class="pro-faq">
       <details>
-        <summary>How much does it cost?</summary>
-        <p>Depends on the scope. A custom alert system might start at a few hundred euros per month. A full market intelligence platform costs more. We always give you a clear quote before building anything.</p>
+        <summary data-i18n="pro.faq1_q">How much does it cost?</summary>
+        <p data-i18n="pro.faq1_a">Depends on the scope. A custom alert system might start at a few hundred euros per month. A full market intelligence platform costs more. We always give you a clear quote before building anything.</p>
       </details>
       <details>
-        <summary>Which platforms do you scan?</summary>
-        <p>Idealista, Fotocasa, and Badi across all of Spain. We scan continuously, in real time, and detect new listings within minutes of publication.</p>
+        <summary data-i18n="pro.faq2_q">Which platforms do you scan?</summary>
+        <p data-i18n="pro.faq2_a">Idealista, Fotocasa, and Badi across all of Spain. We scan continuously, in real time, and detect new listings within minutes of publication.</p>
       </details>
       <details>
-        <summary>How fast can you deliver?</summary>
-        <p>1 to 2 weeks for most solutions. We're not building from scratch. We're adapting our existing scanning infrastructure to your specific needs.</p>
+        <summary data-i18n="pro.faq3_q">How fast can you deliver?</summary>
+        <p data-i18n="pro.faq3_a">1 to 2 weeks for most solutions. We're not building from scratch. We're adapting our existing scanning infrastructure to your specific needs.</p>
       </details>
       <details>
-        <summary>Can I get raw data via API?</summary>
-        <p>Yes. REST API, webhooks, or any format you need. Authenticated, rate-limited, documented. We build the endpoints that match your use case.</p>
+        <summary data-i18n="pro.faq4_q">Can I get raw data via API?</summary>
+        <p data-i18n="pro.faq4_a">Yes. REST API, webhooks, or any format you need. Authenticated, rate-limited, documented. We build the endpoints that match your use case.</p>
       </details>
       <details>
-        <summary>Is this different from your B2C product?</summary>
-        <p>Completely. The B2C product is a Telegram bot for individuals searching for an apartment. What we build for professionals has nothing to do with it. Custom data, custom delivery, custom scope.</p>
+        <summary data-i18n="pro.faq5_q">Is this different from your B2C product?</summary>
+        <p data-i18n="pro.faq5_a">Completely. The B2C product is a Telegram bot for individuals searching for an apartment. What we build for professionals has nothing to do with it. Custom data, custom delivery, custom scope.</p>
       </details>
       <details>
-        <summary>Can you expand to other countries?</summary>
-        <p>Our architecture supports multiple platforms and countries. We're focused on Spain today, but expanding coverage to a new market is feasible. Let's discuss your needs.</p>
+        <summary data-i18n="pro.faq6_q">Can you expand to other countries?</summary>
+        <p data-i18n="pro.faq6_a">Our architecture supports multiple platforms and countries. We're focused on Spain today, but expanding coverage to a new market is feasible. Let's discuss your needs.</p>
       </details>
     </div>
   </div>
@@ -462,10 +475,10 @@
 <!-- FINAL CTA -->
 <section class="pro-cta-section">
   <div class="pro-cta-section__inner">
-    <h2>Tell us what you need</h2>
-    <p>Describe your challenge. We'll come back within 48 hours with a proposal tailored to your business.</p>
+    <h2 data-i18n="pro.final_h2">Tell us what you need</h2>
+    <p data-i18n="pro.final_p">Describe your challenge. We'll come back within 48 hours with a proposal tailored to your business.</p>
     <a href="mailto:contact@getprio.io?subject=Prio%20Pro%20—%20Let's%20talk" class="pro-hero__cta"
-       data-umami-event="cta-click" data-umami-event-cta="pro-bottom-contact">
+       data-umami-event="cta-click" data-umami-event-cta="pro-bottom-contact" data-i18n="pro.final_cta">
       Contact us →
     </a>
     <p class="pro-cta-section__email"><a href="mailto:contact@getprio.io">contact@getprio.io</a></p>
@@ -477,7 +490,7 @@
       <div class="footer__inner">
         <div class="footer__brand">
           <a href="/" class="nav__logo">prio<span>.</span></a>
-          <p>Property alerts ahead of the platforms. Live in Spain, expanding.</p>
+          <p data-i18n="home.footer_tagline">Property alerts ahead of the platforms. Live in Spain, expanding.</p>
         </div>
         <div class="footer__col">
           <h4>Markets</h4>

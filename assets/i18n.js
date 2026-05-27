@@ -127,6 +127,11 @@
     const path = window.location.pathname;
     if (path.includes('/go')) return 'go';
     if (path.includes('/pricing')) return 'pricing';
+    if (path.includes('/about')) return 'about';
+    if (path.includes('/blog')) return 'blog';
+    if (path.includes('/pro')) return 'pro';
+    if (path === '/es/' || path === '/es') return 'spain';
+    if (path.startsWith('/es/')) return 'city';
     return 'home';
   }
 

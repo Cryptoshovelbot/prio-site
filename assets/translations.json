@@ -1,25 +1,66 @@
 {
   "meta": {
-    "version": "1.0.0",
-    "pages": ["home", "go", "pricing"],
-    "languages": ["en", "fr", "es"],
+    "version": "1.1.0",
+    "pages": [
+      "home",
+      "go",
+      "pricing",
+      "spain_landing",
+      "about",
+      "blog_index",
+      "pro"
+    ],
+    "languages": [
+      "en",
+      "fr",
+      "es"
+    ],
     "notes": "Canonical edge claim: 3-10 min. NEVER '30 minutes'. Floor promise per language hardcoded below."
   },
-
   "nav": {
-    "spain": { "en": "Spain", "fr": "Espagne", "es": "España" },
-    "pricing": { "en": "Pricing", "fr": "Tarifs", "es": "Precios" },
-    "blog": { "en": "Blog", "fr": "Blog", "es": "Blog" },
-    "for_pros": { "en": "For Pros", "fr": "Pour les Pros", "es": "Para Profesionales" },
-    "about": { "en": "About", "fr": "À propos", "es": "Acerca de" },
-    "get_alerts": { "en": "Get Alerts →", "fr": "Recevoir les alertes →", "es": "Recibir alertas →" },
-    "for_agents": { "en": "For Agents", "fr": "Pour les Agents", "es": "Para Agentes" }
+    "spain": {
+      "en": "Spain",
+      "fr": "Espagne",
+      "es": "España"
+    },
+    "pricing": {
+      "en": "Pricing",
+      "fr": "Tarifs",
+      "es": "Precios"
+    },
+    "blog": {
+      "en": "Blog",
+      "fr": "Blog",
+      "es": "Blog"
+    },
+    "for_pros": {
+      "en": "For Pros",
+      "fr": "Pour les Pros",
+      "es": "Para Profesionales"
+    },
+    "about": {
+      "en": "About",
+      "fr": "À propos",
+      "es": "Acerca de"
+    },
+    "get_alerts": {
+      "en": "Get Alerts →",
+      "fr": "Recevoir les alertes →",
+      "es": "Recibir alertas →"
+    },
+    "for_agents": {
+      "en": "For Agents",
+      "fr": "Pour les Agents",
+      "es": "Para Agentes"
+    }
   },
-
   "lang_picker": {
-    "label": { "en": "EN", "fr": "FR", "es": "ES" }
+    "label": {
+      "en": "EN",
+      "fr": "FR",
+      "es": "ES"
+    }
   },
-
   "home": {
     "badge": {
       "en": "Live in Spain · More countries coming soon",
@@ -66,7 +107,6 @@
       "fr": "3 plateformes · Toute l'Espagne",
       "es": "3 plataformas · Toda España"
     },
-
     "timeline_published": {
       "en": "Listing published",
       "fr": "Annonce publiée",
@@ -92,7 +132,6 @@
       "fr": "400 personnes appellent. Trop tard.",
       "es": "400 personas llaman. Demasiado tarde."
     },
-
     "faster_h2": {
       "en": "Faster than push alerts.",
       "fr": "Plus rapide que les notifications push.",
@@ -108,7 +147,6 @@
       "fr": "Pendant que 400 personnes reçoivent la notification et se précipitent pour appeler, vous avez déjà réservé la visite.",
       "es": "Mientras 400 personas reciben la notificación y se pelean por llamar, tú ya has reservado la visita."
     },
-
     "problem_label": {
       "en": "The Problem",
       "fr": "Le Problème",
@@ -134,7 +172,6 @@
       "fr": "Prio élimine ce décalage sur toutes les grandes plateformes immobilières en Espagne.",
       "es": "Prio elimina esa brecha en todas las grandes plataformas inmobiliarias de España."
     },
-
     "how_label": {
       "en": "How It Works",
       "fr": "Comment ça marche",
@@ -175,7 +212,6 @@
       "fr": "Photo, prix, surface, localisation, lien direct. Alertes illimitées pendant votre essai gratuit de 7 jours, des minutes avant tout le monde.",
       "es": "Foto, precio, superficie, ubicación, enlace directo. Alertas ilimitadas durante tu prueba gratis de 7 días, minutos antes que nadie."
     },
-
     "pricing_label": {
       "en": "Pricing",
       "fr": "Tarifs",
@@ -186,7 +222,6 @@
       "fr": "Essayez Prio gratuitement pendant 7 jours. Sans carte bancaire.",
       "es": "Prueba Prio gratis durante 7 días. Sin tarjeta de crédito."
     },
-
     "speed_label": {
       "en": "The Speed Advantage",
       "fr": "L'avantage vitesse",
@@ -217,7 +252,6 @@
       "fr": "Ces quelques minutes d'avance font la différence entre décrocher une visite et entendre « désolé, c'est déjà pris ».",
       "es": "Esos minutos de ventaja marcan la diferencia entre conseguir una visita y escuchar «lo siento, ya está cogido»."
     },
-
     "table_alert_speed": {
       "en": "Alert speed",
       "fr": "Vitesse d'alerte",
@@ -248,7 +282,6 @@
       "fr": "✓ 7 jours d'essai gratuit",
       "es": "✓ 7 días de prueba gratis"
     },
-
     "markets_h2": {
       "en": "Live in Spain. Expanding across Europe.",
       "fr": "Disponible en Espagne. Expansion en Europe.",
@@ -299,13 +332,11 @@
       "fr": "Contactez-nous",
       "es": "Contáctanos"
     },
-
     "testimonials_h2": {
       "en": "Trusted by apartment hunters across Spain",
       "fr": "Utilisé par des chercheurs d'appartement dans toute l'Espagne",
       "es": "Usado por buscadores de piso en toda España"
     },
-
     "final_cta_h2": {
       "en": "Stop losing apartments.",
       "fr": "Arrêtez de perdre des appartements.",
@@ -316,23 +347,33 @@
       "fr": "Essai gratuit 7 jours. Sans carte bancaire. Aucune app à installer.",
       "es": "Prueba gratis 7 días. Sin tarjeta. Sin app que instalar."
     },
-
     "footer_tagline": {
       "en": "Property alerts ahead of the platforms. Live in Spain, expanding.",
       "fr": "Alertes immobilières avant les plateformes. Actif en Espagne, en expansion.",
       "es": "Alertas inmobiliarias antes que las plataformas. Activo en España, en expansión."
     }
   },
-
   "plans": {
-    "free_name": { "en": "Free", "fr": "Gratuit", "es": "Gratis" },
+    "free_name": {
+      "en": "Free",
+      "fr": "Gratuit",
+      "es": "Gratis"
+    },
     "free_tagline": {
       "en": "See the speed difference",
       "fr": "Constatez la différence de vitesse",
       "es": "Comprueba la diferencia de velocidad"
     },
-    "free_price": { "en": "€0 forever", "fr": "€0 pour toujours", "es": "€0 para siempre" },
-    "free_any_platform": { "en": "Any platform", "fr": "Toute plateforme", "es": "Cualquier plataforma" },
+    "free_price": {
+      "en": "€0 forever",
+      "fr": "€0 pour toujours",
+      "es": "€0 para siempre"
+    },
+    "free_any_platform": {
+      "en": "Any platform",
+      "fr": "Toute plateforme",
+      "es": "Cualquier plataforma"
+    },
     "free_f1": {
       "en": "4 priority alerts / day",
       "fr": "4 alertes prioritaires / jour",
@@ -358,14 +399,21 @@
       "fr": "Commencer",
       "es": "Empezar"
     },
-
-    "roommate_name": { "en": "Roommate", "fr": "Coloc", "es": "Compañero" },
+    "roommate_name": {
+      "en": "Roommate",
+      "fr": "Coloc",
+      "es": "Compañero"
+    },
     "roommate_tagline": {
       "en": "Finding your room",
       "fr": "Trouvez votre chambre",
       "es": "Encuentra tu habitación"
     },
-    "roommate_price": { "en": "€4.95", "fr": "€4,95", "es": "€4,95" },
+    "roommate_price": {
+      "en": "€4.95",
+      "fr": "€4,95",
+      "es": "€4,95"
+    },
     "roommate_period_home": {
       "en": "/month",
       "fr": "/mois",
@@ -386,7 +434,11 @@
       "fr": "~4 semaines de recherche en moy.",
       "es": "~4 semanas de búsqueda de media"
     },
-    "roommate_platform": { "en": "Badi only", "fr": "Badi uniquement", "es": "Solo Badi" },
+    "roommate_platform": {
+      "en": "Badi only",
+      "fr": "Badi uniquement",
+      "es": "Solo Badi"
+    },
     "roommate_f1": {
       "en": "Unlimited priority alerts",
       "fr": "Alertes prioritaires illimitées",
@@ -402,16 +454,31 @@
       "fr": "Des minutes d'avance sur tout le monde",
       "es": "Minutos de ventaja sobre todos"
     },
-
-    "renter_name": { "en": "Renter", "fr": "Locataire", "es": "Inquilino" },
-    "renter_badge": { "en": "MOST POPULAR", "fr": "LE PLUS POPULAIRE", "es": "EL MÁS POPULAR" },
+    "renter_name": {
+      "en": "Renter",
+      "fr": "Locataire",
+      "es": "Inquilino"
+    },
+    "renter_badge": {
+      "en": "MOST POPULAR",
+      "fr": "LE PLUS POPULAIRE",
+      "es": "EL MÁS POPULAR"
+    },
     "renter_tagline": {
       "en": "Your next apartment",
       "fr": "Votre prochain appartement",
       "es": "Tu próximo piso"
     },
-    "renter_price": { "en": "€19.90", "fr": "€19,90", "es": "€19,90" },
-    "renter_period": { "en": "/mo", "fr": "/mois", "es": "/mes" },
+    "renter_price": {
+      "en": "€19.90",
+      "fr": "€19,90",
+      "es": "€19,90"
+    },
+    "renter_period": {
+      "en": "/mo",
+      "fr": "/mois",
+      "es": "/mes"
+    },
     "renter_sub": {
       "en": "after 7-day free trial",
       "fr": "après 7 jours d'essai gratuit",
@@ -422,7 +489,11 @@
       "fr": "résiliable à tout moment",
       "es": "cancela cuando quieras"
     },
-    "renter_platform": { "en": "Rental listings", "fr": "Annonces de location", "es": "Anuncios de alquiler" },
+    "renter_platform": {
+      "en": "Rental listings",
+      "fr": "Annonces de location",
+      "es": "Anuncios de alquiler"
+    },
     "renter_f1": {
       "en": "Unlimited priority alerts",
       "fr": "Alertes prioritaires illimitées",
@@ -433,15 +504,26 @@
       "fr": "3 recherches par plateforme",
       "es": "3 búsquedas por plataforma"
     },
-
-    "buyer_name": { "en": "Buyer", "fr": "Acheteur", "es": "Comprador" },
+    "buyer_name": {
+      "en": "Buyer",
+      "fr": "Acheteur",
+      "es": "Comprador"
+    },
     "buyer_tagline": {
       "en": "Your dream property",
       "fr": "Votre bien de rêve",
       "es": "Tu inmueble soñado"
     },
-    "buyer_price": { "en": "€49.90", "fr": "€49,90", "es": "€49,90" },
-    "buyer_period": { "en": "/mo", "fr": "/mois", "es": "/mes" },
+    "buyer_price": {
+      "en": "€49.90",
+      "fr": "€49,90",
+      "es": "€49,90"
+    },
+    "buyer_period": {
+      "en": "/mo",
+      "fr": "/mois",
+      "es": "/mes"
+    },
     "buyer_sub": {
       "en": "after 7-day free trial",
       "fr": "après 7 jours d'essai gratuit",
@@ -452,7 +534,11 @@
       "fr": "résiliable à tout moment",
       "es": "cancela cuando quieras"
     },
-    "buyer_platform": { "en": "Purchase listings", "fr": "Annonces de vente", "es": "Anuncios de venta" },
+    "buyer_platform": {
+      "en": "Purchase listings",
+      "fr": "Annonces de vente",
+      "es": "Anuncios de venta"
+    },
     "buyer_f1": {
       "en": "Unlimited priority alerts",
       "fr": "Alertes prioritaires illimitées",
@@ -468,7 +554,6 @@
       "fr": "Support prioritaire",
       "es": "Soporte prioritario"
     },
-
     "trial_footer": {
       "en": "All plans include a 7-day free trial. No credit card required.",
       "fr": "Tous les plans incluent 7 jours d'essai gratuit. Sans carte bancaire.",
@@ -485,7 +570,6 @@
       "es": "Prueba gratis"
     }
   },
-
   "go": {
     "tag": {
       "en": "DECISIVE ADVANTAGE",
@@ -593,17 +677,22 @@
       "es": "Prio detecta nuevos anuncios antes que las notificaciones de las plataformas. La velocidad de detección varía según el tipo de anuncio y las condiciones."
     }
   },
-
   "pricing_page": {
-    "label": { "en": "Pricing", "fr": "Tarifs", "es": "Precios" },
+    "label": {
+      "en": "Pricing",
+      "fr": "Tarifs",
+      "es": "Precios"
+    },
     "h1": {
       "en": "Start free. Upgrade when you feel the difference.",
       "fr": "Commencez gratuitement. Passez à la vitesse supérieure quand vous sentez la différence.",
       "es": "Empieza gratis. Mejora tu plan cuando notes la diferencia."
     },
-
-    "faq_title": { "en": "Pricing Questions", "fr": "Questions sur les tarifs", "es": "Preguntas sobre precios" },
-
+    "faq_title": {
+      "en": "Pricing Questions",
+      "fr": "Questions sur les tarifs",
+      "es": "Preguntas sobre precios"
+    },
     "faq_roommate_q": {
       "en": "Why is Roommate limited to Badi?",
       "fr": "Pourquoi le plan Coloc est-il limité à Badi ?",
@@ -664,7 +753,6 @@
       "fr": "Paiement par carte via Stripe. Vous vous abonnez directement via le bot Telegram — pas de compte séparé nécessaire. Les plans B2B peuvent aussi être payés par virement avec facturation.",
       "es": "Pago con tarjeta vía Stripe. Te suscribes directamente a través del bot de Telegram — sin necesidad de crear cuenta. Los planes B2B también se pueden pagar por transferencia con facturación."
     },
-
     "b2b_label": {
       "en": "For Professionals",
       "fr": "Pour les Professionnels",
@@ -680,42 +768,61 @@
       "fr": "Voyez les annonces de particuliers dès leur mise en ligne. Contactez le propriétaire avant tout autre agent. La pige immobilière moderne — plus rapide que n'importe quel outil historique.",
       "es": "Ve los anuncios de particulares en el momento en que se publican. Contacta al propietario antes que cualquier otro agente. La captación inmobiliaria moderna — más rápida que cualquier herramienta tradicional."
     },
-
-    "b2b_indie_name": { "en": "Independent", "fr": "Indépendant", "es": "Independiente" },
+    "b2b_indie_name": {
+      "en": "Independent",
+      "fr": "Indépendant",
+      "es": "Independiente"
+    },
     "b2b_indie_desc": {
       "en": "Solo property hunter, real estate dealer, agent",
       "fr": "Chasseur immobilier indépendant, agent, négociateur",
       "es": "Cazador de pisos independiente, agente, negociador"
     },
-    "b2b_indie_price": { "en": "€170", "fr": "€170", "es": "€170" },
+    "b2b_indie_price": {
+      "en": "€170",
+      "fr": "€170",
+      "es": "€170"
+    },
     "b2b_indie_period": {
       "en": "Monthly · No commitment",
       "fr": "Mensuel · Sans engagement",
       "es": "Mensual · Sin compromiso"
     },
-
-    "b2b_team_name": { "en": "Team", "fr": "Équipe", "es": "Equipo" },
+    "b2b_team_name": {
+      "en": "Team",
+      "fr": "Équipe",
+      "es": "Equipo"
+    },
     "b2b_team_desc": {
       "en": "Relocation agencies, small real estate teams",
       "fr": "Agences de relocation, petites équipes immobilières",
       "es": "Agencias de relocation, pequeños equipos inmobiliarios"
     },
-    "b2b_team_price": { "en": "€590", "fr": "€590", "es": "€590" },
-
-    "b2b_custom_name": { "en": "Custom", "fr": "Sur mesure", "es": "A medida" },
+    "b2b_team_price": {
+      "en": "€590",
+      "fr": "€590",
+      "es": "€590"
+    },
+    "b2b_custom_name": {
+      "en": "Custom",
+      "fr": "Sur mesure",
+      "es": "A medida"
+    },
     "b2b_custom_desc": {
       "en": "High volume, API, integration",
       "fr": "Haut volume, API, intégration",
       "es": "Alto volumen, API, integración"
     },
-    "b2b_custom_price": { "en": "Let's talk", "fr": "Parlons-en", "es": "Hablemos" },
-
+    "b2b_custom_price": {
+      "en": "Let's talk",
+      "fr": "Parlons-en",
+      "es": "Hablemos"
+    },
     "b2b_vat": {
       "en": "Prices for professionals are shown excluding VAT.",
       "fr": "Prix professionnels affichés hors TVA.",
       "es": "Precios para profesionales mostrados sin IVA."
     },
-
     "usecase_h2": {
       "en": "Built for professionals who win on speed.",
       "fr": "Conçu pour les professionnels qui gagnent grâce à la vitesse.",
@@ -741,7 +848,6 @@
       "fr": "Votre client vous fait confiance pour trouver son prochain logement. Prio vous alerte dès qu'une annonce correspondante est mise en ligne → vous réservez la visite en quelques jours, pas en semaines → votre client signe le bail pendant que les autres rafraîchissent encore Idealista.",
       "es": "Tu cliente confía en ti para encontrar su próximo hogar. Prio te alerta en cuanto un anuncio coincidente se publica → reservas la visita en días, no en semanas → tu cliente firma el contrato mientras los demás siguen refrescando Idealista."
     },
-
     "ready_h2": {
       "en": "Ready to be first?",
       "fr": "Prêt à être le premier ?",
@@ -758,10 +864,12 @@
       "es": "Contacto B2B"
     }
   },
-
   "faq_home": {
-    "title": { "en": "Questions", "fr": "Questions", "es": "Preguntas" },
-
+    "title": {
+      "en": "Questions",
+      "fr": "Questions",
+      "es": "Preguntas"
+    },
     "q_roommate": {
       "en": "Why is the Roommate plan limited to Badi?",
       "fr": "Pourquoi le plan Coloc est-il limité à Badi ?",
@@ -893,7 +1001,6 @@
       "es": "Prio cubre toda España a través de Idealista, Fotocasa y Badi. Las principales ciudades incluyen Barcelona, Madrid, Valencia, Sevilla, Bilbao, Málaga, Alicante, Granada, Zaragoza, Palma de Mallorca, San Sebastián y Las Palmas."
     }
   },
-
   "seo": {
     "home_title": {
       "en": "Prio — Idealista, Fotocasa & Badi Alerts Before Everyone Else",
@@ -924,6 +1031,506 @@
       "en": "Property alerts ahead of the platforms in Spain. Plans for renters from €19.90/mo, professionals from €170/mo. No commitment.",
       "fr": "Alertes immobilières avant les plateformes en Espagne. Plans locataires dès 19,90 €/mois, professionnels dès 170 €/mois. Sans engagement.",
       "es": "Alertas inmobiliarias antes que las plataformas en España. Planes para inquilinos desde 19,90 €/mes, profesionales desde 170 €/mes. Sin compromiso."
+    },
+    "spain_title": {
+      "en": "Spain Apartment Alerts: 12 Cities, 3 Platforms, <60s",
+      "fr": "Alertes Appartements Espagne : 12 Villes, 3 Plateformes, <60s",
+      "es": "Alertas de Pisos España: 12 Ciudades, 3 Plataformas, <60s"
+    },
+    "spain_description": {
+      "en": "Prio sends you Telegram alerts from Idealista, Fotocasa & Badi under 60 seconds. Barcelona, Madrid, Valencia, Málaga, Sevilla + 7 more cities. 7-day free trial.",
+      "fr": "Prio vous envoie des alertes Telegram depuis Idealista, Fotocasa & Badi en moins de 60 secondes. Barcelone, Madrid, Valence, Málaga, Séville + 7 autres villes. Essai gratuit 7 jours.",
+      "es": "Prio te envía alertas de Telegram desde Idealista, Fotocasa y Badi en menos de 60 segundos. Barcelona, Madrid, Valencia, Málaga, Sevilla + 7 ciudades más. Prueba gratis 7 días."
+    },
+    "about_title": {
+      "en": "About Prio — Apartment Alerts Before Everyone",
+      "fr": "À propos de Prio — Alertes Appartements Avant Tout le Monde",
+      "es": "Sobre Prio — Alertas de Pisos Antes que Nadie"
+    },
+    "about_description": {
+      "en": "Prio detects new listings on Idealista, Fotocasa, and Badi before the platforms notify you. 3 to 10 minutes ahead, every time. Built for Spain.",
+      "fr": "Prio détecte les nouvelles annonces sur Idealista, Fotocasa et Badi avant que les plateformes ne vous notifient. 3 à 10 minutes d'avance, à chaque fois. Conçu pour l'Espagne.",
+      "es": "Prio detecta nuevos anuncios en Idealista, Fotocasa y Badi antes de que las plataformas te notifiquen. De 3 a 10 minutos de ventaja, cada vez. Creado para España."
+    },
+    "blog_title": {
+      "en": "Prio Blog — Apartment Hunting Tips, Market Reports & Guides",
+      "fr": "Blog Prio — Conseils Recherche Appartement, Rapports de Marché & Guides",
+      "es": "Blog Prio — Consejos para Buscar Piso, Informes de Mercado y Guías"
+    },
+    "blog_description": {
+      "en": "Practical guides for finding apartments in Spain and Europe. Market reports, scam prevention, neighborhood guides, and rental market insights from Prio.",
+      "fr": "Guides pratiques pour trouver un appartement en Espagne et en Europe. Rapports de marché, prévention des arnaques, guides de quartiers et analyses du marché locatif par Prio.",
+      "es": "Guías prácticas para encontrar piso en España y Europa. Informes de mercado, prevención de estafas, guías de barrios y análisis del mercado de alquiler por Prio."
+    },
+    "pro_title": {
+      "en": "Prio for Pros — Real Estate Tech Solutions Spain",
+      "es": "Prio para Profesionales — Soluciones Tecnológicas Inmobiliarias España"
+    },
+    "pro_description": {
+      "en": "Custom real estate technology for professionals in Spain. Market data, automated prospecting, competitive monitoring, API access. Tell us your problem.",
+      "es": "Tecnología inmobiliaria personalizada para profesionales en España. Datos de mercado, prospección automatizada, monitorización competitiva, acceso API. Cuéntanos tu problema."
+    }
+  },
+  "spain_landing": {
+    "label": {
+      "en": "🇪🇸 Spain",
+      "fr": "🇪🇸 Espagne",
+      "es": "🇪🇸 España"
+    },
+    "h1": {
+      "en": "Alerts from <span style=\"color: var(--color-primary);\">Idealista, Fotocasa & Badi</span> before everyone else.",
+      "fr": "Alertes <span style=\"color: var(--color-primary);\">Idealista, Fotocasa & Badi</span> avant tout le monde.",
+      "es": "Alertas de <span style=\"color: var(--color-primary);\">Idealista, Fotocasa y Badi</span> antes que nadie."
+    },
+    "subtitle": {
+      "en": "Prio monitors all three major Spanish platforms and sends you a Telegram alert ahead of the platforms when a new listing appears. Live in Barcelona, Madrid, Valencia, and 9+ more cities.",
+      "fr": "Prio surveille les trois principales plateformes espagnoles et vous envoie une alerte Telegram avant les plateformes dès qu'une nouvelle annonce apparaît. Actif à Barcelone, Madrid, Valence et dans 9+ autres villes.",
+      "es": "Prio monitoriza las tres principales plataformas españolas y te envía una alerta de Telegram antes que las plataformas cuando aparece un nuevo anuncio. Activo en Barcelona, Madrid, Valencia y 9+ ciudades más."
+    },
+    "cta_trial": {
+      "en": "Start 7-day free trial →",
+      "fr": "Essai gratuit 7 jours →",
+      "es": "Prueba gratis 7 días →"
+    },
+    "cta_pricing": {
+      "en": "See Pricing",
+      "fr": "Voir les tarifs",
+      "es": "Ver precios"
+    },
+    "cities_label": {
+      "en": "Cities",
+      "fr": "Villes",
+      "es": "Ciudades"
+    },
+    "cities_h2": {
+      "en": "Available across Spain",
+      "fr": "Disponible dans toute l'Espagne",
+      "es": "Disponible en toda España"
+    }
+  },
+  "about": {
+    "h1": {
+      "en": "We moved to Barcelona as a couple.<br><span>We lost every apartment we wanted.</span>",
+      "fr": "Nous avons emménagé à Barcelone en couple.<br><span>Nous avons perdu chaque appartement que nous voulions.</span>",
+      "es": "Nos mudamos a Barcelona en pareja.<br><span>Perdimos cada piso que nos gustaba.</span>"
+    },
+    "story_p1": {
+      "en": "We arrived in Barcelona with a plan: find a nice apartment, settle in, start our new life. What we didn't plan for was the <strong>50 other people</strong> who wanted the same apartment.",
+      "fr": "Nous sommes arrivés à Barcelone avec un plan : trouver un bel appartement, nous installer, commencer notre nouvelle vie. Ce que nous n'avions pas prévu, c'étaient les <strong>50 autres personnes</strong> qui voulaient le même appartement.",
+      "es": "Llegamos a Barcelona con un plan: encontrar un buen piso, instalarnos, empezar nuestra nueva vida. Lo que no habíamos previsto eran las <strong>50 otras personas</strong> que querían el mismo piso."
+    },
+    "story_p2": {
+      "en": "Every time we found a place we loved on Idealista — great location, fair price, nice photos — we'd call immediately. \"Sorry, we already have 30 visits scheduled.\" We'd show up to viewings where the line went down the stairs. We'd send our documents within hours and hear nothing back.",
+      "fr": "Chaque fois que nous trouvions un appartement qui nous plaisait sur Idealista — bon emplacement, prix correct, belles photos — nous appelions immédiatement. « Désolé, nous avons déjà 30 visites programmées. » Nous allions à des visites où la file descendait les escaliers. Nous envoyions nos documents en quelques heures et n'avions jamais de réponse.",
+      "es": "Cada vez que encontrábamos un piso que nos gustaba en Idealista — buena ubicación, precio justo, buenas fotos — llamábamos inmediatamente. «Lo siento, ya tenemos 30 visitas programadas.» Íbamos a visitas donde la cola bajaba por las escaleras. Enviábamos nuestros documentos en horas y nunca recibíamos respuesta."
+    },
+    "story_highlight": {
+      "en": "We weren't too slow. We just didn't know that Idealista's push notifications arrive 3 to 10 minutes after a listing is actually published. In competitive markets, that's enough for dozens of people to call before you.",
+      "fr": "Nous n'étions pas trop lents. Nous ne savions simplement pas que les notifications push d'Idealista arrivent 3 à 10 minutes après la publication réelle d'une annonce. Sur les marchés compétitifs, c'est suffisant pour que des dizaines de personnes appellent avant vous.",
+      "es": "No éramos demasiado lentos. Simplemente no sabíamos que las notificaciones push de Idealista llegan de 3 a 10 minutos después de que un anuncio se publica realmente. En mercados competitivos, eso basta para que decenas de personas llamen antes que tú."
+    },
+    "story_p3": {
+      "en": "One of us is a developer. So instead of refreshing Idealista for the 200th time, we built something. A script that checks for new listings every few seconds and sends a Telegram alert the moment something matching our criteria appears.",
+      "fr": "L'un de nous est développeur. Alors au lieu de rafraîchir Idealista pour la 200ème fois, nous avons construit quelque chose. Un script qui vérifie les nouvelles annonces toutes les quelques secondes et envoie une alerte Telegram dès qu'un bien correspondant à nos critères apparaît.",
+      "es": "Uno de nosotros es desarrollador. Así que en vez de refrescar Idealista por 200ª vez, construimos algo. Un script que busca nuevos anuncios cada pocos segundos y envía una alerta de Telegram en cuanto aparece algo que coincide con nuestros criterios."
+    },
+    "story_p4": {
+      "en": "<strong>We found our apartment in 3 days.</strong>",
+      "fr": "<strong>Nous avons trouvé notre appartement en 3 jours.</strong>",
+      "es": "<strong>Encontramos nuestro piso en 3 días.</strong>"
+    },
+    "story_p5": {
+      "en": "Then friends asked for it. Then friends of friends. Then strangers in expat Facebook groups. We realized this wasn't just our problem — it was everyone's problem. In Barcelona, Madrid, Paris, London, Dubai — anywhere the rental market is competitive, speed is the only advantage that matters.",
+      "fr": "Puis des amis nous l'ont demandé. Puis des amis d'amis. Puis des inconnus dans des groupes Facebook d'expatriés. Nous avons réalisé que ce n'était pas seulement notre problème — c'était celui de tout le monde. À Barcelone, Madrid, Paris, Londres, Dubaï — partout où le marché locatif est compétitif, la rapidité est le seul avantage qui compte.",
+      "es": "Luego nos lo pidieron amigos. Luego amigos de amigos. Luego desconocidos en grupos de Facebook de expatriados. Nos dimos cuenta de que no era solo nuestro problema — era el de todos. En Barcelona, Madrid, París, Londres, Dubái — en cualquier lugar donde el mercado de alquiler es competitivo, la rapidez es la única ventaja que importa."
+    },
+    "story_p6": {
+      "en": "So we turned our script into Prio.",
+      "fr": "Alors nous avons transformé notre script en Prio.",
+      "es": "Así que convertimos nuestro script en Prio."
+    },
+    "timeline_h2": {
+      "en": "The journey so far",
+      "fr": "Le chemin parcouru",
+      "es": "El camino hasta ahora"
+    },
+    "timeline1_date": {
+      "en": "Early 2025",
+      "fr": "Début 2025",
+      "es": "Principios de 2025"
+    },
+    "timeline1_text": {
+      "en": "<strong>Moved to Barcelona.</strong> Started apartment hunting on Idealista. Discovered the hard way that being \"fast\" wasn't fast enough.",
+      "fr": "<strong>Emménagement à Barcelone.</strong> Début de la recherche d'appartement sur Idealista. Découverte à nos dépens qu'être « rapide » ne suffisait pas.",
+      "es": "<strong>Mudanza a Barcelona.</strong> Empezamos a buscar piso en Idealista. Descubrimos por las malas que ser «rápidos» no era suficiente."
+    },
+    "timeline2_date": {
+      "en": "Mid 2025",
+      "fr": "Mi-2025",
+      "es": "Mediados de 2025"
+    },
+    "timeline2_text": {
+      "en": "<strong>Built the first script.</strong> A Python script checking Idealista every few seconds. Found our apartment in 3 days. Friends started asking for access.",
+      "fr": "<strong>Premier script.</strong> Un script Python vérifiant Idealista toutes les quelques secondes. Appartement trouvé en 3 jours. Des amis ont commencé à demander l'accès.",
+      "es": "<strong>Primer script.</strong> Un script en Python que revisaba Idealista cada pocos segundos. Encontramos piso en 3 días. Los amigos empezaron a pedir acceso."
+    },
+    "timeline3_date": {
+      "en": "Late 2025",
+      "fr": "Fin 2025",
+      "es": "Finales de 2025"
+    },
+    "timeline3_text": {
+      "en": "<strong>Added Fotocasa and Badi.</strong> One alert stream for all platforms. 22 beta testers in Barcelona, all finding apartments faster than they thought possible.",
+      "fr": "<strong>Ajout de Fotocasa et Badi.</strong> Un flux d'alertes pour toutes les plateformes. 22 bêta-testeurs à Barcelone, tous trouvant un appartement plus vite qu'ils ne le pensaient possible.",
+      "es": "<strong>Añadimos Fotocasa y Badi.</strong> Un flujo de alertas para todas las plataformas. 22 beta testers en Barcelona, todos encontrando piso más rápido de lo que creían posible."
+    },
+    "timeline4_date": {
+      "en": "March 2026",
+      "fr": "Mars 2026",
+      "es": "Marzo 2026"
+    },
+    "timeline4_text": {
+      "en": "<strong>Live in Spain on 3 major platforms (Idealista, Fotocasa, Badi).</strong> Active research and validation of coverage across other European markets. 46,000+ alerts sent to date.",
+      "fr": "<strong>Actif en Espagne sur 3 grandes plateformes (Idealista, Fotocasa, Badi).</strong> Recherche active et validation de la couverture sur d'autres marchés européens. 46 000+ alertes envoyées à ce jour.",
+      "es": "<strong>Activo en España en 3 grandes plataformas (Idealista, Fotocasa, Badi).</strong> Investigación activa y validación de cobertura en otros mercados europeos. 46.000+ alertas enviadas hasta la fecha."
+    },
+    "timeline5_date": {
+      "en": "What's next",
+      "fr": "La suite",
+      "es": "Próximos pasos"
+    },
+    "timeline5_text": {
+      "en": "Expanding to France and Italy. Adding new countries every month.",
+      "fr": "Expansion en France et en Italie. Ajout de nouveaux pays chaque mois.",
+      "es": "Expansión a Francia e Italia. Añadiendo nuevos países cada mes."
+    },
+    "values_h2": {
+      "en": "What we believe",
+      "fr": "Ce en quoi nous croyons",
+      "es": "En lo que creemos"
+    },
+    "value1_h3": {
+      "en": "Speed is the only moat",
+      "fr": "La rapidité est le seul avantage",
+      "es": "La rapidez es la única ventaja"
+    },
+    "value1_p": {
+      "en": "In a competitive rental market, the person who knows first wins. Everything we build is optimized for speed — seconds, not minutes.",
+      "fr": "Sur un marché locatif compétitif, celui qui sait en premier gagne. Tout ce que nous construisons est optimisé pour la vitesse — des secondes, pas des minutes.",
+      "es": "En un mercado de alquiler competitivo, quien sabe primero gana. Todo lo que construimos está optimizado para la velocidad — segundos, no minutos."
+    },
+    "value2_h3": {
+      "en": "One alert, not three apps",
+      "fr": "Une alerte, pas trois apps",
+      "es": "Una alerta, no tres apps"
+    },
+    "value2_p": {
+      "en": "You shouldn't need to check Idealista, Fotocasa, and Badi separately. One unified stream across every platform in your city.",
+      "fr": "Vous ne devriez pas avoir besoin de vérifier Idealista, Fotocasa et Badi séparément. Un flux unifié sur toutes les plateformes de votre ville.",
+      "es": "No deberías tener que revisar Idealista, Fotocasa y Badi por separado. Un flujo unificado en todas las plataformas de tu ciudad."
+    },
+    "value3_h3": {
+      "en": "Fair pricing, fair access",
+      "fr": "Prix justes, accès juste",
+      "es": "Precios justos, acceso justo"
+    },
+    "value3_p": {
+      "en": "Every plan starts with a 7-day free trial because you deserve to see the difference before paying. No credit card required.",
+      "fr": "Chaque plan commence par un essai gratuit de 7 jours parce que vous méritez de voir la différence avant de payer. Sans carte bancaire.",
+      "es": "Cada plan empieza con una prueba gratis de 7 días porque mereces ver la diferencia antes de pagar. Sin tarjeta de crédito."
+    },
+    "value4_h3": {
+      "en": "Built by users, for users",
+      "fr": "Construit par des utilisateurs, pour des utilisateurs",
+      "es": "Creado por usuarios, para usuarios"
+    },
+    "value4_p": {
+      "en": "We use Prio ourselves. Every feature exists because we needed it. No bloat, no features nobody asked for.",
+      "fr": "Nous utilisons Prio nous-mêmes. Chaque fonctionnalité existe parce que nous en avions besoin. Pas de superflu, pas de fonctionnalités que personne n'a demandées.",
+      "es": "Usamos Prio nosotros mismos. Cada función existe porque la necesitábamos. Sin relleno, sin funciones que nadie pidió."
+    },
+    "numbers_h2": {
+      "en": "Prio in numbers",
+      "fr": "Prio en chiffres",
+      "es": "Prio en números"
+    },
+    "stat1_label": {
+      "en": "alerts sent",
+      "fr": "alertes envoyées",
+      "es": "alertas enviadas"
+    },
+    "stat2_label": {
+      "en": "avg alert time",
+      "fr": "temps moyen d'alerte",
+      "es": "tiempo medio de alerta"
+    },
+    "stat3_label": {
+      "en": "platforms",
+      "fr": "plateformes",
+      "es": "plataformas"
+    },
+    "stat4_label": {
+      "en": "countries",
+      "fr": "pays",
+      "es": "países"
+    },
+    "team_note": {
+      "en": "Prio is built by two people — not a VC-funded startup with 50 employees. We answer every message personally, we fix bugs the same day, and we care about this problem because we lived it. If you have questions, feedback, or just want to say hi — reach out directly.",
+      "fr": "Prio est construit par deux personnes — pas une startup financée par du capital-risque avec 50 employés. Nous répondons personnellement à chaque message, nous corrigeons les bugs le jour même, et ce problème nous tient à cœur parce que nous l'avons vécu. Si vous avez des questions, des retours, ou juste envie de dire bonjour — contactez-nous directement.",
+      "es": "Prio está hecho por dos personas — no una startup con inversión de capital riesgo y 50 empleados. Respondemos personalmente a cada mensaje, corregimos bugs el mismo día, y nos importa este problema porque lo vivimos. Si tienes preguntas, comentarios, o simplemente quieres saludar — escríbenos directamente."
+    },
+    "cta_h2": {
+      "en": "Want to talk?",
+      "fr": "Envie de discuter ?",
+      "es": "¿Quieres hablar?"
+    },
+    "cta_p": {
+      "en": "Whether you're looking for an apartment or have feedback on Prio — we'd love to hear from you.",
+      "fr": "Que vous cherchiez un appartement ou que vous ayez des retours sur Prio — nous serions ravis de vous entendre.",
+      "es": "Ya sea que busques un piso o tengas comentarios sobre Prio — nos encantaría saber de ti."
+    },
+    "cta_btn": {
+      "en": "Message us on Telegram →",
+      "fr": "Écrivez-nous sur Telegram →",
+      "es": "Escríbenos en Telegram →"
+    }
+  },
+  "blog_index": {
+    "h1": {
+      "en": "Blog",
+      "fr": "Blog",
+      "es": "Blog"
+    },
+    "subtitle": {
+      "en": "Practical guides, market reports, and scam prevention tips for apartment hunters across Europe.",
+      "fr": "Guides pratiques, rapports de marché et conseils anti-arnaques pour les chercheurs d'appartement en Europe.",
+      "es": "Guías prácticas, informes de mercado y consejos contra estafas para buscadores de piso en Europa."
+    }
+  },
+  "pro": {
+    "hero_badge": {
+      "en": "FOR REAL ESTATE PROFESSIONALS",
+      "es": "PARA PROFESIONALES INMOBILIARIOS"
+    },
+    "h1": {
+      "en": "Your real estate <span>tech department.</span>",
+      "es": "Tu departamento de <span>tecnología inmobiliaria.</span>"
+    },
+    "subtitle": {
+      "en": "Our infrastructure scans the Spanish property market in real time. We have the technology, the data, and the expertise to build <strong>exactly what you need</strong>.",
+      "es": "Nuestra infraestructura escanea el mercado inmobiliario español en tiempo real. Tenemos la tecnología, los datos y la experiencia para construir <strong>exactamente lo que necesitas</strong>."
+    },
+    "cta": {
+      "en": "Let's talk about your project →",
+      "es": "Hablemos de tu proyecto →"
+    },
+    "what_badge": {
+      "en": "WHAT WE BUILD",
+      "es": "LO QUE CONSTRUIMOS"
+    },
+    "what_h2": {
+      "en": "Data, automation, and intelligence for real estate",
+      "es": "Datos, automatización e inteligencia para el sector inmobiliario"
+    },
+    "what_sub": {
+      "en": "We don't sell a fixed product. We build bespoke tools powered by our real-time scanning of Idealista, Fotocasa, and Badi.",
+      "es": "No vendemos un producto fijo. Construimos herramientas a medida basadas en nuestro escaneo en tiempo real de Idealista, Fotocasa y Badi."
+    },
+    "card1_h3": {
+      "en": "Market data and reports",
+      "es": "Datos de mercado e informes"
+    },
+    "card1_p": {
+      "en": "Automated reports on pricing, volumes, trends, and days on market. By neighborhood, city, or custom zone. Delivered daily, weekly, or on demand in the format you choose.",
+      "es": "Informes automáticos sobre precios, volúmenes, tendencias y días en el mercado. Por barrio, ciudad o zona personalizada. Entregados diariamente, semanalmente o bajo demanda en el formato que elijas."
+    },
+    "card2_h3": {
+      "en": "Competitive monitoring",
+      "es": "Monitorización competitiva"
+    },
+    "card2_p": {
+      "en": "Track what your competitors publish, at what price, in which zones. Detect price changes, listing removals, and market movements before they become trends.",
+      "es": "Rastrea lo que publican tus competidores, a qué precio, en qué zonas. Detecta cambios de precio, eliminación de anuncios y movimientos de mercado antes de que se conviertan en tendencia."
+    },
+    "card3_h3": {
+      "en": "Automated prospecting",
+      "es": "Prospección automatizada"
+    },
+    "card3_p": {
+      "en": "Detect every new listing the moment it appears. Automated lead extraction, contact information, and scoring. Pige at scale across the entire Spanish market.",
+      "es": "Detecta cada nuevo anuncio en el momento en que aparece. Extracción automática de leads, información de contacto y puntuación. Captación a escala en todo el mercado español."
+    },
+    "card4_h3": {
+      "en": "Custom integrations",
+      "es": "Integraciones personalizadas"
+    },
+    "card4_p": {
+      "en": "Real-time API feeds, webhook notifications, CRM sync, Google Sheets export, Notion integration, custom dashboards. Whatever fits your workflow, we plug into it.",
+      "es": "Feeds API en tiempo real, notificaciones webhook, sincronización con CRM, exportación a Google Sheets, integración con Notion, dashboards personalizados. Lo que encaje en tu flujo de trabajo, nos conectamos."
+    },
+    "examples_badge": {
+      "en": "CONCRETE EXAMPLES",
+      "es": "EJEMPLOS CONCRETOS"
+    },
+    "examples_h2": {
+      "en": "Solutions we can build for you",
+      "es": "Soluciones que podemos construir para ti"
+    },
+    "examples_sub": {
+      "en": "Not hypothetical features. Real solutions we've built or can build within days.",
+      "es": "No son funciones hipotéticas. Soluciones reales que hemos construido o podemos construir en días."
+    },
+    "ex1_label": {
+      "en": "PROSPECTING",
+      "es": "PROSPECCIÓN"
+    },
+    "ex1_p": {
+      "en": "<strong>A system that alerts you the moment a new listing appears in your zone</strong>, with the owner's phone number, before any other agent sees it. You call first, you get the mandate.",
+      "es": "<strong>Un sistema que te alerta en el momento en que aparece un nuevo anuncio en tu zona</strong>, con el teléfono del propietario, antes de que cualquier otro agente lo vea. Tú llamas primero, tú consigues el mandato."
+    },
+    "ex2_label": {
+      "en": "COMPETITIVE INTEL",
+      "es": "INTELIGENCIA COMPETITIVA"
+    },
+    "ex2_p": {
+      "en": "<strong>A weekly report showing every price change in your market.</strong> Which competitors dropped their price, by how much, and when. Spot opportunities and adjust your strategy.",
+      "es": "<strong>Un informe semanal con cada cambio de precio en tu mercado.</strong> Qué competidores bajaron su precio, cuánto y cuándo. Detecta oportunidades y ajusta tu estrategia."
+    },
+    "ex3_label": {
+      "en": "MARKET ANALYSIS",
+      "es": "ANÁLISIS DE MERCADO"
+    },
+    "ex3_p": {
+      "en": "<strong>A live dashboard of rental prices by neighborhood in Barcelona</strong>, with average price per m², median time on market, and volume trends. Updated every hour, exportable to Excel.",
+      "es": "<strong>Un dashboard en vivo de precios de alquiler por barrio en Barcelona</strong>, con precio medio por m², tiempo medio en el mercado y tendencias de volumen. Actualizado cada hora, exportable a Excel."
+    },
+    "ex4_label": {
+      "en": "AUTOMATION",
+      "es": "AUTOMATIZACIÓN"
+    },
+    "ex4_p": {
+      "en": "<strong>An automatic daily export of all new sale listings under €300k in Valencia</strong>, sent to your CRM with photos, surface, location, and contact. Zero manual work.",
+      "es": "<strong>Una exportación automática diaria de todos los nuevos anuncios de venta por menos de 300.000€ en Valencia</strong>, enviada a tu CRM con fotos, superficie, ubicación y contacto. Cero trabajo manual."
+    },
+    "ex5_label": {
+      "en": "MONITORING",
+      "es": "MONITORIZACIÓN"
+    },
+    "ex5_p": {
+      "en": "<strong>Track when listings in your portfolio zone get removed or republished.</strong> Know instantly when a competitor's listing disappears or reappears at a different price.",
+      "es": "<strong>Rastrea cuándo los anuncios en tu zona se eliminan o se republican.</strong> Sabrás al instante cuándo el anuncio de un competidor desaparece o reaparece a un precio diferente."
+    },
+    "ex6_label": {
+      "en": "CUSTOM API",
+      "es": "API PERSONALIZADA"
+    },
+    "ex6_p": {
+      "en": "<strong>A REST API that returns all active listings in a given zone</strong>, with filters on price, surface, rooms, publication date. Paginated, authenticated, documented. Plug it into anything.",
+      "es": "<strong>Una API REST que devuelve todos los anuncios activos en una zona dada</strong>, con filtros por precio, superficie, habitaciones, fecha de publicación. Paginada, autenticada, documentada. Conéctala a lo que quieras."
+    },
+    "how_badge": {
+      "en": "HOW IT WORKS",
+      "es": "CÓMO FUNCIONA"
+    },
+    "how_h2": {
+      "en": "From your problem to a working solution",
+      "es": "De tu problema a una solución funcional"
+    },
+    "how_sub": {
+      "en": "No months of development. No rigid SaaS. We already have the infrastructure.",
+      "es": "Sin meses de desarrollo. Sin SaaS rígido. Ya tenemos la infraestructura."
+    },
+    "step1_h3": {
+      "en": "You tell us what you need",
+      "es": "Nos cuentas lo que necesitas"
+    },
+    "step1_p": {
+      "en": "A 30-minute call or a simple email. What are you trying to achieve? What data do you need? How do you work today?",
+      "es": "Una llamada de 30 minutos o un simple email. ¿Qué intentas conseguir? ¿Qué datos necesitas? ¿Cómo trabajas hoy?"
+    },
+    "step2_h3": {
+      "en": "We come back with a proposal",
+      "es": "Volvemos con una propuesta"
+    },
+    "step2_p": {
+      "en": "Within 48 hours. What we'll build, how it integrates with your workflow, what it costs, and when it'll be live. Clear and concrete.",
+      "es": "En 48 horas. Qué construiremos, cómo se integra con tu flujo de trabajo, cuánto cuesta y cuándo estará listo. Claro y concreto."
+    },
+    "step3_h3": {
+      "en": "We build, you use",
+      "es": "Construimos, tú usas"
+    },
+    "step3_p": {
+      "en": "Most solutions go live within 1 to 2 weeks. Not a proof of concept. A working tool that solves your problem. We iterate based on your feedback.",
+      "es": "La mayoría de soluciones están listas en 1 a 2 semanas. No un proof of concept. Una herramienta funcional que resuelve tu problema. Iteramos según tu feedback."
+    },
+    "faq_badge": {
+      "en": "FAQ",
+      "es": "FAQ"
+    },
+    "faq_h2": {
+      "en": "Common questions",
+      "es": "Preguntas frecuentes"
+    },
+    "faq1_q": {
+      "en": "How much does it cost?",
+      "es": "¿Cuánto cuesta?"
+    },
+    "faq1_a": {
+      "en": "Depends on the scope. A custom alert system might start at a few hundred euros per month. A full market intelligence platform costs more. We always give you a clear quote before building anything.",
+      "es": "Depende del alcance. Un sistema de alertas personalizado puede empezar en unos cientos de euros al mes. Una plataforma completa de inteligencia de mercado cuesta más. Siempre te damos un presupuesto claro antes de construir nada."
+    },
+    "faq2_q": {
+      "en": "Which platforms do you scan?",
+      "es": "¿Qué plataformas escaneáis?"
+    },
+    "faq2_a": {
+      "en": "Idealista, Fotocasa, and Badi across all of Spain. We scan continuously, in real time, and detect new listings within minutes of publication.",
+      "es": "Idealista, Fotocasa y Badi en toda España. Escaneamos continuamente, en tiempo real, y detectamos nuevos anuncios en minutos desde su publicación."
+    },
+    "faq3_q": {
+      "en": "How fast can you deliver?",
+      "es": "¿Cuánto tardáis en entregar?"
+    },
+    "faq3_a": {
+      "en": "1 to 2 weeks for most solutions. We're not building from scratch. We're adapting our existing scanning infrastructure to your specific needs.",
+      "es": "De 1 a 2 semanas para la mayoría de soluciones. No construimos desde cero. Adaptamos nuestra infraestructura de escaneo existente a tus necesidades específicas."
+    },
+    "faq4_q": {
+      "en": "Can I get raw data via API?",
+      "es": "¿Puedo obtener datos brutos por API?"
+    },
+    "faq4_a": {
+      "en": "Yes. REST API, webhooks, or any format you need. Authenticated, rate-limited, documented. We build the endpoints that match your use case.",
+      "es": "Sí. API REST, webhooks o cualquier formato que necesites. Autenticada, con rate-limiting, documentada. Construimos los endpoints que se adaptan a tu caso de uso."
+    },
+    "faq5_q": {
+      "en": "Is this different from your B2C product?",
+      "es": "¿Es diferente de vuestro producto B2C?"
+    },
+    "faq5_a": {
+      "en": "Completely. The B2C product is a Telegram bot for individuals searching for an apartment. What we build for professionals has nothing to do with it. Custom data, custom delivery, custom scope.",
+      "es": "Completamente. El producto B2C es un bot de Telegram para personas buscando piso. Lo que construimos para profesionales no tiene nada que ver. Datos personalizados, entrega personalizada, alcance personalizado."
+    },
+    "faq6_q": {
+      "en": "Can you expand to other countries?",
+      "es": "¿Podéis expandiros a otros países?"
+    },
+    "faq6_a": {
+      "en": "Our architecture supports multiple platforms and countries. We're focused on Spain today, but expanding coverage to a new market is feasible. Let's discuss your needs.",
+      "es": "Nuestra arquitectura soporta múltiples plataformas y países. Nos enfocamos en España hoy, pero expandir la cobertura a un nuevo mercado es viable. Hablemos de tus necesidades."
+    },
+    "final_h2": {
+      "en": "Tell us what you need",
+      "es": "Cuéntanos lo que necesitas"
+    },
+    "final_p": {
+      "en": "Describe your challenge. We'll come back within 48 hours with a proposal tailored to your business.",
+      "es": "Describe tu reto. Volveremos en 48 horas con una propuesta adaptada a tu negocio."
+    },
+    "final_cta": {
+      "en": "Contact us →",
+      "es": "Contáctanos →"
     }
   }
 }
