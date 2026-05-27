@@ -1275,3 +1275,17 @@ p {
   font-size: 13px;
   color: #6b6b80;
 }
+
+/* Language picker */
+.lang-picker a {
+  font-size: 0.75rem;
+  padding: 2px 6px;
+  border-radius: 3px;
+  text-decoration: none;
+  color: var(--text-muted, #888);
+  transition: all 0.15s;
+}
+.lang-picker a.active {
+  color: var(--text-primary, #fff);
+  background: var(--accent, #4f46e5);
+}
