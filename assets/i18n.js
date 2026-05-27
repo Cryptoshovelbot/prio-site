@@ -24,7 +24,7 @@
 
   const SUPPORTED = ['en', 'fr', 'es'];
   const STORAGE_KEY = 'prio-lang';
-  const TRANSLATIONS_PATH = '/assets/translations.json';
+  const TRANSLATIONS_PATH = '/assets/translations.json?v=2';
 
   // --- Language detection ---
   function detectLang() {
