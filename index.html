@@ -8,8 +8,10 @@
   <title>Prio — Idealista, Fotocasa & Badi Alerts Before Everyone</title>
   <meta name="description" content="Apartment alerts seconds after publication. Prio monitors Idealista, Fotocasa & Badi — Telegram notifications before the platforms. 7-day free trial.">
   <link rel="canonical" href="https://getprio.io/">
-  <link rel="alternate" hreflang="en" href="https://getprio.io/">
-  <link rel="alternate" hreflang="x-default" href="https://getprio.io/">
+  <link rel="alternate" hreflang="en" href="https://getprio.io/?lang=en" />
+  <link rel="alternate" hreflang="fr" href="https://getprio.io/?lang=fr" />
+  <link rel="alternate" hreflang="es" href="https://getprio.io/?lang=es" />
+  <link rel="alternate" hreflang="x-default" href="https://getprio.io/" />
 
   <!-- Open Graph -->
   <meta property="og:title" content="Prio — Idealista, Fotocasa & Badi Alerts Before Everyone Else">
@@ -35,6 +37,9 @@
 
   <!-- Styles -->
   <link rel="stylesheet" href="css/style.css?v=3">
+
+  <!-- i18n -->
+  <script src="/assets/i18n.js" defer></script>
 
   <!-- Pricing V2 scoped styles -->
   <style>
@@ -153,6 +158,18 @@
     .tier-card__cta--solid:hover { background: #1d4ed8; color: #fff; box-shadow: 0 4px 12px rgba(37,99,235,0.3); }
     .tier-card__cta--dark { background: #0f172a; border: none; color: #fff; }
     .tier-card__cta--dark:hover { background: #000; color: #fff; box-shadow: 0 4px 12px rgba(0,0,0,0.2); }
+    .lang-picker a {
+      font-size: 0.75rem;
+      padding: 2px 6px;
+      border-radius: 3px;
+      text-decoration: none;
+      color: var(--text-muted, #888);
+      transition: all 0.15s;
+    }
+    .lang-picker a.active {
+      color: var(--text-primary, #fff);
+      background: var(--accent, #4f46e5);
+    }
     @media (max-width: 768px) {
       .pricing-v2 { flex-direction: column; align-items: center; }
       .tier-card { max-width: 100%; min-width: 0; width: 100%; }
@@ -291,12 +308,19 @@
       <a href="/" class="nav__logo">prio<span>.</span></a>
 
       <ul class="nav__links">
-        <li><a href="/es/">Spain</a></li>
-        <li><a href="/pricing/">Pricing</a></li>
+        <li><a href="/es/" data-i18n="nav.spain">Spain</a></li>
+        <li><a href="/pricing/" data-i18n="nav.pricing">Pricing</a></li>
         <li><a href="/blog/">Blog</a></li>
-        <li><a href="/pro/">For Pros</a></li>
-        <li><a href="/about/">About</a></li>
-        <li><a href="/go/?lang=en" class="nav__cta" data-umami-event="cta-click" data-umami-event-cta="home-nav-getalerts" data-umami-event-page="home" data-umami-event-tier="na">Get Alerts →</a></li>
+        <li><a href="/pro/" data-i18n="nav.for_pros">For Pros</a></li>
+        <li><a href="/about/" data-i18n="nav.about">About</a></li>
+        <li>
+          <span class="lang-picker">
+            <a href="?lang=en" data-lang="en">EN</a>
+            <a href="?lang=fr" data-lang="fr">FR</a>
+            <a href="?lang=es" data-lang="es">ES</a>
+          </span>
+        </li>
+        <li><a href="/go/?lang=en" class="nav__cta" data-umami-event="cta-click" data-umami-event-cta="home-nav-getalerts" data-umami-event-page="home" data-umami-event-tier="na" data-i18n="nav.get_alerts">Get Alerts →</a></li>
       </ul>
 
       <button class="nav__toggle" aria-label="Toggle menu">
@@ -308,15 +332,15 @@
   <!-- ========== HERO ========== -->
   <header class="hero">
     <div class="container">
-      <div class="hero__badge">Live in Spain · More countries coming soon</div>
+      <div class="hero__badge" data-i18n="home.badge">Live in Spain · More countries coming soon</div>
 
-      <h1>First notified. First to call. First to visit.</h1>
+      <h1 data-i18n="home.h1">First notified. First to call. First to visit.</h1>
 
-      <p class="hero__subtitle">
+      <p class="hero__subtitle" data-i18n="home.subtitle">
         You receive all platform notifications with a minimum 3-minute head start on EVERYONE. Plus, all your alerts in one place.
       </p>
 
-      <p class="hero__about">
+      <p class="hero__about" data-i18n="home.description">
         Prio is a real-time apartment alert service for Spain. It detects new listings on Idealista, Fotocasa and Badi within seconds of publication, before official platform push notifications reach users.
       </p>
 
@@ -336,16 +360,16 @@
       </div>
 
       <div class="hero__ctas">
-        <a href="/go/?lang=en" class="btn btn--dark btn--lg" data-umami-event="cta-click" data-umami-event-cta="home-hero-cta" data-umami-event-page="home" data-umami-event-tier="na">
+        <a href="/go/?lang=en" class="btn btn--dark btn--lg" data-umami-event="cta-click" data-umami-event-cta="home-hero-cta" data-umami-event-page="home" data-umami-event-tier="na" data-i18n="home.cta_trial">
           Start your 7-day free trial →
         </a>
       </div>
-      <p style="font-size:13px;color:var(--color-text-muted);margin-top:8px;">No credit card required</p>
+      <p style="font-size:13px;color:var(--color-text-muted);margin-top:8px;" data-i18n="home.no_cc">No credit card required</p>
 
       <div class="hero__proof">
-        <span>📬 130,000+ alerts sent</span>
-        <span>⚡ &lt;60s average</span>
-        <span>🌍 3 platforms · All of Spain</span>
+        <span>📬 <span data-i18n="home.stats_alerts">130,000+ alerts sent</span></span>
+        <span>⚡ <span data-i18n="home.stats_speed">&lt;60s average</span></span>
+        <span>🌍 <span data-i18n="home.stats_platforms">3 platforms · All of Spain</span></span>
       </div>
     </div>
   </header>
@@ -358,22 +382,22 @@
           <line x1="40" y1="20" x2="40" y2="220" stroke="#d1d1d1" stroke-width="1"/>
           <circle cx="40" cy="40" r="5" fill="#1D9E75"/>
           <text x="58" y="34" fill="#999" font-size="11" font-family="Satoshi,sans-serif">14:00:00</text>
-          <text x="58" y="52" fill="#1a1a1a" font-size="13" font-weight="500" font-family="Satoshi,sans-serif">Listing published</text>
+          <text x="58" y="52" fill="#1a1a1a" font-size="13" font-weight="500" font-family="Satoshi,sans-serif" data-i18n="home.timeline_published">Listing published</text>
           <circle cx="40" cy="110" r="6" fill="#378ADD" stroke="#85B7EB" stroke-width="2"/>
           <text x="58" y="98" fill="#378ADD" font-size="11" font-family="Satoshi,sans-serif">14:00:05</text>
-          <text x="58" y="116" fill="#1a1a1a" font-size="14" font-weight="600" font-family="Satoshi,sans-serif">⚡ Prio alert. You call first.</text>
-          <text x="58" y="134" fill="#666" font-size="12" font-family="Satoshi,sans-serif">You book the visit. You're ahead.</text>
+          <text x="58" y="116" fill="#1a1a1a" font-size="14" font-weight="600" font-family="Satoshi,sans-serif" data-i18n="home.timeline_prio">⚡ Prio alert. You call first.</text>
+          <text x="58" y="134" fill="#666" font-size="12" font-family="Satoshi,sans-serif" data-i18n="home.timeline_prio_sub">You book the visit. You're ahead.</text>
           <circle cx="40" cy="195" r="5" fill="#BA7517"/>
           <text x="58" y="184" fill="#BA7517" font-size="11" font-family="Satoshi,sans-serif">14:10:00</text>
-          <text x="58" y="202" fill="#1a1a1a" font-size="13" font-weight="500" font-family="Satoshi,sans-serif">Idealista push notification</text>
-          <text x="58" y="218" fill="#999" font-size="11" font-family="Satoshi,sans-serif">400 people call. Too late.</text>
+          <text x="58" y="202" fill="#1a1a1a" font-size="13" font-weight="500" font-family="Satoshi,sans-serif" data-i18n="home.timeline_platform">Idealista push notification</text>
+          <text x="58" y="218" fill="#999" font-size="11" font-family="Satoshi,sans-serif" data-i18n="home.timeline_platform_sub">400 people call. Too late.</text>
         </svg>
       </div>
       <div style="flex:1">
-        <h2 style="font-size:1.8rem;font-weight:600;margin:0 0 1rem">Faster than push alerts.</h2>
-        <p style="font-size:1.05rem;line-height:1.6;color:#666;margin:0 0 0.8rem">Prio detects new listings before Idealista, Fotocasa and Badi send their own notifications. You get 3 to 15 minutes of head start on every single listing.</p>
-        <p style="font-size:1.05rem;line-height:1.6;color:#666;margin:0 0 1.5rem">While 400 other people receive the platform push and scramble to call, you've already booked the visit.</p>
-        <a href="/go/?lang=en" class="btn btn--dark" data-umami-event="cta-click" data-umami-event-cta="home-section-startfree" data-umami-event-page="home" data-umami-event-tier="na">Start 7-day free trial →</a>
+        <h2 style="font-size:1.8rem;font-weight:600;margin:0 0 1rem" data-i18n="home.faster_h2">Faster than push alerts.</h2>
+        <p style="font-size:1.05rem;line-height:1.6;color:#666;margin:0 0 0.8rem" data-i18n="home.faster_p">Prio detects new listings before Idealista, Fotocasa and Badi send their own notifications. You get 3 to 15 minutes of head start on every single listing.</p>
+        <p style="font-size:1.05rem;line-height:1.6;color:#666;margin:0 0 1.5rem" data-i18n="home.faster_p2">While 400 other people receive the platform push and scramble to call, you've already booked the visit.</p>
+        <a href="/go/?lang=en" class="btn btn--dark" data-umami-event="cta-click" data-umami-event-cta="home-section-startfree" data-umami-event-page="home" data-umami-event-tier="na" data-i18n="home.cta_trial">Start 7-day free trial →</a>
       </div>
     </div>
   </section>
@@ -382,17 +406,17 @@
   <section class="section section--bordered">
     <div class="container container--text">
       <div class="section__header reveal">
-        <span class="section__label">The Problem</span>
-        <h2>You're not too slow. The platforms are.</h2>
+        <span class="section__label" data-i18n="home.problem_label">The Problem</span>
+        <h2 data-i18n="home.problem_h2">You're not too slow. The platforms are.</h2>
       </div>
 
-      <p class="reveal">
+      <p class="reveal" data-i18n="home.problem_p1">
         You set up your alerts on Idealista, Fotocasa, or Badi. You check your phone constantly. But by the time you see a listing, dozens of people have already called.
       </p>
-      <p class="mt-lg reveal">
+      <p class="mt-lg reveal" data-i18n-html="home.problem_p2">
         Here's what most people don't know: there's a <strong>3 to 10 minute delay</strong> between when a listing is actually published and when the platform sends you the push notification. That's enough for dozens of people to call before you.
       </p>
-      <p class="mt-lg reveal">
+      <p class="mt-lg reveal" data-i18n="home.problem_p3">
         Prio eliminates that gap across every major listing platform in Spain.
       </p>
     </div>
@@ -402,25 +426,25 @@
   <section class="section" id="how-it-works">
     <div class="container">
       <div class="section__header reveal">
-        <span class="section__label">How It Works</span>
-        <h2>Three steps. Two minutes to set up.</h2>
+        <span class="section__label" data-i18n="home.how_label">How It Works</span>
+        <h2 data-i18n="home.how_h2">Three steps. Two minutes to set up.</h2>
       </div>
 
       <div class="steps stagger-children">
         <div class="step reveal">
           <div class="step__number">1</div>
-          <h3>Share your search link</h3>
-          <p>Send us your search URL from any supported platform: Idealista, Fotocasa, Badi. Same filters you already use.</p>
+          <h3 data-i18n="home.step1_title">Share your search link</h3>
+          <p data-i18n="home.step1_desc">Send us your search URL from any supported platform: Idealista, Fotocasa, Badi. Same filters you already use.</p>
         </div>
         <div class="step reveal">
           <div class="step__number">2</div>
-          <h3>We detect listings first</h3>
-          <p>Our system checks for new listings continuously. When a new property matches your criteria, we detect it before the platform sends its own alert.</p>
+          <h3 data-i18n="home.step2_title">We detect listings first</h3>
+          <p data-i18n="home.step2_desc">Our system checks for new listings continuously. When a new property matches your criteria, we detect it before the platform sends its own alert.</p>
         </div>
         <div class="step reveal">
           <div class="step__number">3</div>
-          <h3>Instant Telegram alert</h3>
-          <p>Photo, price, size, location, direct link. Unlimited alerts during your 7-day free trial, minutes before everyone else.</p>
+          <h3 data-i18n="home.step3_title">Instant Telegram alert</h3>
+          <p data-i18n="home.step3_desc">Photo, price, size, location, direct link. Unlimited alerts during your 7-day free trial, minutes before everyone else.</p>
         </div>
       </div>
     </div>
@@ -430,88 +454,88 @@
   <section class="section section--subtle" id="pricing">
     <div class="container">
       <div class="section__header reveal">
-        <span class="section__label">Pricing</span>
-        <h2>Try Prio free for 7 days. No credit card required.</h2>
+        <span class="section__label" data-i18n="home.pricing_label">Pricing</span>
+        <h2 data-i18n="home.pricing_h2">Try Prio free for 7 days. No credit card required.</h2>
       </div>
 
       <div class="pricing-v2 stagger-children">
         <!-- ROOMMATE -->
         <div class="tier-card reveal">
           <div class="tier-card__header">
-            <h3 class="tier-card__name">Roommate</h3>
-            <p class="tier-card__tagline">Finding your room</p>
+            <h3 class="tier-card__name" data-i18n="plans.roommate_name">Roommate</h3>
+            <p class="tier-card__tagline" data-i18n="plans.roommate_tagline">Finding your room</p>
           </div>
           <div class="tier-card__price-block">
-            <span class="tier-card__price">€4.95</span>
-            <span class="tier-card__period">/month</span>
-            <p class="tier-card__period-sub">after 7-day free trial</p>
+            <span class="tier-card__price" data-i18n="plans.roommate_price">€4.95</span>
+            <span class="tier-card__period" data-i18n="plans.roommate_period_home">/month</span>
+            <p class="tier-card__period-sub" data-i18n="plans.roommate_sub_home">after 7-day free trial</p>
           </div>
           <div class="tier-card__platforms">
-            <span class="tier-card__platform-label">Badi only</span>
+            <span class="tier-card__platform-label" data-i18n="plans.roommate_platform">Badi only</span>
             <span class="platform-pill platform-pill--badi"><span class="platform-pill__dot"></span>Badi</span>
           </div>
           <ul class="tier-card__features">
-            <li class="tier-card__feature"><span class="tier-card__feature-icon">⚡</span><span>Unlimited priority alerts</span></li>
-            <li class="tier-card__feature"><span class="tier-card__feature-icon">🔍</span><span>Up to 5 searches</span></li>
-            <li class="tier-card__feature"><span class="tier-card__feature-icon">🏃</span><span>Minutes ahead of everyone</span></li>
-            <li class="tier-card__feature"><span class="tier-card__feature-icon">📱</span><span>Telegram delivery</span></li>
+            <li class="tier-card__feature"><span class="tier-card__feature-icon">⚡</span><span data-i18n="plans.roommate_f1">Unlimited priority alerts</span></li>
+            <li class="tier-card__feature"><span class="tier-card__feature-icon">🔍</span><span data-i18n="plans.roommate_f2">Up to 5 searches</span></li>
+            <li class="tier-card__feature"><span class="tier-card__feature-icon">🏃</span><span data-i18n="plans.roommate_f3">Minutes ahead of everyone</span></li>
+            <li class="tier-card__feature"><span class="tier-card__feature-icon">📱</span><span data-i18n="plans.free_f4">Telegram delivery</span></li>
           </ul>
-          <a href="/go/?lang=en" class="tier-card__cta tier-card__cta--outline" data-umami-event="cta-click" data-umami-event-cta="home-card-roommate-startfree" data-umami-event-page="home" data-umami-event-tier="roommate">Start 7-day free trial</a>
+          <a href="/go/?lang=en" class="tier-card__cta tier-card__cta--outline" data-umami-event="cta-click" data-umami-event-cta="home-card-roommate-startfree" data-umami-event-page="home" data-umami-event-tier="roommate" data-i18n="plans.start_trial">Start 7-day free trial</a>
         </div>
 
         <!-- RENTER -->
         <div class="tier-card tier-card--popular reveal">
-          <div class="tier-card__badge">MOST POPULAR</div>
+          <div class="tier-card__badge" data-i18n="plans.renter_badge">MOST POPULAR</div>
           <div class="tier-card__header">
-            <h3 class="tier-card__name">Renter</h3>
-            <p class="tier-card__tagline">Your next apartment</p>
+            <h3 class="tier-card__name" data-i18n="plans.renter_name">Renter</h3>
+            <p class="tier-card__tagline" data-i18n="plans.renter_tagline">Your next apartment</p>
           </div>
           <div class="tier-card__price-block">
-            <span class="tier-card__price">€19.90</span>
-            <span class="tier-card__period">/mo</span>
-            <p class="tier-card__period-sub">after 7-day free trial</p>
+            <span class="tier-card__price" data-i18n="plans.renter_price">€19.90</span>
+            <span class="tier-card__period" data-i18n="plans.renter_period">/mo</span>
+            <p class="tier-card__period-sub" data-i18n="plans.renter_sub">after 7-day free trial</p>
           </div>
           <div class="tier-card__platforms">
-            <span class="tier-card__platform-label">Rental listings</span>
+            <span class="tier-card__platform-label" data-i18n="plans.renter_platform">Rental listings</span>
             <span class="platform-pill platform-pill--idealista"><span class="platform-pill__dot"></span>Idealista</span>
             <span class="platform-pill platform-pill--fotocasa"><span class="platform-pill__dot"></span>Fotocasa</span>
           </div>
           <ul class="tier-card__features">
-            <li class="tier-card__feature"><span class="tier-card__feature-icon">⚡</span><span>Unlimited priority alerts</span></li>
-            <li class="tier-card__feature"><span class="tier-card__feature-icon">🔍</span><span>3 searches per platform</span></li>
-            <li class="tier-card__feature"><span class="tier-card__feature-icon">🏃</span><span>Minutes ahead of everyone</span></li>
-            <li class="tier-card__feature"><span class="tier-card__feature-icon">📱</span><span>Telegram delivery</span></li>
+            <li class="tier-card__feature"><span class="tier-card__feature-icon">⚡</span><span data-i18n="plans.renter_f1">Unlimited priority alerts</span></li>
+            <li class="tier-card__feature"><span class="tier-card__feature-icon">🔍</span><span data-i18n="plans.renter_f2">3 searches per platform</span></li>
+            <li class="tier-card__feature"><span class="tier-card__feature-icon">🏃</span><span data-i18n="plans.roommate_f3">Minutes ahead of everyone</span></li>
+            <li class="tier-card__feature"><span class="tier-card__feature-icon">📱</span><span data-i18n="plans.free_f4">Telegram delivery</span></li>
           </ul>
-          <a href="/go/?lang=en" class="tier-card__cta tier-card__cta--solid" data-umami-event="cta-click" data-umami-event-cta="home-card-renter-startfree" data-umami-event-page="home" data-umami-event-tier="renter">Start 7-day free trial</a>
+          <a href="/go/?lang=en" class="tier-card__cta tier-card__cta--solid" data-umami-event="cta-click" data-umami-event-cta="home-card-renter-startfree" data-umami-event-page="home" data-umami-event-tier="renter" data-i18n="plans.start_trial">Start 7-day free trial</a>
         </div>
 
         <!-- BUYER -->
         <div class="tier-card reveal">
           <div class="tier-card__header">
-            <h3 class="tier-card__name">Buyer</h3>
-            <p class="tier-card__tagline">Your dream property</p>
+            <h3 class="tier-card__name" data-i18n="plans.buyer_name">Buyer</h3>
+            <p class="tier-card__tagline" data-i18n="plans.buyer_tagline">Your dream property</p>
           </div>
           <div class="tier-card__price-block">
-            <span class="tier-card__price">€49.90</span>
-            <span class="tier-card__period">/mo</span>
-            <p class="tier-card__period-sub">after 7-day free trial</p>
+            <span class="tier-card__price" data-i18n="plans.buyer_price">€49.90</span>
+            <span class="tier-card__period" data-i18n="plans.buyer_period">/mo</span>
+            <p class="tier-card__period-sub" data-i18n="plans.buyer_sub">after 7-day free trial</p>
           </div>
           <div class="tier-card__platforms">
-            <span class="tier-card__platform-label">Purchase listings</span>
+            <span class="tier-card__platform-label" data-i18n="plans.buyer_platform">Purchase listings</span>
             <span class="platform-pill platform-pill--idealista"><span class="platform-pill__dot"></span>Idealista</span>
             <span class="platform-pill platform-pill--fotocasa"><span class="platform-pill__dot"></span>Fotocasa</span>
           </div>
           <ul class="tier-card__features">
-            <li class="tier-card__feature"><span class="tier-card__feature-icon">⚡</span><span>Unlimited priority alerts</span></li>
-            <li class="tier-card__feature"><span class="tier-card__feature-icon">🔍</span><span>3 searches per platform</span></li>
-            <li class="tier-card__feature"><span class="tier-card__feature-icon">🏃</span><span>Minutes ahead of everyone</span></li>
-            <li class="tier-card__feature"><span class="tier-card__feature-icon">🎯</span><span>Priority support</span></li>
+            <li class="tier-card__feature"><span class="tier-card__feature-icon">⚡</span><span data-i18n="plans.buyer_f1">Unlimited priority alerts</span></li>
+            <li class="tier-card__feature"><span class="tier-card__feature-icon">🔍</span><span data-i18n="plans.buyer_f2">3 searches per platform</span></li>
+            <li class="tier-card__feature"><span class="tier-card__feature-icon">🏃</span><span data-i18n="plans.roommate_f3">Minutes ahead of everyone</span></li>
+            <li class="tier-card__feature"><span class="tier-card__feature-icon">🎯</span><span data-i18n="plans.buyer_f3">Priority support</span></li>
           </ul>
-          <a href="/go/?lang=en" class="tier-card__cta tier-card__cta--dark" data-umami-event="cta-click" data-umami-event-cta="home-card-buyer-startfree" data-umami-event-page="home" data-umami-event-tier="buyer">Start 7-day free trial</a>
+          <a href="/go/?lang=en" class="tier-card__cta tier-card__cta--dark" data-umami-event="cta-click" data-umami-event-cta="home-card-buyer-startfree" data-umami-event-page="home" data-umami-event-tier="buyer" data-i18n="plans.start_trial">Start 7-day free trial</a>
         </div>
       </div>
 
-      <p class="text-center text-sm text-muted" style="margin-bottom:var(--space-xl);">
+      <p class="text-center text-sm text-muted" style="margin-bottom:var(--space-xl);" data-i18n="plans.trial_footer">
         All plans include a 7-day free trial. No credit card required.
       </p>
     </div>
@@ -521,9 +545,9 @@
   <section class="section">
     <div class="container">
       <div class="section__header reveal">
-        <span class="section__label">The Speed Advantage</span>
-        <h2>How much faster?</h2>
-        <p>Measured across thousands of listings. The gap is real.</p>
+        <span class="section__label" data-i18n="home.speed_label">The Speed Advantage</span>
+        <h2 data-i18n="home.speed_h2">How much faster?</h2>
+        <p data-i18n="home.speed_measured">Measured across thousands of listings. The gap is real.</p>
       </div>
 
       <div class="speed-demo reveal-scale">
@@ -531,7 +555,7 @@
           <div class="speed-bar">
             <div class="speed-bar__label">Prio</div>
             <div class="speed-bar__track">
-              <div class="speed-bar__fill speed-bar__fill--prio" style="width: 10%; min-width: 70px;">
+              <div class="speed-bar__fill speed-bar__fill--prio" style="width: 10%; min-width: 70px;" data-i18n="home.speed_prio">
                 &lt;60s
               </div>
             </div>
@@ -539,13 +563,13 @@
           <div class="speed-bar">
             <div class="speed-bar__label">Platform alerts</div>
             <div class="speed-bar__track">
-              <div class="speed-bar__fill speed-bar__fill--other" style="width: 85%;">
+              <div class="speed-bar__fill speed-bar__fill--other" style="width: 85%;" data-i18n="home.speed_platform">
                 ~3-10 min avg
               </div>
             </div>
           </div>
         </div>
-        <p class="mt-2xl text-sm text-muted">
+        <p class="mt-2xl text-sm text-muted" data-i18n="home.speed_gap_text">
           That several-minute head start is the difference between getting a viewing and hearing "sorry, already taken."
         </p>
       </div>
@@ -557,18 +581,18 @@
           <div class="comparison__cell">Platform Alerts</div>
         </div>
         <div class="comparison__row">
-          <div class="comparison__cell fw-600">Alert speed</div>
+          <div class="comparison__cell fw-600" data-i18n="home.table_alert_speed">Alert speed</div>
           <div class="comparison__cell comparison__highlight">&lt; 60 seconds</div>
           <div class="comparison__cell">~3-10 min avg</div>
         </div>
         <div class="comparison__row">
-          <div class="comparison__cell fw-600">Cross-platform</div>
-          <div class="comparison__cell comparison__highlight"><span class="check">✓</span>&nbsp; 3 platforms unified</div>
-          <div class="comparison__cell"><span class="cross">✗</span>&nbsp; One platform only</div>
+          <div class="comparison__cell fw-600" data-i18n="home.table_cross_platform">Cross-platform</div>
+          <div class="comparison__cell comparison__highlight" data-i18n-html="home.table_cross_yes"><span class="check">✓</span>&nbsp; 3 platforms unified</div>
+          <div class="comparison__cell" data-i18n-html="home.table_cross_no"><span class="cross">✗</span>&nbsp; One platform only</div>
         </div>
         <div class="comparison__row">
-          <div class="comparison__cell fw-600">Free trial</div>
-          <div class="comparison__cell comparison__highlight"><span class="check">✓</span>&nbsp; 7-day free trial</div>
+          <div class="comparison__cell fw-600" data-i18n="home.table_trial">Free trial</div>
+          <div class="comparison__cell comparison__highlight" data-i18n-html="home.table_trial_yes"><span class="check">✓</span>&nbsp; 7-day free trial</div>
           <div class="comparison__cell"><span class="cross">✗</span></div>
         </div>
       </div>
@@ -580,7 +604,7 @@
     <div class="container">
       <div class="section__header reveal">
         <span class="section__label">Where we operate</span>
-        <h2>Live in Spain. Expanding across Europe.</h2>
+        <h2 data-i18n="home.markets_h2">Live in Spain. Expanding across Europe.</h2>
       </div>
 
       <div class="grid grid--2 stagger-children" style="gap: var(--space-lg);">
@@ -588,25 +612,25 @@
           <div style="display:flex;align-items:center;gap:8px;margin-bottom:12px;">
             <span style="font-size:1.4rem;">🇪🇸</span>
             <h3 style="font-size:var(--text-lg);margin:0;">Spain</h3>
-            <span style="font-size:0.7rem;font-weight:600;padding:2px 8px;border-radius:999px;background:#ecfdf5;color:#10b981;">Live</span>
+            <span style="font-size:0.7rem;font-weight:600;padding:2px 8px;border-radius:999px;background:#ecfdf5;color:#10b981;" data-i18n="home.spain_status">Live</span>
           </div>
-          <p style="font-size:var(--text-sm);margin:0;">Idealista · Fotocasa · Badi</p>
-          <p style="font-size:var(--text-xs);color:var(--color-text-muted);margin-top:4px;">Barcelona, Madrid, Valencia + 9 cities</p>
+          <p style="font-size:var(--text-sm);margin:0;" data-i18n="home.spain_desc">Idealista · Fotocasa · Badi</p>
+          <p style="font-size:var(--text-xs);color:var(--color-text-muted);margin-top:4px;" data-i18n="home.spain_cities">Barcelona, Madrid, Valencia + 9 cities</p>
         </div>
 
         <div class="card reveal" style="padding: var(--space-lg);">
           <div style="display:flex;align-items:center;gap:8px;margin-bottom:12px;">
             <span style="font-size:1.4rem;">🚀</span>
-            <h3 style="font-size:var(--text-lg);margin:0;">Other European markets</h3>
-            <span style="font-size:0.7rem;font-weight:600;padding:2px 8px;border-radius:999px;background:#f1f3f5;color:#9ca3af;">Coming in 2026</span>
+            <h3 style="font-size:var(--text-lg);margin:0;" data-i18n="home.europe_title">Other European markets</h3>
+            <span style="font-size:0.7rem;font-weight:600;padding:2px 8px;border-radius:999px;background:#f1f3f5;color:#9ca3af;" data-i18n="home.europe_coming">Coming in 2026</span>
           </div>
-          <p style="font-size:var(--text-sm);margin:0;">France, Italy, UK and more</p>
-          <p style="font-size:var(--text-xs);color:var(--color-text-muted);margin-top:4px;">Active research and validation</p>
+          <p style="font-size:var(--text-sm);margin:0;" data-i18n="home.europe_desc">France, Italy, UK and more</p>
+          <p style="font-size:var(--text-xs);color:var(--color-text-muted);margin-top:4px;" data-i18n="home.europe_sub">Active research and validation</p>
         </div>
       </div>
 
       <p class="text-center text-sm text-muted mt-xl">
-        Want Prio in your country? <a href="mailto:contact@getprio.io" data-umami-event="cta-click" data-umami-event-cta="home-coverage-contactus" data-umami-event-page="home" data-umami-event-tier="na">Contact us</a>.
+        <span data-i18n="home.country_cta">Want Prio in your country?</span> <a href="mailto:contact@getprio.io" data-umami-event="cta-click" data-umami-event-cta="home-coverage-contactus" data-umami-event-page="home" data-umami-event-tier="na" data-i18n="home.contact_us">Contact us</a>.
       </p>
     </div>
   </section>
@@ -616,7 +640,7 @@
     <div class="container">
       <div class="section__header reveal">
         <span class="section__label">Testimonials</span>
-        <h2>Trusted by apartment hunters across Spain</h2>
+        <h2 data-i18n="home.testimonials_h2">Trusted by apartment hunters across Spain</h2>
       </div>
 
       <div class="grid grid--3 stagger-children">
@@ -671,98 +695,98 @@
     <div class="container container--narrow">
       <div class="section__header reveal">
         <span class="section__label">FAQ</span>
-        <h2>Questions</h2>
+        <h2 data-i18n="faq_home.title">Questions</h2>
       </div>
 
       <div class="faq">
         <div class="faq__item">
-          <button class="faq__question">Why is the Roommate plan limited to Badi?</button>
+          <button class="faq__question" data-i18n="faq_home.q_roommate">Why is the Roommate plan limited to Badi?</button>
           <div class="faq__answer">
-            <p>Badi specializes in shared housing. Room listings on Idealista and Fotocasa are mixed with apartment listings. With Roommate, you get a focused, noise-free experience on the platform built for room search.</p>
+            <p data-i18n="faq_home.a_roommate">Badi specializes in shared housing. Room listings on Idealista and Fotocasa are mixed with apartment listings. With Roommate, you get a focused, noise-free experience on the platform built for room search.</p>
           </div>
         </div>
 
         <div class="faq__item">
-          <button class="faq__question">What's the difference between Renter and Buyer?</button>
+          <button class="faq__question" data-i18n="faq_home.q_diff">What's the difference between Renter and Buyer?</button>
           <div class="faq__answer">
-            <p>Renter monitors rental listings and Buyer monitors purchase listings. Both cover Idealista and Fotocasa with the same features. The distinction ensures you only see listings relevant to your search type.</p>
+            <p data-i18n="faq_home.a_diff">Renter monitors rental listings and Buyer monitors purchase listings. Both cover Idealista and Fotocasa with the same features. The distinction ensures you only see listings relevant to your search type.</p>
           </div>
         </div>
 
         <div class="faq__item">
-          <button class="faq__question">How fast are the priority alerts?</button>
+          <button class="faq__question" data-i18n="faq_home.q_speed">How fast are the priority alerts?</button>
           <div class="faq__answer">
-            <p>Paid users receive new listings 3 to 10 minutes before they appear on the platforms' own notifications. You're systematically the first to call.</p>
+            <p data-i18n="faq_home.a_speed">Paid users receive new listings 3 to 10 minutes before they appear on the platforms' own notifications. You're systematically the first to call.</p>
           </div>
         </div>
 
         <div class="faq__item">
-          <button class="faq__question">What happens after the 7-day trial?</button>
+          <button class="faq__question" data-i18n="faq_home.q_after_trial">What happens after the 7-day trial?</button>
           <div class="faq__answer">
-            <p>After 7 days, choose the plan that fits your search. Roommate from €4.95/mo, Renter at €19.90/mo, Buyer at €49.90/mo. If you don't subscribe, alerts simply stop — no charge, no commitment.</p>
+            <p data-i18n="faq_home.a_after_trial">After 7 days, choose the plan that fits your search. Roommate from €4.95/mo, Renter at €19.90/mo, Buyer at €49.90/mo. If you don't subscribe, alerts simply stop — no charge, no commitment.</p>
           </div>
         </div>
 
         <div class="faq__item">
-          <button class="faq__question">How is Prio different from Idealista / Fotocasa alerts?</button>
+          <button class="faq__question" data-i18n="faq_home.q_different">How is Prio different from Idealista / Fotocasa alerts?</button>
           <div class="faq__answer">
-            <p>Platform push notifications have a 3 to 10 minute delay from when a listing is actually published. Prio detects new listings before the platforms send their own notifications. We also monitor multiple platforms simultaneously, one unified alert stream instead of checking every app separately.</p>
+            <p data-i18n="faq_home.a_different">Platform push notifications have a 3 to 10 minute delay from when a listing is actually published. Prio detects new listings before the platforms send their own notifications. We also monitor multiple platforms simultaneously, one unified alert stream instead of checking every app separately.</p>
           </div>
         </div>
 
         <div class="faq__item">
-          <button class="faq__question">Do I need a credit card to start?</button>
+          <button class="faq__question" data-i18n="faq_home.q_cc">Do I need a credit card to start?</button>
           <div class="faq__answer">
-            <p>No. The 7-day free trial requires no credit card and no payment information. You get full access to unlimited priority alerts. After the trial, you choose whether to subscribe.</p>
+            <p data-i18n="faq_home.a_cc">No. The 7-day free trial requires no credit card and no payment information. You get full access to unlimited priority alerts. After the trial, you choose whether to subscribe.</p>
           </div>
         </div>
 
         <div class="faq__item">
-          <button class="faq__question">What countries and platforms do you cover?</button>
+          <button class="faq__question" data-i18n="faq_home.q_countries">What countries and platforms do you cover?</button>
           <div class="faq__answer">
-            <p>Live now: Spain (Idealista, Fotocasa, Badi). Expanding to other European markets in 2026.</p>
+            <p data-i18n="faq_home.a_countries">Live now: Spain (Idealista, Fotocasa, Badi). Expanding to other European markets in 2026.</p>
           </div>
         </div>
 
         <div class="faq__item">
-          <button class="faq__question">How does the 7-day free trial work?</button>
+          <button class="faq__question" data-i18n="faq_home.q_trial_how">How does the 7-day free trial work?</button>
           <div class="faq__answer">
-            <p>Every plan starts with a full 7-day free trial. No credit card required. You get unlimited priority alerts during the trial. After 7 days, choose a plan to continue or simply stop — no charge.</p>
+            <p data-i18n="faq_home.a_trial_how">Every plan starts with a full 7-day free trial. No credit card required. You get unlimited priority alerts during the trial. After 7 days, choose a plan to continue or simply stop — no charge.</p>
           </div>
         </div>
 
         <div class="faq__item">
-          <button class="faq__question">How is this legal?</button>
+          <button class="faq__question" data-i18n="faq_home.q_legal">How is this legal?</button>
           <div class="faq__answer">
-            <p>Prio uses publicly available listing data, the same information you see when you search on any platform. We check for new listings more frequently than you humanly could.</p>
+            <p data-i18n="faq_home.a_legal">Prio uses publicly available listing data, the same information you see when you search on any platform. We check for new listings more frequently than you humanly could.</p>
           </div>
         </div>
 
         <div class="faq__item">
-          <button class="faq__question">Why Telegram?</button>
+          <button class="faq__question" data-i18n="faq_home.q_telegram">Why Telegram?</button>
           <div class="faq__answer">
-            <p>Telegram delivers notifications instantly with no delays from email servers or app queues. It's the fastest channel we tested. WhatsApp and email are on the roadmap.</p>
+            <p data-i18n="faq_home.a_telegram">Telegram delivers notifications instantly with no delays from email servers or app queues. It's the fastest channel we tested. WhatsApp and email are on the roadmap.</p>
           </div>
         </div>
 
         <div class="faq__item">
-          <button class="faq__question">How do I get started?</button>
+          <button class="faq__question" data-i18n="faq_home.q_start">How do I get started?</button>
           <div class="faq__answer">
-            <p>Message us on Telegram with your search URL from any supported platform. Setup takes under 2 minutes. No app to install, no account to create. 7-day free trial, no credit card required.</p>
+            <p data-i18n="faq_home.a_start">Message us on Telegram with your search URL from any supported platform. Setup takes under 2 minutes. No app to install, no account to create. 7-day free trial, no credit card required.</p>
           </div>
         </div>
 
         <div class="faq__item">
-          <button class="faq__question">What is Prio?</button>
+          <button class="faq__question" data-i18n="faq_home.q_what">What is Prio?</button>
           <div class="faq__answer">
-            <p>Prio is a property alert service monitoring major listing platforms in Spain (Idealista, Fotocasa, Badi), expanding to other European markets. Telegram notifications when new listings match your criteria, before the platforms' own alerts. Used by apartment hunters, property buyers, and real estate professionals.</p>
+            <p data-i18n="faq_home.a_what">Prio is a property alert service monitoring major listing platforms in Spain (Idealista, Fotocasa, Badi), expanding to other European markets. Telegram notifications when new listings match your criteria, before the platforms' own alerts. Used by apartment hunters, property buyers, and real estate professionals.</p>
           </div>
         </div>
 
         <div class="faq__item">
-          <button class="faq__question">Which Spanish cities does Prio cover?</button>
+          <button class="faq__question" data-i18n="faq_home.q_cities">Which Spanish cities does Prio cover?</button>
           <div class="faq__answer">
-            <p>Prio covers all of Spain through Idealista, Fotocasa and Badi. Major cities include Barcelona, Madrid, Valencia, Seville, Bilbao, Malaga, Alicante, Granada, Zaragoza, Palma de Mallorca, San Sebastian and Las Palmas.</p>
+            <p data-i18n="faq_home.a_cities">Prio covers all of Spain through Idealista, Fotocasa and Badi. Major cities include Barcelona, Madrid, Valencia, Seville, Bilbao, Malaga, Alicante, Granada, Zaragoza, Palma de Mallorca, San Sebastian and Las Palmas.</p>
           </div>
         </div>
       </div>
@@ -772,11 +796,11 @@
   <!-- ========== FINAL CTA ========== -->
   <section class="section section--subtle">
     <div class="container" style="text-align:center;">
-      <h2 style="margin-bottom:var(--space-md);">Stop losing apartments.</h2>
-      <p style="max-width:500px;margin:0 auto var(--space-xl);font-size:var(--text-lg);">
+      <h2 style="margin-bottom:var(--space-md);" data-i18n="home.final_cta_h2">Stop losing apartments.</h2>
+      <p style="max-width:500px;margin:0 auto var(--space-xl);font-size:var(--text-lg);" data-i18n="home.final_cta_sub">
         7-day free trial. No credit card. No app to install.
       </p>
-      <a href="/go/?lang=en" class="btn btn--dark btn--lg" data-umami-event="cta-click" data-umami-event-cta="home-footer-startfree" data-umami-event-page="home" data-umami-event-tier="na">
+      <a href="/go/?lang=en" class="btn btn--dark btn--lg" data-umami-event="cta-click" data-umami-event-cta="home-footer-startfree" data-umami-event-page="home" data-umami-event-tier="na" data-i18n="home.cta_trial">
         Start 7-day free trial →
       </a>
     </div>
@@ -788,7 +812,7 @@
       <div class="footer__inner">
         <div class="footer__brand">
           <a href="/" class="nav__logo">prio<span>.</span></a>
-          <p>Property alerts ahead of the platforms. Live in Spain, expanding.</p>
+          <p data-i18n="home.footer_tagline">Property alerts ahead of the platforms. Live in Spain, expanding.</p>
         </div>
 
         <div class="footer__col">
