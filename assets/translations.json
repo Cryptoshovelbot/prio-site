@@ -15,7 +15,7 @@
       "fr",
       "es"
     ],
-    "notes": "Canonical edge claim: 3-10 min. NEVER '30 minutes'. Floor promise per language hardcoded below."
+    "notes": "Messaging pillar: exhaustiveness + simplicity (all platforms, one place, real-time). Do NOT use specific minute figures (no '3-10 min', no '<60s')."
   },
   "nav": {
     "spain": {
@@ -73,9 +73,9 @@
       "es": "Primero en saberlo. Primero en llamar. Primero en visitar."
     },
     "subtitle": {
-      "en": "You receive all platform notifications with a minimum 3-minute head start on EVERYONE. Plus, all your alerts in one place.",
-      "fr": "Vous voyez les annonces 3 minutes minimum avant tout le monde. Et toutes vos alertes au même endroit.",
-      "es": "Ves los anuncios 3 minutos mínimo antes que nadie. Y todas tus alertas en un solo lugar."
+      "en": "Idealista, Fotocasa and Badi — every new listing in one Telegram alert. Stop juggling three apps.",
+      "fr": "Idealista, Fotocasa et Badi — chaque nouvelle annonce dans une seule alerte Telegram. Fini de jongler entre trois apps.",
+      "es": "Idealista, Fotocasa y Badi — cada nuevo anuncio en una sola alerta de Telegram. Deja de saltar entre tres apps."
     },
     "description": {
       "en": "Prio is a real-time apartment alert service for Spain. It detects new listings on Idealista, Fotocasa and Badi within seconds of publication, before official platform push notifications reach users.",
@@ -98,54 +98,14 @@
       "es": "130.000+ alertas enviadas"
     },
     "stats_speed": {
-      "en": "<60s average",
-      "fr": "<60s en moyenne",
-      "es": "<60s de media"
+      "en": "Real-time",
+      "fr": "Temps réel",
+      "es": "Tiempo real"
     },
     "stats_platforms": {
       "en": "3 platforms · All of Spain",
       "fr": "3 plateformes · Toute l'Espagne",
       "es": "3 plataformas · Toda España"
-    },
-    "timeline_published": {
-      "en": "Listing published",
-      "fr": "Annonce publiée",
-      "es": "Anuncio publicado"
-    },
-    "timeline_prio": {
-      "en": "⚡ Prio alert. You call first.",
-      "fr": "⚡ Alerte Prio. Vous appelez en premier.",
-      "es": "⚡ Alerta Prio. Tú llamas primero."
-    },
-    "timeline_prio_sub": {
-      "en": "You book the visit. You're ahead.",
-      "fr": "Vous réservez la visite. Vous avez l'avantage.",
-      "es": "Reservas la visita. Llevas ventaja."
-    },
-    "timeline_platform": {
-      "en": "Idealista push notification",
-      "fr": "Notification push Idealista",
-      "es": "Notificación push de Idealista"
-    },
-    "timeline_platform_sub": {
-      "en": "400 people call. Too late.",
-      "fr": "400 personnes appellent. Trop tard.",
-      "es": "400 personas llaman. Demasiado tarde."
-    },
-    "faster_h2": {
-      "en": "Faster than push alerts.",
-      "fr": "Plus rapide que les notifications push.",
-      "es": "Más rápido que las notificaciones push."
-    },
-    "faster_p": {
-      "en": "Prio detects new listings before Idealista, Fotocasa and Badi send their own notifications. You get 3 to 15 minutes of head start on every single listing.",
-      "fr": "Prio détecte les nouvelles annonces avant qu'Idealista, Fotocasa et Badi n'envoient leurs propres notifications. Vous gagnez 3 à 15 minutes d'avance sur chaque annonce.",
-      "es": "Prio detecta nuevos anuncios antes de que Idealista, Fotocasa y Badi envíen sus propias notificaciones. Ganas de 3 a 15 minutos de ventaja en cada anuncio."
-    },
-    "faster_p2": {
-      "en": "While 400 other people receive the platform push and scramble to call, you've already booked the visit.",
-      "fr": "Pendant que 400 personnes reçoivent la notification et se précipitent pour appeler, vous avez déjà réservé la visite.",
-      "es": "Mientras 400 personas reciben la notificación y se pelean por llamar, tú ya has reservado la visita."
     },
     "problem_label": {
       "en": "The Problem",
@@ -163,9 +123,9 @@
       "es": "Configuras tus alertas en Idealista, Fotocasa o Badi. Miras el móvil sin parar. Pero cuando ves el anuncio, decenas de personas ya han llamado."
     },
     "problem_p2": {
-      "en": "Here's what most people don't know: there's a <strong>3 to 10 minute delay</strong> between when a listing is actually published and when the platform sends you the push notification. That's enough for dozens of people to call before you.",
-      "fr": "Ce que la plupart des gens ignorent : il y a un <strong>délai de 3 à 10 minutes</strong> entre la publication réelle d'une annonce et le moment où la plateforme vous envoie la notification. C'est suffisant pour que des dizaines de personnes appellent avant vous.",
-      "es": "Lo que la mayoría no sabe: hay un <strong>retraso de 3 a 10 minutos</strong> entre la publicación real de un anuncio y el momento en que la plataforma te envía la notificación. Suficiente para que decenas de personas llamen antes que tú."
+      "en": "Here's what most people don't realize: you're checking three different apps — Idealista, Fotocasa, Badi — and still missing listings that only appear on one of them.",
+      "fr": "Ce que la plupart des gens ne réalisent pas : vous vérifiez trois apps différentes — Idealista, Fotocasa, Badi — et vous ratez quand même des annonces qui n'apparaissent que sur l'une d'elles.",
+      "es": "Lo que la mayoría no se da cuenta: revisas tres apps diferentes — Idealista, Fotocasa, Badi — y aún así se te escapan anuncios que solo aparecen en una de ellas."
     },
     "problem_p3": {
       "en": "Prio eliminates that gap across every major listing platform in Spain.",
@@ -223,54 +183,34 @@
       "es": "Prueba Prio gratis durante 7 días. Sin tarjeta de crédito."
     },
     "speed_label": {
-      "en": "The Speed Advantage",
-      "fr": "L'avantage vitesse",
-      "es": "La ventaja de velocidad"
+      "en": "Everything in one place",
+      "fr": "Tout au même endroit",
+      "es": "Todo en un solo lugar"
     },
     "speed_h2": {
-      "en": "How much faster?",
-      "fr": "Combien plus rapide ?",
-      "es": "¿Cuánto más rápido?"
+      "en": "Every listing. One place.",
+      "fr": "Chaque annonce. Un seul endroit.",
+      "es": "Cada anuncio. Un solo lugar."
     },
     "speed_measured": {
-      "en": "Measured across thousands of listings. The gap is real.",
-      "fr": "Mesuré sur des milliers d'annonces. L'écart est réel.",
-      "es": "Medido en miles de anuncios. La diferencia es real."
+      "en": "Prio monitors Idealista, Fotocasa, and Badi simultaneously. No more switching between apps.",
+      "fr": "Prio surveille Idealista, Fotocasa et Badi simultanément. Fini de passer d'une app à l'autre.",
+      "es": "Prio monitoriza Idealista, Fotocasa y Badi a la vez. Se acabó cambiar de una app a otra."
     },
     "speed_prio": {
-      "en": "<60s",
-      "fr": "<60s",
-      "es": "<60s"
+      "en": "All platforms → 1 notification",
+      "fr": "Toutes les plateformes → 1 notification",
+      "es": "Todas las plataformas → 1 notificación"
     },
     "speed_platform": {
-      "en": "~3-10 min avg",
-      "fr": "~3-10 min en moy.",
-      "es": "~3-10 min de media"
+      "en": "Check Idealista… then Fotocasa… then Badi…",
+      "fr": "Vérifier Idealista… puis Fotocasa… puis Badi…",
+      "es": "Mirar Idealista… luego Fotocasa… luego Badi…"
     },
     "speed_gap_text": {
-      "en": "That several-minute head start is the difference between getting a viewing and hearing \"sorry, already taken.\"",
-      "fr": "Ces quelques minutes d'avance font la différence entre décrocher une visite et entendre « désolé, c'est déjà pris ».",
-      "es": "Esos minutos de ventaja marcan la diferencia entre conseguir una visita y escuchar «lo siento, ya está cogido»."
-    },
-    "table_alert_speed": {
-      "en": "Alert speed",
-      "fr": "Vitesse d'alerte",
-      "es": "Velocidad de alerta"
-    },
-    "table_cross_platform": {
-      "en": "Cross-platform",
-      "fr": "Multi-plateforme",
-      "es": "Multi-plataforma"
-    },
-    "table_cross_yes": {
-      "en": "✓ 3 platforms unified",
-      "fr": "✓ 3 plateformes unifiées",
-      "es": "✓ 3 plataformas unificadas"
-    },
-    "table_cross_no": {
-      "en": "✗ One platform only",
-      "fr": "✗ Une seule plateforme",
-      "es": "✗ Una sola plataforma"
+      "en": "Stop juggling 3 apps. Every new listing, one notification.",
+      "fr": "Arrêtez de jongler entre 3 apps. Chaque nouvelle annonce, une seule notification.",
+      "es": "Deja de saltar entre 3 apps. Cada nuevo anuncio, una sola notificación."
     },
     "table_trial": {
       "en": "Free trial",
@@ -351,6 +291,76 @@
       "en": "Property alerts ahead of the platforms. Live in Spain, expanding.",
       "fr": "Alertes immobilières avant les plateformes. Actif en Espagne, en expansion.",
       "es": "Alertas inmobiliarias antes que las plataformas. Activo en España, en expansión."
+    },
+    "speed_without_label": {
+      "en": "Without Prio",
+      "fr": "Sans Prio",
+      "es": "Sin Prio"
+    },
+    "table_without": {
+      "en": "Without Prio",
+      "fr": "Sans Prio",
+      "es": "Sin Prio"
+    },
+    "table_platforms": {
+      "en": "Platforms covered",
+      "fr": "Plateformes couvertes",
+      "es": "Plataformas cubiertas"
+    },
+    "table_platforms_yes": {
+      "en": "<span class=\"check\">✓</span>&nbsp; Idealista, Fotocasa, Badi",
+      "fr": "<span class=\"check\">✓</span>&nbsp; Idealista, Fotocasa, Badi",
+      "es": "<span class=\"check\">✓</span>&nbsp; Idealista, Fotocasa, Badi"
+    },
+    "table_platforms_no": {
+      "en": "One at a time",
+      "fr": "Une à la fois",
+      "es": "Una a una"
+    },
+    "table_setup": {
+      "en": "Setup",
+      "fr": "Configuration",
+      "es": "Configuración"
+    },
+    "table_setup_yes": {
+      "en": "Paste your URL, done",
+      "fr": "Collez votre URL, c'est tout",
+      "es": "Pega tu URL y listo"
+    },
+    "table_setup_no": {
+      "en": "Create account on each platform",
+      "fr": "Créer un compte sur chaque plateforme",
+      "es": "Crear cuenta en cada plataforma"
+    },
+    "table_dupes": {
+      "en": "Duplicates",
+      "fr": "Doublons",
+      "es": "Duplicados"
+    },
+    "table_dupes_yes": {
+      "en": "Filtered",
+      "fr": "Filtrés",
+      "es": "Filtrados"
+    },
+    "table_dupes_no": {
+      "en": "You deal with it",
+      "fr": "À vous de gérer",
+      "es": "Tú te encargas"
+    },
+    "table_alerttype": {
+      "en": "Alert type",
+      "fr": "Type d'alerte",
+      "es": "Tipo de alerta"
+    },
+    "table_alerttype_yes": {
+      "en": "Instant Telegram push",
+      "fr": "Push Telegram instantané",
+      "es": "Push instantáneo de Telegram"
+    },
+    "table_alerttype_no": {
+      "en": "Email or manual refresh",
+      "fr": "E-mail ou rafraîchissement manuel",
+      "es": "Email o actualización manual"
     }
   },
   "plans": {
@@ -360,9 +370,9 @@
       "es": "Gratis"
     },
     "free_tagline": {
-      "en": "See the speed difference",
-      "fr": "Constatez la différence de vitesse",
-      "es": "Comprueba la diferencia de velocidad"
+      "en": "See everything in one place",
+      "fr": "Tout voir au même endroit",
+      "es": "Verlo todo en un solo lugar"
     },
     "free_price": {
       "en": "€0 forever",
@@ -560,9 +570,9 @@
       "es": "Todos los planes incluyen 7 días de prueba gratis. Sin tarjeta de crédito."
     },
     "fomo_line": {
-      "en": "Free users see exactly how much faster paid users were, on every single notification.",
-      "fr": "Les utilisateurs gratuits voient exactement combien de minutes d'avance les utilisateurs Premium ont eu, sur chaque notification.",
-      "es": "Los usuarios gratis ven exactamente cuántos minutos de ventaja tuvieron los usuarios Premium, en cada notificación."
+      "en": "Free users get the same real-time alerts, limited to 4 per day.",
+      "fr": "Les utilisateurs gratuits reçoivent les mêmes alertes en temps réel, limitées à 4 par jour.",
+      "es": "Los usuarios gratis reciben las mismas alertas en tiempo real, limitadas a 4 al día."
     },
     "start_trial": {
       "en": "Start Free Trial",
@@ -714,14 +724,14 @@
       "es": "Inquilino monitoriza anuncios de alquiler y Comprador anuncios de venta. Ambos cubren Idealista y Fotocasa con las mismas funcionalidades. La distinción garantiza que solo veas anuncios relevantes para tu tipo de búsqueda."
     },
     "faq_speed_q": {
-      "en": "How fast are the priority alerts?",
-      "fr": "À quelle vitesse arrivent les alertes prioritaires ?",
-      "es": "¿Qué tan rápidas son las alertas prioritarias?"
+      "en": "Which platforms do the alerts cover?",
+      "fr": "Quelles plateformes les alertes couvrent-elles ?",
+      "es": "¿Qué plataformas cubren las alertas?"
     },
     "faq_speed_a": {
-      "en": "Paid users receive new listings 3 to 10 minutes before they appear on the platforms' own notifications. You're systematically the first to call.",
-      "fr": "Les utilisateurs payants reçoivent les nouvelles annonces 3 à 10 minutes avant qu'elles n'apparaissent dans les notifications des plateformes. Vous êtes systématiquement le premier à appeler.",
-      "es": "Los usuarios de pago reciben los nuevos anuncios de 3 a 10 minutos antes de que aparezcan en las notificaciones de las plataformas. Eres sistemáticamente el primero en llamar."
+      "en": "Every plan monitors Idealista, Fotocasa and Badi and sends new listings to one Telegram chat in real time.",
+      "fr": "Chaque offre surveille Idealista, Fotocasa et Badi et envoie les nouvelles annonces dans un seul chat Telegram en temps réel.",
+      "es": "Cada plan monitoriza Idealista, Fotocasa y Badi y envía los nuevos anuncios a un solo chat de Telegram en tiempo real."
     },
     "faq_free_q": {
       "en": "What do free users get?",
@@ -764,9 +774,9 @@
       "es": "Captación de mandatos en tiempo real."
     },
     "b2b_subtitle": {
-      "en": "See private seller listings the moment they go live. Contact the owner before any other agent. The modern pige immobilière — faster than any legacy tool.",
-      "fr": "Voyez les annonces de particuliers dès leur mise en ligne. Contactez le propriétaire avant tout autre agent. La pige immobilière moderne — plus rapide que n'importe quel outil historique.",
-      "es": "Ve los anuncios de particulares en el momento en que se publican. Contacta al propietario antes que cualquier otro agente. La captación inmobiliaria moderna — más rápida que cualquier herramienta tradicional."
+      "en": "See private seller listings the moment they go live. Contact the owner before any other agent. The modern pige immobilière — across every platform, in one place.",
+      "fr": "Voyez les annonces de particuliers dès leur mise en ligne. Contactez le propriétaire avant tout autre agent. La pige immobilière moderne — sur toutes les plateformes, au même endroit.",
+      "es": "Ve los anuncios de particulares en el momento en que se publican. Contacta al propietario antes que cualquier otro agente. La captación inmobiliaria moderna — en todas las plataformas, en un solo lugar."
     },
     "b2b_indie_name": {
       "en": "Independent",
@@ -891,14 +901,14 @@
       "es": "Inquilino monitoriza anuncios de alquiler y Comprador anuncios de venta. Ambos cubren Idealista y Fotocasa con las mismas funcionalidades. La distinción garantiza que solo veas anuncios relevantes para tu tipo de búsqueda."
     },
     "q_speed": {
-      "en": "How fast are the priority alerts?",
-      "fr": "À quelle vitesse arrivent les alertes prioritaires ?",
-      "es": "¿Qué tan rápidas son las alertas prioritarias?"
+      "en": "Which platforms does Prio cover?",
+      "fr": "Quelles plateformes Prio couvre-t-il ?",
+      "es": "¿Qué plataformas cubre Prio?"
     },
     "a_speed": {
-      "en": "Paid users receive new listings 3 to 10 minutes before they appear on the platforms' own notifications. You're systematically the first to call.",
-      "fr": "Les utilisateurs payants reçoivent les nouvelles annonces 3 à 10 minutes avant qu'elles n'apparaissent dans les notifications des plateformes. Vous êtes systématiquement le premier à appeler.",
-      "es": "Los usuarios de pago reciben los nuevos anuncios de 3 a 10 minutos antes de que aparezcan en las notificaciones de las plataformas. Eres sistemáticamente el primero en llamar."
+      "en": "Prio monitors Idealista, Fotocasa and Badi at once and sends every new listing to one Telegram chat in real time — no more checking each app separately.",
+      "fr": "Prio surveille Idealista, Fotocasa et Badi en même temps et envoie chaque nouvelle annonce dans un seul chat Telegram en temps réel — fini de vérifier chaque app séparément.",
+      "es": "Prio monitoriza Idealista, Fotocasa y Badi a la vez y envía cada nuevo anuncio a un solo chat de Telegram en tiempo real — se acabó revisar cada app por separado."
     },
     "q_after_trial": {
       "en": "What happens after the 7-day trial?",
@@ -916,9 +926,9 @@
       "es": "¿En qué se diferencia Prio de las alertas de Idealista / Fotocasa?"
     },
     "a_different": {
-      "en": "Platform push notifications have a 3 to 10 minute delay from when a listing is actually published. Prio detects new listings before the platforms send their own notifications. We also monitor multiple platforms simultaneously, one unified alert stream instead of checking every app separately.",
-      "fr": "Les notifications push des plateformes ont un délai de 3 à 10 minutes par rapport à la publication réelle de l'annonce. Prio détecte les nouvelles annonces avant que les plateformes n'envoient leurs propres notifications. Nous surveillons aussi plusieurs plateformes simultanément : un flux d'alertes unifié au lieu de vérifier chaque app séparément.",
-      "es": "Las notificaciones push de las plataformas tienen un retraso de 3 a 10 minutos desde que el anuncio se publica realmente. Prio detecta nuevos anuncios antes de que las plataformas envíen sus propias notificaciones. Además monitorizamos varias plataformas simultáneamente: un flujo de alertas unificado en lugar de revisar cada app por separado."
+      "en": "Most people set up alerts on each platform separately and switch between apps all day. Prio unifies Idealista, Fotocasa and Badi into one real-time Telegram stream, with duplicates filtered out.",
+      "fr": "La plupart des gens configurent des alertes sur chaque plateforme séparément et passent leurs journées à zapper entre les apps. Prio unifie Idealista, Fotocasa et Badi en un seul flux Telegram en temps réel, doublons filtrés.",
+      "es": "La mayoría configura alertas en cada plataforma por separado y se pasa el día cambiando de app. Prio unifica Idealista, Fotocasa y Badi en un solo flujo de Telegram en tiempo real, con los duplicados filtrados."
     },
     "q_cc": {
       "en": "Do I need a credit card to start?",
@@ -1018,9 +1028,9 @@
       "es": "Prio — Sé el primero en llamar"
     },
     "go_description": {
-      "en": "Get real estate alerts before everyone else. Prio detects new listings 3 to 10 minutes before official notifications.",
-      "fr": "Recevez des alertes immobilières avant tout le monde. Prio détecte les nouvelles annonces 3 à 10 minutes avant les notifications officielles.",
-      "es": "Recibe alertas inmobiliarias antes que nadie. Prio detecta nuevos anuncios de 3 a 10 minutos antes de las notificaciones oficiales."
+      "en": "Get real estate alerts before everyone else. Prio monitors Idealista, Fotocasa and Badi and sends every new listing to one Telegram alert.",
+      "fr": "Recevez des alertes immobilières avant tout le monde. Prio surveille Idealista, Fotocasa et Badi et envoie chaque nouvelle annonce dans une seule alerte Telegram.",
+      "es": "Recibe alertas inmobiliarias antes que nadie. Prio monitoriza Idealista, Fotocasa y Badi y envía cada nuevo anuncio a una sola alerta de Telegram."
     },
     "pricing_title": {
       "en": "Prio Pricing — Plans for Renters & Real Estate Pros",
@@ -1033,14 +1043,14 @@
       "es": "Alertas inmobiliarias antes que las plataformas en España. Planes para inquilinos desde 19,90 €/mes, profesionales desde 170 €/mes. Sin compromiso."
     },
     "spain_title": {
-      "en": "Spain Apartment Alerts: 12 Cities, 3 Platforms, <60s",
-      "fr": "Alertes Appartements Espagne : 12 Villes, 3 Plateformes, <60s",
-      "es": "Alertas de Pisos España: 12 Ciudades, 3 Plataformas, <60s"
+      "en": "Spain Apartment Alerts: Idealista, Fotocasa & Badi in One Place",
+      "fr": "Alertes Appartements Espagne : Idealista, Fotocasa & Badi au même endroit",
+      "es": "Alertas de Pisos España: Idealista, Fotocasa y Badi en un solo lugar"
     },
     "spain_description": {
-      "en": "Prio sends you Telegram alerts from Idealista, Fotocasa & Badi under 60 seconds. Barcelona, Madrid, Valencia, Málaga, Sevilla + 7 more cities. 7-day free trial.",
-      "fr": "Prio vous envoie des alertes Telegram depuis Idealista, Fotocasa & Badi en moins de 60 secondes. Barcelone, Madrid, Valence, Málaga, Séville + 7 autres villes. Essai gratuit 7 jours.",
-      "es": "Prio te envía alertas de Telegram desde Idealista, Fotocasa y Badi en menos de 60 segundos. Barcelona, Madrid, Valencia, Málaga, Sevilla + 7 ciudades más. Prueba gratis 7 días."
+      "en": "Prio monitors Idealista, Fotocasa & Badi and sends every new listing to one Telegram alert. Barcelona, Madrid, Valencia, Málaga, Sevilla + 7 more cities. 7-day free trial.",
+      "fr": "Prio surveille Idealista, Fotocasa & Badi et envoie chaque nouvelle annonce dans une seule alerte Telegram. Barcelone, Madrid, Valence, Málaga, Séville + 7 autres villes. Essai gratuit 7 jours.",
+      "es": "Prio monitoriza Idealista, Fotocasa y Badi y envía cada nuevo anuncio a una sola alerta de Telegram. Barcelona, Madrid, Valencia, Málaga, Sevilla + 7 ciudades más. Prueba gratis 7 días."
     },
     "about_title": {
       "en": "About Prio — Apartment Alerts Before Everyone",
@@ -1048,9 +1058,9 @@
       "es": "Sobre Prio — Alertas de Pisos Antes que Nadie"
     },
     "about_description": {
-      "en": "Prio detects new listings on Idealista, Fotocasa, and Badi before the platforms notify you. 3 to 10 minutes ahead, every time. Built for Spain.",
-      "fr": "Prio détecte les nouvelles annonces sur Idealista, Fotocasa et Badi avant que les plateformes ne vous notifient. 3 à 10 minutes d'avance, à chaque fois. Conçu pour l'Espagne.",
-      "es": "Prio detecta nuevos anuncios en Idealista, Fotocasa y Badi antes de que las plataformas te notifiquen. De 3 a 10 minutos de ventaja, cada vez. Creado para España."
+      "en": "Prio detects new listings on Idealista, Fotocasa, and Badi before the platforms notify you. All three platforms in one Telegram alert. Built for Spain.",
+      "fr": "Prio détecte les nouvelles annonces sur Idealista, Fotocasa et Badi avant que les plateformes ne vous notifient. Les trois plateformes dans une seule alerte Telegram. Conçu pour l'Espagne.",
+      "es": "Prio detecta nuevos anuncios en Idealista, Fotocasa y Badi antes de que las plataformas te notifiquen. Las tres plataformas en una sola alerta de Telegram. Creado para España."
     },
     "blog_title": {
       "en": "Prio Blog — Apartment Hunting Tips, Market Reports & Guides",
@@ -1125,9 +1135,9 @@
       "es": "Cada vez que encontrábamos un piso que nos gustaba en Idealista — buena ubicación, precio justo, buenas fotos — llamábamos inmediatamente. «Lo siento, ya tenemos 30 visitas programadas.» Íbamos a visitas donde la cola bajaba por las escaleras. Enviábamos nuestros documentos en horas y nunca recibíamos respuesta."
     },
     "story_highlight": {
-      "en": "We weren't too slow. We just didn't know that Idealista's push notifications arrive 3 to 10 minutes after a listing is actually published. In competitive markets, that's enough for dozens of people to call before you.",
-      "fr": "Nous n'étions pas trop lents. Nous ne savions simplement pas que les notifications push d'Idealista arrivent 3 à 10 minutes après la publication réelle d'une annonce. Sur les marchés compétitifs, c'est suffisant pour que des dizaines de personnes appellent avant vous.",
-      "es": "No éramos demasiado lentos. Simplemente no sabíamos que las notificaciones push de Idealista llegan de 3 a 10 minutos después de que un anuncio se publica realmente. En mercados competitivos, eso basta para que decenas de personas llamen antes que tú."
+      "en": "We weren't too slow. We were drowning — checking Idealista, then Fotocasa, then Badi, all day, and still missing listings.",
+      "fr": "Nous n'étions pas trop lents. Nous étions débordés — à vérifier Idealista, puis Fotocasa, puis Badi, toute la journée, et à rater quand même des annonces.",
+      "es": "No éramos demasiado lentos. Estábamos desbordados — revisando Idealista, luego Fotocasa, luego Badi, todo el día, y aun así se nos escapaban anuncios."
     },
     "story_p3": {
       "en": "One of us is a developer. So instead of refreshing Idealista for the 200th time, we built something. A script that checks for new listings every few seconds and sends a Telegram alert the moment something matching our criteria appears.",
@@ -1210,14 +1220,14 @@
       "es": "En lo que creemos"
     },
     "value1_h3": {
-      "en": "Speed is the only moat",
-      "fr": "La rapidité est le seul avantage",
-      "es": "La rapidez es la única ventaja"
+      "en": "Everything in one place",
+      "fr": "Tout au même endroit",
+      "es": "Todo en un solo lugar"
     },
     "value1_p": {
-      "en": "In a competitive rental market, the person who knows first wins. Everything we build is optimized for speed — seconds, not minutes.",
-      "fr": "Sur un marché locatif compétitif, celui qui sait en premier gagne. Tout ce que nous construisons est optimisé pour la vitesse — des secondes, pas des minutes.",
-      "es": "En un mercado de alquiler competitivo, quien sabe primero gana. Todo lo que construimos está optimizado para la velocidad — segundos, no minutos."
+      "en": "In a competitive rental market, the person who knows first wins. Everything we build is optimized to put every listing from every platform in one place.",
+      "fr": "Sur un marché locatif compétitif, celui qui sait en premier gagne. Tout ce que nous construisons vise à réunir chaque annonce de chaque plateforme au même endroit.",
+      "es": "En un mercado de alquiler competitivo, quien sabe primero gana. Todo lo que construimos está pensado para reunir cada anuncio de cada plataforma en un solo lugar."
     },
     "value2_h3": {
       "en": "One alert, not three apps",
@@ -1260,9 +1270,9 @@
       "es": "alertas enviadas"
     },
     "stat2_label": {
-      "en": "avg alert time",
-      "fr": "temps moyen d'alerte",
-      "es": "tiempo medio de alerta"
+      "en": "alerts",
+      "fr": "alertes",
+      "es": "alertas"
     },
     "stat3_label": {
       "en": "platforms",
