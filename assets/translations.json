@@ -93,9 +93,9 @@
       "es": "Sin tarjeta de crédito"
     },
     "stats_alerts": {
-      "en": "130,000+ alerts sent",
-      "fr": "130 000+ alertes envoyées",
-      "es": "130.000+ alertas enviadas"
+      "en": "200,000+ alerts sent",
+      "fr": "200 000+ alertes envoyées",
+      "es": "200.000+ alertas enviadas"
     },
     "stats_speed": {
       "en": "Real-time",
@@ -687,14 +687,14 @@
       "es": "¿Nuevo anuncio? Lo sabrás primero. Llamarás primero."
     },
     "social_users": {
-      "en": "60+ active users",
-      "fr": "60+ utilisateurs actifs",
-      "es": "60+ usuarios activos"
+      "en": "100+ active users",
+      "fr": "100+ utilisateurs actifs",
+      "es": "100+ usuarios activos"
     },
     "social_alerts": {
-      "en": "130,000+ alerts sent",
-      "fr": "130 000+ alertes envoyées",
-      "es": "130.000+ alertas enviadas"
+      "en": "200,000+ alerts sent",
+      "fr": "200 000+ alertes envoyées",
+      "es": "200.000+ alertas enviadas"
     },
     "social_trial": {
       "en": "7-day free trial · No card · No spam",
