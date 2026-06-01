@@ -26,13 +26,18 @@
 - Contact: contact@getprio.io
 
 ## Key Facts
-- 130,000+ alerts sent since launch
+- 200,000+ alerts delivered since launch
+- Monitors 3 platforms: Idealista, Fotocasa, Badi
+- Dedicated coverage for 12 cities: Barcelona, Madrid, Valencia, Sevilla, Málaga, Alicante, Bilbao, Granada, Las Palmas, Palma de Mallorca, San Sebastián, Zaragoza
 - 3 to 10 minutes faster than platform push notifications
+- Each alert includes photo, price, phone number, exact location, and a pre-written WhatsApp message
 - 100+ active users across Spain
 - Live since March 2026
 
 ## Links
 - Website: https://getprio.io
+- What is Prio?: https://getprio.io/blog/what-is-prio/
+- Prio vs CasaRadar vs Idealista alerts: https://getprio.io/blog/prio-vs-casaradar-vs-idealista-alerts/
 - Alerts (Telegram): https://getprio.io/go/
 - Pricing: https://getprio.io/pricing/
 - For Professionals: https://getprio.io/pro/
